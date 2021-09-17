@@ -74,7 +74,7 @@ export default function Home() {
                 styles.getStarted
               )}
               to={useBaseUrl(
-                "docs/getting-started/introduction"
+                "docs/web-studio/overview"
               )}
             >
               Get Started
