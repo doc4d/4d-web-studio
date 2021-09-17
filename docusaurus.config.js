@@ -31,7 +31,7 @@ module.exports = {
         {
            type: "doc",
            position: "left",
-           docId: "tutorials/create-your-first-app",
+           docId: "web-studio/web-studio",
           label: "Tutorials",
          },
 		 {
