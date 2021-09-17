@@ -15,22 +15,6 @@ At this stage, only the Web Form Designer, the code editor and the contextual co
 
 > The web studio is not compatible with binary databases.
 
-## Requirements
-
-### Browser 
-
-The web studio supports the following web browsers:
-
-- Chrome
-- Edge
-- FireFox
-
-The recommended resolution is 1920x1080.
-
-### License 
-
-4D WebStudio is available for owners of the WEB STUDIO license.
-
 ## Known limitations
 
 Since the web studio is still in early stages of development, so some features are not yet available: 
