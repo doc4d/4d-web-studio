@@ -1,19 +1,13 @@
 module.exports = {
 
   docs: [
-	{
-      type: 'category',
-      label: 'Getting started',
-      items: [
-	            'getting-started/introduction',
-				'getting-started/requirements'
-	   ]
-	},
    {
       type: 'category',
       label: 'WebStudio',
       items: [
-	               'web-studio/web-studio',
+	               'web-studio/overview',
+                 'web-studio/configuration',
+                 'web-studio/getting-started'
 			],     
 	},
   {

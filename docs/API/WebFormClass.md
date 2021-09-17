@@ -3,7 +3,7 @@ id: WebFormClass
 title: WebForm
 ---
 
-When working in [4D Web Studio](../web-studio/web-studio.md), the `WebForm `class allows you to handle the behavior of your webform and its components on the server side.
+When working in [4D Web Studio](../web-studio/web-studio.md), the `WebForm` class allows you to handle the behavior of your webform and its components on the server side.
 
 ### WebForm Objects
 
@@ -12,8 +12,8 @@ When working in [4D Web Studio](../web-studio/web-studio.md), the `WebForm `clas
 ### Summary 
 ||
 |---|
-|[<!-- INCLUDE #_command_.WEB Form.Syntax -->](#web-form)<p>&nbsp;&nbsp;&nbsp;&nbsp;<!-- INCLUDE #_command_.WEB Form.Summary --> |
-|[<!-- INCLUDE #_command_.WEB Event.Syntax -->](#web-event)<p>&nbsp;&nbsp;&nbsp;&nbsp;<!-- INCLUDE #_command_.WEB Event.Summary --> |
+|[<!-- INCLUDE #_command_.WEB Form.Syntax -->](#web-form)<p>&nbsp;&nbsp;&nbsp;&nbsp;<!-- INCLUDE #_command_.WEB Form.Summary --></p> |
+|[<!-- INCLUDE #_command_.WEB Event.Syntax -->](#web-event)<p>&nbsp;&nbsp;&nbsp;&nbsp;<!-- INCLUDE #_command_.WEB Event.Summary --></p> |
 
 ## WEB Form
 
@@ -68,7 +68,7 @@ The returned object contains the following properties:
 |----|----|----|
 | caller | Text | Server-side reference of the component triggering the event |
 | eventType | Text | Event type (onclick, onchange, onmouseover...) |
-| data	| Object	| For Tabs component: contains an index property (Number) with the index of the clicked Tab (index starts at 0) |
+| data	| Object| For Tabs component: contains an index property (Number) with the index of the clicked Tab (index starts at 0) |
 
 *eventType* can contain the following events: 
 
@@ -91,11 +91,11 @@ The On Load event is triggered when the `WebForm` component loads.
 
 The objective is to display help when the user hovers over the component:
 
-![alt-text](assets/en/web-studio/web-event-2.png)
+![alt-text](img/web-event-2.png)
 
 To attach an `onmouseover` event to an Input Text component that displays the information:
 
-![alt-text](assets/en/web-studio/web-event-1.png)
+![alt-text](img/web-event-1.png)
 
 In the above image: 
 

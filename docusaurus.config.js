@@ -25,20 +25,14 @@ module.exports = {
         {
            type: "doc",
            position: "left",
-           docId: "getting-started/introduction",
+           docId: "web-studio/overview",
           label: "Docs",
          },
         {
            type: "doc",
            position: "left",
-           docId: "web-studio/web-studio",
-          label: "Tutorials",
-         },
-		 {
-           type: "doc",
-           position: "left",
-           docId: "faq/faq",
-          label: "FAQ",
+           docId: "API/WebFormClass",
+          label: "API",
          },
       ],
     },

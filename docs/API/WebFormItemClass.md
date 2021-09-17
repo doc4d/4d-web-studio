@@ -18,10 +18,10 @@ For example, `WebFormObject.myImage` refers to the image component with `myImage
 ### Summary 
 ||
 |---|
-|[<!-- INCLUDE #WebFormItemClass.hide().Syntax -->](#hide)<p>&nbsp;&nbsp;&nbsp;&nbsp;<!-- INCLUDE #WebFormItemClass.hide().Summary --> |
-|[<!-- INCLUDE #WebFormItemClass.show().Syntax -->](#show)<p>&nbsp;&nbsp;&nbsp;&nbsp;<!-- INCLUDE #WebFormItemClass.show().Summary --> |
-|[<!-- INCLUDE #WebFormItemClass.addCSSClass().Syntax -->](#addcssclass)<p>&nbsp;&nbsp;&nbsp;&nbsp;<!-- INCLUDE #WebFormItemClass.addCSSClass().Summary --> |
-|[<!-- INCLUDE #WebFormItemClass.removeCSSClass().Syntax -->](#removecssclass)<p>&nbsp;&nbsp;&nbsp;&nbsp;<!-- INCLUDE #WebFormItemClass.removeCSSClass().Summary --> |
+|[<!-- INCLUDE #WebFormItemClass.hide().Syntax -->](#hide)<p>&nbsp;&nbsp;&nbsp;&nbsp;<!-- INCLUDE #WebFormItemClass.hide().Summary --></p> |
+|[<!-- INCLUDE #WebFormItemClass.show().Syntax -->](#show)<p>&nbsp;&nbsp;&nbsp;&nbsp;<!-- INCLUDE #WebFormItemClass.show().Summary --></p> |
+|[<!-- INCLUDE #WebFormItemClass.addCSSClass().Syntax -->](#addcssclass)<p>&nbsp;&nbsp;&nbsp;&nbsp;<!-- INCLUDE #WebFormItemClass.addCSSClass().Summary --></p> |
+|[<!-- INCLUDE #WebFormItemClass.removeCSSClass().Syntax -->](#removecssclass)<p>&nbsp;&nbsp;&nbsp;&nbsp;<!-- INCLUDE #WebFormItemClass.removeCSSClass().Summary --></p> |
 
 ## .hide()
 
