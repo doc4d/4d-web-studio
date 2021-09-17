@@ -17,10 +17,10 @@ At this stage, only the Web Form Designer, the code editor and the contextual co
 
 ## Known limitations
 
-Since the web studio is still in early stages of development, so some features are not yet available: 
+Since the web studio is still in early stages of development, some features are not yet available: 
 
-* At this stage, there is no debugger for the web studio.
+* At this stage, there is no debugger for the web studio
 
-* You cannot navigate from page to page.
+* You cannot navigate from page to page
 
-* The web form cannot be rendered exclusively in the web studio (eye icon).
+* The web form cannot be rendered exclusively in the web studio (eye icon)
