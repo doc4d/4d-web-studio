@@ -173,17 +173,19 @@ The **Data Sources** section groups the available data sources:
 
 In this section, you'll find the following:
 
-*  The **Catalog** holds data from your 4D Project. You can designate entities or entity selections from your [datastore](../ORDA/dsMapping.md#datastore), and they will be handled by the server as **Remote** data sources.
+*  The **Catalog** holds:
+    * data from your database: You can designate entities or entity selections from your [datastore](../ORDA/dsMapping.md#datastore), and they will be handled by the server as **Remote** data sources.
+    * Class functions: The Catalog displays the functions defined in each class. 
 
-*  **Remote** data sources: Entities and entity selections, handled on the server, that can be assigned to components. They offer functions defined on the ORDA classes that they instantiate (DataStore classes, Dataclass class, Entity class, Entity Selection class).
+*  **Remote** data sources: Entities and entity selections, handled on the server, that can be assigned to components. 
+They offer functions defined on the ORDA classes that they instantiate (Entity class, Entity Selection class).
 
-> Only the dataclasses and dataclass attributes [exposed as REST resources](https://doc.4d.com/4Dv19/4D/19/Field-properties.300-5416814.en.html) will be available at run time.
+> When working with 4D projects, only the dataclasses and dataclass attributes [exposed as REST resources](https://doc.4d.com/4Dv19/4D/19/Field-properties.300-5416814.en.html) will be available at run time. 
 
-*  **Local** data sources: Scalar types handled with the browser's memory. No request is sent to the server to access this data source.
+*  **Local** data sources: Scalar types handled with the browser's memory. Can be assigned to variables. No request is sent to the server to access local data sources.
 
-Only [exposed functions](../ORDA/ordaClasses.md#exposed-vs-non-exposed-functions) can be used when configuring an event.
+Only [exposed functions](../ORDA/ordaClasses.md#exposed-vs-non-exposed-functions) can be used when configuring an event. Functions and attributes that are not exposed are greyed out.
 
-The data sources display the attributes as well as the functions/methods of data classes.
 ## Creating a data source
 
 To create a data source: 
@@ -220,6 +222,7 @@ For example, to make a search bar, you can attach an `onchange` event to a Text 
 Just like methods, some 4D class functions allow you to set the behavior of your components.
 
 For example, to display or hide a component when an event occurs, you can use the [4D.WebFormItem class functions](../API/WebFormItemClass.md)
+
 ## Server-side reference
 
 The server-side reference of a component is its "address" on the server. To set the behavior of a component, you can assign a server-side reference to it, and then use that reference in class functions.
