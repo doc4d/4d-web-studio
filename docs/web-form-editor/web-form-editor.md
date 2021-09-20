@@ -1,6 +1,6 @@
 ---
-id: getting-started
-title: Getting Started
+id: web-form-editor
+title: Web Form Editor
 ---
 
 ## Creating a WebForm
@@ -15,7 +15,7 @@ To create a WebForm:
 
 The Web Form Editor provides several tools to customize the interface and contents of your application:
 
-![interface](img/web-studio-interface.png)
+![interface](img/web-form-editor-interface.png)
 
 <ol class="interface-numbers">
 <li class="interface-item">Explorer: Displays your project's web forms, methods and classes (assets and data models are not available yet)</li>

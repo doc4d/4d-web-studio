@@ -23,17 +23,17 @@ module.exports = {
       },
       items: [
         {
-           type: "doc",
-           position: "left",
-           docId: "web-studio/overview",
+          type: "doc",
+          position: "left",
+          docId: "getting-started/overview",
           label: "Docs",
-         },
+        },
         {
-           type: "doc",
-           position: "left",
-           docId: "API/WebFormClass",
+          type: "doc",
+          position: "left",
+          docId: "API/WebFormClass",
           label: "API",
-         },
+        },
       ],
     },
     footer: {
@@ -75,7 +75,7 @@ module.exports = {
               label: "4D Documentation",
               to: "https://developer.4d.com/docs/",
             },
-			{
+            {
               label: "4D Doc Center (Legacy)",
               to: "https://doc.4d.com/",
             },
@@ -135,7 +135,7 @@ module.exports = {
           sidebarPath: require.resolve("./sidebars.js"),
           // Please change this to your repo.
           editUrl:
-			"https://github.com/4d/go-mobile/edit/main",
+            "https://github.com/4d/go-mobile/edit/main",
         },
       },
     ],

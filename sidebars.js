@@ -1,22 +1,26 @@
 module.exports = {
 
   docs: [
-   {
+    {
       type: 'category',
-      label: 'WebStudio',
+      label: 'Getting Started',
       items: [
-	               'web-studio/overview',
-                 'web-studio/configuration',
-                 'web-studio/getting-started'
-			],     
-	},
-  {
-    type: 'category',
-    label: 'API',
-    items: [
-               'API/WebFormClass',
-              'API/WebFormItemClass'
-    ],     
-},
+        'getting-started/overview',
+        'getting-started/configuration'
+      ],
+    },
+    {
+      type: 'doc',
+      label: 'Web Form Editor',
+      id: 'web-form-editor/web-form-editor'
+    },
+    {
+      type: 'category',
+      label: 'API',
+      items: [
+        'API/WebFormClass',
+        'API/WebFormItemClass'
+      ],
+    },
   ],
 };
