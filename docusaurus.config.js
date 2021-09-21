@@ -137,6 +137,9 @@ module.exports = {
           editUrl:
             "https://github.com/4d/go-mobile/edit/main",
         },
+        theme: {
+          customCss: [require.resolve('./src/css/custom.css')],
+        },
       },
     ],
   ],
