@@ -31,7 +31,7 @@ module.exports = {
         {
           type: "doc",
           position: "left",
-          docId: "API/WebFormClass",
+          docId: "API/web-form-editor/WebFormClass",
           label: "API",
         },
       ],

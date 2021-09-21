@@ -18,8 +18,25 @@ module.exports = {
       type: 'category',
       label: 'API',
       items: [
-        'API/WebFormClass',
-        'API/WebFormItemClass'
+        {
+          type: 'category',
+          label: 'ORDA',
+          items: [
+            'API/orda/DataStoreClass',
+            'API/orda/DataClassClass',
+            'API/orda/EntityClass',
+            'API/orda/EntitySelectionClass',
+          ],
+        },
+        {
+          type: 'category',
+          label: 'Web Form Editor',
+          items: [
+            'API/web-form-editor/WebFormClass',
+            'API/web-form-editor/WebFormItemClass',
+            'API/web-form-editor/web-event',
+          ],
+        },
       ],
     },
   ],
