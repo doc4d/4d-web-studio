@@ -121,7 +121,7 @@ When you edit CSS using the properties panel, it overrides the CSS defined for t
 
 ## Exporting styles as CSS classes for reuse 
 
-You can export the style of an element as a CSS class to reuse it later. To do this: 
+You can export the style of an element as a CSS class to reuse it later: 
 1. Select a an element on the canvas, the tooltip appears
 2. Click the CSS icon in the tooltip and enter a name for the new CSS class
 3. Click **Export**
@@ -134,9 +134,9 @@ Note that only the [overridden properties](#overriden-properties) are exported a
 
 Once a local class is created, you can hover over it in the Styles Library and click the **Edit Class** button next to its name to edit the CSS directly. The changes apply to all the components using this class.
 
-## Components
+## Component List
 
-This area lets you search for a component or choose one from the list. Once a component is on the canvas, you can [customize its look](#styling-a-component) and (for some components) assign a data source to it.
+The Component area lets you search for a component or choose one from the list. Once a component is on the canvas, you can [customize its look](#styling-a-component) and (for some components) assign a data source to it.
 
 ![alt-text](img/components.png)
 
@@ -160,6 +160,7 @@ The following components are available:
 |Text|Displays text on a web page|
 |Datatable|Displays data in the form of a table. Rows can be selected to interact with the server|
 |Matrix| Container of repeated style boxes|
+|Web Form Loader| Allows you to embed a webform inside another
 
 > More components will be available in the future, and existing components will be enhanced.
 
