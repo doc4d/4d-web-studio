@@ -13,7 +13,7 @@ module.exports = {
       type: 'category',
       label: 'Web Form Editor',
       items: ['web-form-editor/using-web-form-editor',
-        'API/web-form-editor/rendering'
+        'web-form-editor/rendering'
       ],
     },
     {
