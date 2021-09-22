@@ -27,7 +27,7 @@ By default, access to the web studio is not granted. You need to enable access t
 
 	To do this, go to **Settings** > **Web** > **Web features** and check **Enable access to the web studio**.
 
-2.  To enable access to the web studio on the [`WebAdmin`](../Admin/webAdmin.md) web server, go to **File** > **Web Administration** > **Settings...** and check **Enable access to the web studio**
+2.  To enable access to the web studio on the [`WebAdmin`](../Admin/webAdmin.md) web server, go to **File** > **Web Administration** > **Settings...** and check **Enable access to the web studio**.
 
 ## Activating authentication
 
