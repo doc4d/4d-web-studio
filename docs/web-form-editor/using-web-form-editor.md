@@ -1,6 +1,6 @@
 ---
-id: web-form-editor
-title: Web Form Editor
+id: using-web-form-editor
+title: Using the Web Form Editor
 ---
 
 ## Creating a WebForm

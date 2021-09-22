@@ -10,9 +10,11 @@ module.exports = {
       ],
     },
     {
-      type: 'doc',
+      type: 'category',
       label: 'Web Form Editor',
-      id: 'web-form-editor/web-form-editor'
+      items: ['web-form-editor/using-web-form-editor',
+        'API/web-form-editor/rendering'
+      ],
     },
     {
       type: 'category',
