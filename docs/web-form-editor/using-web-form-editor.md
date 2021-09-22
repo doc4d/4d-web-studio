@@ -74,12 +74,10 @@ Inside a WebForm, you can style components using the Properties panel and the St
 
 If you're not familiar with CSS properties and styles, or you need a refresher, here are a few useful links:
 
-[Learn CSS on the MDN website](https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/Cascade_and_inheritance).
-
-[A guide to flexbox properties on css-tricks.com](https://css-tricks.com/snippets/css/a-guide-to-flexbox/).
-
-[Box-shadow examples](https://getcssscan.com/css-box-shadow-examples).
-[Box-shadow generator](https://cssgenerator.org/box-shadow-css-generator.html).
+* Learn CSS on the [MDN website](https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/Cascade_and_inheritance)
+* A guide to [flexbox properties](https://css-tricks.com/snippets/css/a-guide-to-flexbox/) on css-tricks.com
+* [Box-shadow examples](https://getcssscan.com/css-box-shadow-examples)
+* [Box-shadow generator](https://cssgenerator.org/box-shadow-css-generator.html)
 
 ### Styles Library 
 
