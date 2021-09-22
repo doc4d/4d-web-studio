@@ -111,11 +111,11 @@ drag the `bg-red-500` class from the Styles library and drop it on the Button co
 
 * Using the Properties Panel:
     * Select the Button component, and under Style, choose a red color for the background
-    * Select the Button component, and in the properties panel, select the `bg-red-500` class in the CSS section.
+    * Select the Button component, and in the properties panel, select the `bg-red-500` class in the CSS section
 
 ### Overridden properties
 
-When you edit CSS using the properties panel, it overrides the CSS defined for the component (default styles and CSS classes applied). Overriden properties have a blue dot in front of them.
+When you edit CSS using the properties panel, it overrides the CSS defined for the component (default styles and CSS classes applied). Overriden properties have a blue dot in front of them. 
 
 ## Exporting styles as CSS classes for reuse 
 
@@ -145,7 +145,7 @@ The following components are available:
 |Web Form| Base container that holds all the other components| 
 |Style box| Container used to keep the content centered and legible |
 |Grid| Allows you to produce complex and responsive layouts faster. Grid areas can be edited directly on the canvas |
-|Columns|Used in other components to organize information on a page|
+|Columns|Displays data inside columns|
 |Tabs|Organizes and allows navigation between groups of content that are related and at the same level of hierarchy|
 |Text input|Allows users to enter data in a form|
 |Button|Triggers actions on a web page. Serves as call to action (CTA) and links to pages, forms, assets, and more|
@@ -194,7 +194,7 @@ To create a data source:
 There are several ways to bind a data source to a component:
 
 * Drag it from the Data Source section and drop it on a component
-* Entering the name of the data source in the Properties panel > Data source
+* Enter the name of the data source in the Properties panel > Data source
 
 ## Events, methods and class functions
 
@@ -220,13 +220,13 @@ For example, to make a search bar, you can attach an `onchange` event to a Text 
 
 Just like methods, some 4D class functions allow you to set the behavior of your components.
 
-For example, to display or hide a component when an event occurs, you can use the [4D.WebFormItem class functions](../API/WebFormItemClass.md)
+For example, to display or hide a component when an event occurs, you can use the [4D.WebFormItem class functions](../API/web-form-editor/WebFormItemClass.md)
 
 ## Server-side reference
 
-The server-side reference of a component is its "address" on the server. To set the behavior of a component, you can assign a server-side reference to it, and then use that reference in class functions.
+The server-side reference of a component is its "address" on the server. To set the behavior of a component, you can assign a server-side reference to it, and then [use that reference in class functions](../API/web-form-editor/WebFormItemClass.md).
 
-For example, `Web Form.myImage` refers to the image component with `myImage` as server-side reference.
+For example, `WebForm.myImage` refers to the image component with `myImage` as server-side reference.
 
 To assign a server-side reference to a component, enter a value in the Properties Panel > Server Side:
 
