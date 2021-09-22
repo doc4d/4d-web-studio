@@ -23,7 +23,7 @@ The Web Form Editor provides several tools to customize the interface and conten
 <li class="interface-item">Components: The building blocks of your end user's application interface. </li>
 <li class="interface-item">Canvas: This is where you combine your components, styles and data sources. You can drag and drop components onto your canvas, then drag and drop CSS classes and data sources onto these components.</li>
 <li class="interface-item">Contextual configuration panel: This is where you link events and methods to your components, edit CSS styles, etc.</li>
-<li class="interface-item">Properties panel: Allows for advanced style customization. Also allows binding a datasource to a component.</li>
+<li class="interface-item">Properties panel: Allows for advanced style customization. Also allows binding a data source to a component.</li>
 <li class="interface-item">Menu buttons: Save all your work, preview the end user's application</li>
 </ol>
 
@@ -55,7 +55,7 @@ When you select a component, the tooltip displays its type and offers several ac
 |Arrow|Select the parent component|
 |Delete|Remove the selected component from the canvas|
 |CSS|Export the selected element's style to a CSS class|
-|Barred T|Reset styles|
+|Barred T|Reset styles (resets [overriden CSS properties](#overriden-properties))|
 |Duplicate icon|Duplicate the component|
 
 The tooltip is contextual. This means that some actions are only available to certain elements, and not others. For example, you can duplicate a Text Input component, but not its individual parts (Label and Input).
@@ -91,6 +91,8 @@ The Styles Library offers two types of styles:
 
 Unlike Theme classes, Local styles can only be used in the Web Forms in which they are created. 
 
+To create a local CSS class, click the "+" button and enter a name. Then, you can manually edit the css class using the editing pane.
+
 ### Properties Panel
 
 The properties panel gives you extremely granular control over your elements. 
@@ -115,7 +117,7 @@ drag the `bg-red-500` class from the Styles library and drop it on the Button co
 
 ### Overridden properties
 
-When you edit CSS using the properties panel, it overrides the CSS defined for the component (default styles and CSS classes applied). Overriden properties have a blue dot in front of them. 
+When you edit CSS using the properties panel, it overrides the CSS defined for the component (default styles and CSS classes applied). Overriden properties have a blue dot in front of them. Initial properties are defined in italics.
 
 ## Exporting styles as CSS classes for reuse 
 
@@ -124,9 +126,7 @@ You can export the style of an element as a CSS class to reuse it later:
 2. Click the CSS icon in the tooltip and enter a name for the new CSS class
 3. Click **Export**
 
-This exports the style of the element as a local CSS class. Now it appears as a choice in the Styles library and in the property list, and you can apply the class to other elements on your canvas. 
-
-Note that only the [overridden properties](#overriden-properties) are exported as a CSS class.
+This exports the [overridden CSS properties](#overriden-properties) of the element as a new local CSS class. Now it appears as a choice in the Styles library and in the property list, and you can apply the class to other elements on your canvas. 
 
 ### Editing a CSS class
 
@@ -179,15 +179,24 @@ In this section, you'll find the following:
 *  **Remote** data sources: Entities and entity selections, handled on the server, that can be assigned to components. 
 They offer functions defined on the ORDA classes that they instantiate (Entity class, Entity Selection class).
 
-> When working with 4D projects, only the dataclasses and dataclass attributes [exposed as REST resources](https://doc.4d.com/4Dv19/4D/19/Field-properties.300-5416814.en.html) will be available at run time. 
+> When working with 4D projects, only the dataclasses and dataclass attributes [exposed as REST resources](https://doc.4d.com/4Dv19/4D/19/Field-properties.300-5416814.en.html) will be available at run time. Unexposed datasources are greyed out.
 
 *  **Local** data sources: Scalar types handled with the browser's memory. Can be assigned to variables. No request is sent to the server to access local data sources.
 
-Only [exposed functions](../ORDA/ordaClasses.md#exposed-vs-non-exposed-functions) can be used when configuring an event. Functions and attributes that are not exposed are greyed out.
+Only [exposed functions](../ORDA/ordaClasses.md#exposed-vs-non-exposed-functions) can be used when configuring an event. Functions that are not exposed are greyed out.
 
 ## Creating a data source
 
 To create a data source: 
+
+* From the Catalog: 
+    1. In the Data Sources section, choose Catalog > Data Classes
+    2. Click the "+" icon next to an entity selection to designate it as data source
+
+* From the Remote data sources:
+Click the "+" icon next to an entity selection to designate an entity as data source.
+
+> Unexposed data sources appear in the IDE but are greyed out
 
 ## Binding a data source to a component: 
 
