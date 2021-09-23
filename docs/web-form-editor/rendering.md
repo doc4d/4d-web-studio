@@ -19,7 +19,7 @@ The following options must be set:
 
 For more information on server configuration, see [Server Configuration](https://developer.4d.com/docs/en/REST/configuration.html) on developer.4d.com.
 
-## Rendering webforms using the 4D Webstudio IDE
+## Rendering webforms using the 4D WebStudio IDE
 
 When you click on the **Render** button, a new browser tab opens at the following address:
 
@@ -29,7 +29,7 @@ When you click on the **Render** button, a new browser tab opens at the followin
 
 ## Rendering webforms using 4D Server
 
-When deploying a 4D Web Server using 4D Server only, you can access rendered webforms in your browser at the following address:
+When deploying a 4D Web Server using 4D Server only, you can access rendered webforms in the supported browsers, at the following address:
 
 `IP:port/$lib/renderer/?w=WebFormName`
 
