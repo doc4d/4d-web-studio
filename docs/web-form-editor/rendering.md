@@ -23,22 +23,16 @@ For more information on server configuration, see [Server Configuration](https:/
 
 When you click on the **Render** button, a new browser tab opens at the following address:
 
-```
-IP:port/$lib/renderer/?w=WebFormName
-```
+`IP:port/$lib/renderer/?w=WebFormName`
 
 > When the rendering is launched from 4D WebStudio's IDE, the rendering is done on the HTTP port by default (if enabled), otherwise it runs on the HTTPS port.
 
 ## Rendering webforms using 4D Server
 
-When deploying a 4D Web Server using 4D Server only, you can access rendered webforms by typing their address in your browser:
+When deploying a 4D Web Server using 4D Server only, you can access rendered webforms in your browser at the following address:
 
-```
-IP:port/$lib/renderer/?w=WebFormName
-```
+`IP:port/$lib/renderer/?w=WebFormName`
 
 ## Exposed and unexposed data sources 
 
-The renderer applies the REST resource restrictions defined in the project. Unexposed data sources are not rendered in the browser.
-
-> Since the WebStudio IDE runs on the WebAdmin Web Server, those unexposed data sources are visible (but greyed out) in the Web Studio IDE.
+The renderer engine applies the REST resource restrictions defined in your 4D project's database. This means that only exposed data sources are rendered in the browser. 
