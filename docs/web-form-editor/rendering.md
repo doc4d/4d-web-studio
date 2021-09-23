@@ -33,6 +33,6 @@ When deploying a 4D Web Server using 4D Server only, you can access rendered web
 
 `IP:port/$lib/renderer/?w=WebFormName`
 
-## Exposed and unexposed data sources 
+## Exposed and non-exposed data sources 
 
 The renderer engine applies the REST resource restrictions defined in your 4D project's database. This means that only exposed data sources are rendered in the browser. 
