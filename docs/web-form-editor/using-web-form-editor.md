@@ -20,11 +20,11 @@ The Web Form Editor provides several tools to customize the interface and conten
 <ol class="interface-numbers">
 <li class="interface-item">Explorer: Displays your project's web forms, methods and classes (assets and data models are not available yet)</li>
 <li class="interface-item">Tabs: They let you keep track of your currently opened elements, such as your forms and methods.</li>
-<li class="interface-item">Components: The building blocks of your end user's application interface. </li>
+<li class="interface-item">Tool box panel: Contains the Components, Style libray and Data Sources sections.</li>
 <li class="interface-item">Canvas: This is where you combine your components, styles and data sources. You can drag and drop components onto your canvas, then drag and drop CSS classes and data sources onto these components.</li>
 <li class="interface-item">Contextual configuration panel: This is where you link events and methods to your components, edit CSS styles, etc.</li>
 <li class="interface-item">Properties panel: Allows for advanced style customization. Also allows binding a data source to a component.</li>
-<li class="interface-item">Menu buttons: Save all your work, preview the end user's application</li>
+<li class="interface-item">Header</li>
 </ol>
 
 ## Adding components to the Web Form
@@ -45,26 +45,26 @@ When you select a component, the breadcrumbs display its hierarchy:
 
 To select any parent component displayed in the breadcrumbs trail, click its name. 
 
-### Tooltip
-
-When you select a component, the tooltip displays its type and offers several actions:
-
-|Icon|Description|
-|---|---|
-|Cursor|Move the selected component on the canvas|
-|Arrow|Select the parent component|
-|Delete|Remove the selected component from the canvas|
-|CSS|Export the selected element's style to a CSS class|
-|Barred T|Reset styles (resets [overriden CSS properties](#overriden-properties))|
-|Duplicate icon|Duplicate the component|
-
-The tooltip is contextual. This means that some actions are only available to certain elements, and not others. For example, you can duplicate a Text Input component, but not its individual parts (Label and Input).
-
 ### Outline
 
 The outline section displays the hierarchy of your Webform. You can click an element in the list to select it, or click and drag it anywhere in the outline to move it somewhere else.
 
 To display or hide an element, click the eye icon.
+
+### Tooltip
+
+When you select a component, the tooltip displays its type and offers several actions:
+
+|Icon|Action|
+|---|---|
+|Cursor|Move the selected component on the canvas|
+|Arrow|Select the parent component|
+|Delete|Remove the selected component from the canvas|
+|CSS|Export the [[overriden CSS properties](#overriding-style-properties) to a new CSS class|
+|Barred T|Reset styles (resets the [overriden CSS properties](#overriding-style-properties))|
+|Duplicate icon|Duplicate the component|
+
+The tooltip is contextual. This means that some actions are only available to certain elements, and not others. For example, you can duplicate a Text Input component, but not its individual parts (Label and Input).
 
 ## Styling a component 
 
@@ -115,10 +115,13 @@ drag the `bg-red-500` class from the Styles library and drop it on the Button co
     * Select the Button component, and under Style, choose a red color for the background
     * Select the Button component, and in the properties panel, select the `bg-red-500` class in the CSS section
 
-### Overridden properties
+### Overriding style properties
 
-When you edit CSS using the properties panel, it overrides the CSS defined for the component (default styles and CSS classes applied). Overriden properties have a blue dot in front of them. Initial properties are defined in italics.
+Selecting a component displays its style properties in the Properties Panel. Values set by CSS classes are displayed in italics. For example, assigning the `bg-red-500` class to the component will get the Background property to display *rgb(239,68,68)*.
 
+Modifying these values overrides the initial value for that property. Overriden CSS properties have a blue dot in front of them. 
+
+You can [export the new values](Exporting-styles-as-css-classes-for-reuse) to create a new CSS class.
 ## Exporting styles as CSS classes for reuse 
 
 You can export the style of an element as a CSS class to reuse it later: 
@@ -126,7 +129,7 @@ You can export the style of an element as a CSS class to reuse it later:
 2. Click the CSS icon in the tooltip and enter a name for the new CSS class
 3. Click **Export**
 
-This exports the [overridden CSS properties](#overriden-properties) of the element as a new local CSS class. Now it appears as a choice in the Styles library and in the property list, and you can apply the class to other elements on your canvas. 
+This exports the [new style properties](#overriding-style-properties) of the element as a new local CSS class. Now it appears as a choice in the Styles library and in the property list, and you can apply the class to other elements on your canvas. 
 
 ### Editing a CSS class
 
