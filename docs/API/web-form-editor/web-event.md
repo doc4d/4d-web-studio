@@ -1,17 +1,17 @@
 ---
 id: web-event
-title: WEB Event
+title: Web Event
 ---
 
 ### Summary 
 ||
 |---|
-|[<!-- INCLUDE #_command_.WEB Event.Syntax -->](#web-event)<p>&nbsp;&nbsp;&nbsp;&nbsp;<!-- INCLUDE #_command_.WEB Event.Summary --></p> |
+|[<!-- INCLUDE #_command_.Web Event.Syntax -->](#web-event)<p>&nbsp;&nbsp;&nbsp;&nbsp;<!-- INCLUDE #_command_.Web Event.Summary --></p> |
 
-<!-- REF #_command_.WEB Event.Syntax -->
-**WEB Form** : Object<!-- END REF -->
+<!-- REF #_command_.Web Event.Syntax -->
+**Web Form** : Object<!-- END REF -->
 
-<!-- REF #_command_.WEB Event.Params -->
+<!-- REF #_command_.Web Event.Params -->
 |Parameter|Type||Description|
 |---------|--- |:---:|------|
 |Result|Object|<-| Object
@@ -19,7 +19,7 @@ title: WEB Event
 
 #### Description
 
-**WEB Event** <!-- REF #_command_.WEB Event.Summary --> returns an object with information on a triggered event linked to a webform component.<!-- END REF --> 
+**Web Event** <!-- REF #_command_.Web Event.Summary --> returns an object with information on a triggered event linked to a webform component.<!-- END REF --> 
 
 The function must be called in the context of a web form handled by the web server
 
@@ -70,8 +70,8 @@ In the above image:
 var $event : Object
 var $webForm : 4D.WebForm
 
-$webForm:=WEB Form
-$event:=WEB Event
+$webForm:=Web Form
+$event:=Web Event
 $componentRef:=$event.caller
 
 If ($event.eventType="onmouseover")  // event is onmouseover 

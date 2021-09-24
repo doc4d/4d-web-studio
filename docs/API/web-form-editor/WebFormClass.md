@@ -7,14 +7,14 @@ When working in [4D Web Studio](../web-studio/web-studio.md), the `WebForm` clas
 
 ### WebForm Objects
 
-`WebForm` objects are instantiated with the [WEB Form](#web-form) command.
+`WebForm` objects are instantiated with the [Web Form](#web-form) command.
 
 ### Summary 
 ||
 |---|
-|[<!-- INCLUDE #_command_.WEB Form.Syntax -->](#web-form)<p>&nbsp;&nbsp;&nbsp;&nbsp;<!-- INCLUDE #_command_.WEB Form.Summary --></p> |
+|[<!-- INCLUDE #_command_.Web Form.Syntax -->](#web-form)<p>&nbsp;&nbsp;&nbsp;&nbsp;<!-- INCLUDE #_command_.Web Form.Summary --></p> |
 
-## WEB Form
+## Web Form
 
 <details><summary>History</summary>
 |Version|Changes|
@@ -22,17 +22,17 @@ When working in [4D Web Studio](../web-studio/web-studio.md), the `WebForm` clas
 |v19 R3|Added|
 </details>
 
-<!-- REF #_command_.WEB Form.Syntax -->
-**WEB Form** : 4D.WebForm<!-- END REF -->
+<!-- REF #_command_.Web Form.Syntax -->
+**Web Form** : 4D.WebForm<!-- END REF -->
 
-<!-- REF #_command_.WEB Form.Params -->
+<!-- REF #_command_.Web Form.Params -->
 |Parameter|Type||Description|
 |---------|--- |:---:|------|
 |Result|4D.WebForm|<-|New `WebForm` object
 <!-- END REF -->
 
 #### Description
-The `WEB Form` command <!-- REF #_command_.WEB Form.Summary --> returns a `4D.WebForm` object that references a webform.<!-- END REF -->
+The `Web Form` command <!-- REF #_command_.Web Form.Summary --> returns a `4D.WebForm` object that references a webform.<!-- END REF -->
 
 Each property of the returned object is an object of the [4D.WebFormItem](WebFormItemClass.md) class.
 

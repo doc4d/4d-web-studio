@@ -7,9 +7,9 @@ When working in [4D Web Studio](../web-studio/web-studio.md), the `WebFormItem` 
 
 ### WebFormItem Objects
 
-`4D.WebFormItem` objects are properties of the `4D.WebForm` object returned by the `WEB Form` command. 
+`4D.WebFormItem` objects are properties of the `4D.WebForm` object returned by the `Web Form` command. 
 
-When you call the `WEB Form` command, the returned `4D.WebForm` object holds as many `4D.WebFormItems` as there are components with [server-side references](../web-studio/web-studio.md#server-side-references) in your webform.
+When you call the `Web Form` command, the returned `4D.WebForm` object holds as many `4D.WebFormItems` as there are components with [server-side references](../web-studio/web-studio.md#server-side-references) in your webform.
 
 For example, `WebFormObject.myImage` refers to the image component with `myImage` as server reference.
 
@@ -48,7 +48,7 @@ To call a function that hides an image when the user clicks a button:
 ```4d 
 var $myComponent: 4D.WebFormItem
 
-$myComponent:=WEB Form.myImage
+$myComponent:=Web Form.myImage
 $myComponent.hide() //The component that has "myComponent" as server reference 
 ```
 
