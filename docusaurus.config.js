@@ -9,7 +9,7 @@ module.exports = {
   favicon: "img/favicon.ico",
   organizationName: "doc4d", // Usually your GitHub org/user name.
   projectName: "4d-web-studio", // Usually your repo name.
-  noIndex: false,
+  noIndex: true,
   themeConfig: {
     prism: {
       theme: require("./src/theme/highlight/themes/palenight"),
