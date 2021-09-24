@@ -1,14 +1,14 @@
 /** @type {import('@docusaurus/types').DocusaurusConfig} */
 module.exports = {
-  title: "4D WebStudio",
+  title: "4D Web Studio",
   tagline: "Quickly build web applications from your browser",
   url: "https://doc4d.github.io",
-  baseUrl: "/webstudio/",
+  baseUrl: "/4d-web-studio/",
   onBrokenLinks: "warn",
   onBrokenMarkdownLinks: "warn",
   favicon: "img/favicon.ico",
   organizationName: "doc4d", // Usually your GitHub org/user name.
-  projectName: "webstudio", // Usually your repo name.
+  projectName: "4d-web-studio", // Usually your repo name.
   noIndex: false,
   themeConfig: {
     prism: {
