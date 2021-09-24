@@ -3,13 +3,13 @@ id: rendering
 title: Rendering Webforms
 ---
 
-4D Projects have embedded rendering engines that allow you to run you webforms on the server and access their rendered version in the supported browsers.
+At runtime, WebForms are generated and interpreted by a built-in renderer engine. No additional Javascript or React code is required. 
 
 Each webform has its own URL on the web server, and the rendering engine communicates with the 4D Web Server using REST Requests.
 
 ## Configuration
 
-The following options must be set:
+To enable WebForm rendering, the following options must be set:
 
 * The **Settings** > **Expose as REST server** option must be activated 
 * The web server of the 4D project must be running
@@ -17,7 +17,7 @@ The following options must be set:
 > You can configure The web server's IP and HTTP/HTTPS ports in **Settings** > 
 **Configuration**.
 
-For more information on server configuration, see [Server Configuration](https://developer.4d.com/docs/en/REST/configuration.html) on developer.4d.com.
+For more information on server configuration, see [Server Configuration](https://developer.4d.com/docs/en/REST/configuration.html) on developer.4d.com/docs.
 
 ## Rendering webforms using the 4D WebStudio IDE
 
