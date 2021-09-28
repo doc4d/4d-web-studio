@@ -8,7 +8,7 @@
 /* You can override the default Infima variables here.   --ifm-color-primary: #25c2a0;*/
 
 :root {
-  --ifm-color-primary: #269de3;
+  --ifm-color-primary: #104b8b;
   --ifm-color-primary-dark: rgb(33, 175, 144);
   --ifm-color-primary-darker: rgb(31, 165, 136);
   --ifm-color-primary-darkest: rgb(26, 136, 112);
@@ -82,3 +82,16 @@ ol.interface-numbers {
   padding: 1px;
   border-radius: 0.50em;
   }
+
+.get-started {
+  background-color: rgb(235, 231, 255);
+  border: none;
+  color: #000;
+  transition: all 0.5s;
+  }
+  
+.get-started:hover{
+    background-color: rgb(213, 205, 255);
+    color:#000
+  }
+    

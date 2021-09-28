@@ -16,7 +16,7 @@ module.exports = {
     },
     navbar: {
       hideOnScroll: true,
-      title: "WebStudio",
+      title: "Web Studio",
       logo: {
         alt: "4D Logo",
         src: "img/logo.png",
