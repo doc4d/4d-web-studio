@@ -21,7 +21,7 @@ The Web Form Editor provides several tools to customize the interface and conten
 <li class="interface-item">Explorer: Displays your project's web forms, methods and classes (assets and data models are not available yet)</li>
 <li class="interface-item">Tabs: They let you keep track of your currently opened elements, such as your forms and methods.</li>
 <li class="interface-item">Tool box panel: Contains the Components, Style libray and Data Sources sections.</li>
-<li class="interface-item">Canvas: This is where you combine your components, styles and data sources. You can drag and drop components onto your canvas, then drag and drop CSS classes and data sources onto these components.</li>
+<li class="interface-item">Canvas: This is where you combine your components, styles and data sources. You can drag and drop components onto your canvas, then drag and drop CSS classes and data sources onto these components, and preview or render your webforms.</li>
 <li class="interface-item">Contextual configuration panel: This is where you link events and methods to your components, edit CSS styles, etc.</li>
 <li class="interface-item">Properties panel: Allows for advanced style customization. Also allows binding a data source to a component.</li>
 <li class="interface-item">Header</li>
@@ -91,7 +91,7 @@ The Styles Library offers two types of styles:
 
 Unlike Theme classes, Local styles can only be used in the Web Forms in which they are created. 
 
-To create a local CSS class, click the "+" button and enter a name. Then, you can manually edit the css class using the editing pane.
+To create a local CSS class, click the "+" button and enter a name. Then, you can manually edit the css class in the editing panel.
 
 ### Properties Panel
 
@@ -151,15 +151,15 @@ The following components are available:
 |Columns|Displays data inside columns|
 |Tabs|Organizes and allows navigation between groups of content that are related and at the same level of hierarchy|
 |Text input|Allows users to enter data in a form|
-|Button|Triggers actions on a web page. Serves as call to action (CTA) and links to pages, forms, assets, and more|
+|Button|Triggers actions on a web page|
 |Radio button|Allows selecting one of a set of options (only one option can be selected at any time)|
-|Range input|Allows selecting a range of numeric values|
+|Range input|Allows selecting a value in a range|
 |Select box|Allows selecting an item in a list|
 |Image|Displays an image|
 |Icon|Displays an icon|
 |Check box|Allows the user to make a binary choice (boolean value)|
 |Text|Displays text on a web page|
-|Datatable|Displays data in the form of a table. Rows can be selected to interact with the server|
+|Datatable|Displays data in the form of a table. You can select a row to interact with the server|
 |Matrix| Container of repeated style boxes|
 |Web Form Loader| Allows you to embed a webform inside another
 
@@ -180,9 +180,9 @@ In this section, you'll find the following:
     * Class functions: The Catalog displays the functions defined in each class. 
 
 *  **Remote** data sources: Entities and entity selections, handled on the server, that can be assigned to components. 
-They offer functions defined on the ORDA classes that they instantiate (Entity class, Entity Selection class).
+They offer functions defined on the ORDA classes that they instantiate ([Entity class](../API/EntityClass.md), [Entity Selection class](../API/EntitySelectionClass.md).
 
-> When working with 4D projects, only the dataclasses and dataclass attributes [exposed as REST resources](https://doc.4d.com/4Dv19/4D/19/Field-properties.300-5416814.en.html) will be available at run time. Unexposed datasources are greyed out.
+> When working with 4D projects, only the dataclasses and dataclass attributes [exposed as REST resources](https://developer.4d.com/docs/en/REST/configuration.html#exposing-tables-and-fields) will be available at run time. Unexposed datasources are greyed out.
 
 *  **Local** data sources: Scalar types handled with the browser's memory. Can be assigned to variables. No request is sent to the server to access local data sources.
 
@@ -194,10 +194,12 @@ To create a data source:
 
 * From the Catalog: 
     1. In the Data Sources section, choose Catalog > Data Classes
-    2. Click the "+" icon next to an entity selection to designate it as data source
+    2. Click the "+" icon next to a dataclass
+    3. Select Entity or Entity Selection and click **Confirm**. The newly created Entity or Entity selection now appears as a Remote data source
 
-* From the Remote data sources:
-Click the "+" icon next to an entity selection to designate an entity as data source.
+* From a Remote data source, click the "+" icon:
+    * next to an entity selection to create an entity
+    * next to an entity's relation to create an entity selection or an entity  
 
 > Unexposed data sources appear in the IDE but are greyed out
 
@@ -214,25 +216,32 @@ There are several ways to bind a data source to a component:
 
 Events are usually used as a means of triggering certain behaviors. They are used in conjuction with methods and class functions. 
 
-For example, if the user clicks a button on a webpage, you can choose how to react. 
+For example, if the user clicks a button on a webpage, you can choose how to react.
+Events can also be triggered when a data source is updated. 
 
 ![alt-text](img/events.png)
 
 In 4D WebStudio, events are used to execute code on the 4D server. There's no need to write additional Javascript or React code.
 
-Events are executed in the defined order, and you can map one method to several events or one event to several methods.
+Events are executed in the defined order, and you can map class functions to several events or one event to several class functions.
 
-## Methods
+## 4D class Functions
 
-Methods allow you to determine how to react to certain events.
-
-For example, to make a search bar, you can attach an `onchange` event to a Text input component and write a method that taps into a [dataclass](../ORDA/dsMapping.md) to suggest a list of items as the user is typing. 
-
-## Class Functions
-
-Just like methods, some 4D class functions allow you to set the behavior of your components.
+Some 4D class functions allow you to set the behavior of your components.
 
 For example, to display or hide a component when an event occurs, you can use the [4D.WebFormItem class functions](../API/web-form-editor/WebFormItemClass.md)
+
+## Custom class functions
+
+You can also write your own class functions to handle data and events.
+
+For example, to make a search bar, you can attach an `onchange` event to a Text input component and write a class function that taps into a [dataclass](../ORDA/dsMapping.md) to suggest a list of items as the user is typing. 
+
+:::note 
+
+Methods also allow you to determine how to react to certain events, but they need to be defined as datastore, dataclass, entity or entity class functions. We highly recommend using class functions over methods.
+
+:::
 
 ## Server-side reference
 
