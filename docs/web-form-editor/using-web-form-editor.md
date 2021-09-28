@@ -3,9 +3,9 @@ id: using-web-form-editor
 title: Using the Webform Editor
 ---
 
-## Creating a WebForm
+## Creating a Webform
 
-In 4D WebStudio, everything starts with a WebForm. A WebForm is a container that holds all the other components (buttons, grids, style boxes, etc.) of your application.
+In 4D WebStudio, everything starts with a Webform. A Webform is a container that holds all the other components (buttons, grids, style boxes, etc.) of your application.
 
 To create a WebForm:
 * from the homepage, click **Webform** and enter a name for the new Webform. The WebForm editor opens.
@@ -13,12 +13,12 @@ To create a WebForm:
 
 ## Webform Editor Interface
 
-The Web Form Editor provides several tools to customize the interface and contents of your application:
+The Webform Editor provides several tools to customize the interface and contents of your application:
 
 ![interface](img/web-form-editor-interface.png)
 
 <ol class="interface-numbers">
-<li class="interface-item">Explorer: Displays your project's web forms, methods and classes (assets and data models are not available yet)</li>
+<li class="interface-item">Explorer: Displays your project's Webforms, methods and classes (assets and data models are not available yet)</li>
 <li class="interface-item">Tabs: They let you keep track of your currently opened elements, such as your forms and methods.</li>
 <li class="interface-item">Tool box panel: Contains the Components, Style libray and Data Sources sections.</li>
 <li class="interface-item">Canvas: This is where you combine your components, styles and data sources. You can drag and drop components onto your canvas, then drag and drop CSS classes and data sources onto these components, and preview or render your webforms.</li>
@@ -89,7 +89,7 @@ The Styles Library offers two types of styles:
 
 ![styles-library](img/styles-library.png)
 
-Unlike Theme classes, Local styles can only be used in the Web Forms in which they are created. 
+Unlike Theme classes, Local styles can only be used in the Webforms in which they are created. 
 
 To create a local CSS class, click the "+" button and enter a name. Then, you can manually edit the css class in the editing panel.
 
@@ -145,7 +145,7 @@ The following components are available:
 
 |Component|Description|
 |---|---|
-|Web Form| Base container that holds all the other components| 
+|Webform| Base container that holds all the other components| 
 |Style box| Container used to keep the content centered and legible |
 |Grid| Allows you to produce complex and responsive layouts faster. Grid areas can be edited directly on the canvas |
 |Columns|Displays data inside columns|
@@ -161,7 +161,7 @@ The following components are available:
 |Text|Displays text on a web page|
 |Datatable|Displays data in the form of a table. You can select a row to interact with the server|
 |Matrix| Container of repeated style boxes|
-|Web Form Loader| Allows you to embed a Webform inside another
+|Webform Loader| Allows you to embed a Webform inside another
 
 > More components will be available in the future, and existing components will be enhanced.
 
