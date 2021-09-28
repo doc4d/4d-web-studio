@@ -11,7 +11,7 @@ module.exports = {
     },
     {
       type: 'category',
-      label: 'Web Form Editor',
+      label: 'Web Forms',
       items: ['web-form-editor/using-web-form-editor',
         'web-form-editor/rendering'
       ],
