@@ -10,7 +10,7 @@ import styles from "./styles.module.css";
 const features = [
   {
     title: "Build from your browser",
-    imageUrl: "img/native.png",
+    imageUrl: "img/webapp.png",
     description: (
       <>
         <Translate>
@@ -21,7 +21,7 @@ const features = [
   },
   {
     title: "WYSIWIG environment",
-    imageUrl: "img/open.png",
+    imageUrl: "img/wysiwig.png",
     description: (
       <>
         Design professional, responsive, and custom web applications using a visual canvas.
@@ -31,7 +31,7 @@ const features = [
   },
   {
     title: "ORDA",
-    imageUrl: "img/offline.png",
+    imageUrl: "img/orda.png",
     description: (
       <>
         Tap into data sources and simplify the flow of data in your web applications.
