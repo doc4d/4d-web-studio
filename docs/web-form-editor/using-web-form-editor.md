@@ -180,7 +180,7 @@ In this section, you'll find the following:
     * Class functions: The Catalog displays the functions defined in each class. 
 
 *  **Remote** data sources: Entities and entity selections, handled on the server, that can be assigned to components. 
-They offer functions defined on the ORDA classes that they instantiate ([Entity class](../API/EntityClass.md), [Entity Selection class](../API/EntitySelectionClass.md).
+They offer functions defined on the ORDA classes that they instantiate ([Entity class](../API/EntityClass.md), [Entity Selection class](../API/EntitySelectionClass.md)).
 
 > When working with 4D projects, only the dataclasses and dataclass attributes [exposed as REST resources](https://developer.4d.com/docs/en/REST/configuration.html#exposing-tables-and-fields) will be available at run time. Unexposed datasources are greyed out.
 
