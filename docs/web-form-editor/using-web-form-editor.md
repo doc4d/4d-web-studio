@@ -1,6 +1,6 @@
 ---
 id: using-web-form-editor
-title: Using the Web Form Editor
+title: Using the Webform Editor
 ---
 
 ## Creating a WebForm
@@ -11,7 +11,7 @@ To create a WebForm:
 * from the homepage, click **Webform** and enter a name for the new Webform. The WebForm editor opens.
 * from the WebForm editor, click the **New +** tab > **Webform**
 
-## Web Form Editor Interface
+## Webform Editor Interface
 
 The Web Form Editor provides several tools to customize the interface and contents of your application:
 
@@ -27,7 +27,7 @@ The Web Form Editor provides several tools to customize the interface and conten
 <li class="interface-item">Header</li>
 </ol>
 
-## Adding components to the Web Form
+## Adding components to the Webform
 
 Components are the building blocks of your application. To add a component, drag it from the Components section and drop it on the canvas.
 
@@ -161,13 +161,13 @@ The following components are available:
 |Text|Displays text on a web page|
 |Datatable|Displays data in the form of a table. You can select a row to interact with the server|
 |Matrix| Container of repeated style boxes|
-|Web Form Loader| Allows you to embed a webform inside another
+|Web Form Loader| Allows you to embed a Webform inside another
 
 > More components will be available in the future, and existing components will be enhanced.
 
 ## About data sources
 
-Data sources contain data. You can bind them to your webform components to determine where the data is displayed in your application.
+Data sources contain data. You can bind them to your Webform components to determine where the data is displayed in your application.
 
 The **Data Sources** section groups the available data sources:
 

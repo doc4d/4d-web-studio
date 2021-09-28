@@ -11,7 +11,7 @@ module.exports = {
     },
     {
       type: 'category',
-      label: 'Web Forms',
+      label: 'Webforms',
       items: ['web-form-editor/using-web-form-editor',
         'web-form-editor/rendering'
       ],
@@ -32,7 +32,7 @@ module.exports = {
         },
         {
           type: 'category',
-          label: 'Web Form Editor',
+          label: 'Webform Editor',
           items: [
             'API/web-form-editor/WebFormClass',
             'API/web-form-editor/WebFormItemClass',
