@@ -25,7 +25,7 @@ When you click on the **Render** button, a new browser tab opens at the followin
 
 `IP:port/$lib/renderer/?w=WebFormName`
 
-> When the rendering is launched from 4D WebStudio's IDE, the rendering is done on the HTTP port by default (if enabled), otherwise it runs on the HTTPS port.
+> When the rendering is launched from 4D WebStudio's IDE, the HTTP port is used by default if enabled, otherwise the HTTPS port is used.
 
 ## Rendering Webforms using 4D Server
 
