@@ -18,6 +18,15 @@ module.exports = {
     },
     {
       type: 'category',
+      label: 'ORDA',
+      items: [
+        'ORDA/overview',
+        'ORDA/data-model'
+      ],
+    },
+
+    {
+      type: 'category',
       label: 'API',
       items: [
         {
