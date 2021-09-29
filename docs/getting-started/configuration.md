@@ -15,7 +15,7 @@ The web studio supports the following web browsers:
 The recommended resolution is 1920x1080.
 ## Enabling access to the web studio
 
-By default, access to the web studio is not granted. You need to enable access to it on the database level and on the `WebAdmin` web server level.
+By default, access to the web studio is not granted. You need to enable access to it on the project database level and on the `WebAdmin` web server level.
 
 1. To enable access to the web studio on the database level, you need to check the option on the [web server configuration page](../WebServer/webServerAdmin.md#enable-access-to-the-web-studio). 
 
@@ -42,7 +42,7 @@ There are two ways to access the web studio:
 
 *	from your 4D single-user application, go to **Design** > **Web Studio...**. 
  
- 	If the `WebAdmin` server is already running, depending on your web server configuration, your default browser opens at `IPaddress:HTTPPort/studio` or `IPaddress:HTTPSPort/studio`. Otherwise, you will be asked if you want to start the `WebAdmin` web server first.
+ 	If the `WebAdmin` server is already running, depending on your web server configuration, your default browser opens at `IPaddress:HTTPPort/studio` or `IPaddress:HTTPSPort/studio`. Otherwise, you will be prompted if you want to start the `WebAdmin` web server first.
 
 *	on a browser, with the `WebAdmin` web server running (launched from 4D or 4D Server), enter the following address:
  	
