@@ -19,6 +19,6 @@ At this stage, only the Web Form Designer, the code editor and the contextual co
 
 Since the web studio is still in early stages of development, some features are not yet available. At this stage:
 
-* The debugger is not available yet.
+* The debugger is not available yet
 
-* Navigation features are still in development. You can already embed a WebForm inside another.
+* Navigation features are still in development, but you can already embed a Webform inside another using the [Webform Loader](../webforms/using-web-form-editor.md#component-list)

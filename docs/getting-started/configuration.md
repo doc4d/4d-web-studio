@@ -25,7 +25,7 @@ By default, access to the web studio is not granted. You need to enable access t
 
 :::note Reminder
 
-The WebAdmin settings apply to the running 4D application. For the new settings to be taken into account, you'll need to restart the WebAdmin Web Server. 
+The WebAdmin settings apply to the running 4D application. For the new settings to be taken into account, you'll need to restart the WebAdmin web server. 
 
 :::
 
