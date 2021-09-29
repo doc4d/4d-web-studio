@@ -21,4 +21,4 @@ Since the web studio is still in early stages of development, some features are 
 
 * The debugger is not available yet
 
-* Navigation features are still in development, but you can already embed a Webform inside another using the [Webform Loader](../webforms/using-web-form-editor#component-list)
+* Navigation features are still in development, but you can already embed a Webform inside another using the [Webform Loader](../webforms/using-web-form-editor.md#component-list)
