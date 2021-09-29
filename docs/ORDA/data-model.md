@@ -1,46 +1,40 @@
 ---
-id: dsmapping
+id: data-model
 title: Data Model Objects
 ---
 
 The ORDA technology is based upon an automatic mapping of an underlying database structure. It also provides access to data through entity and entity selection objects. As a result, ORDA exposes the whole database as a set of data model objects. 
  
 
-## Structure mapping 
+![schema](img/orda-schema.png)
 
-When you call a datastore using the [`ds`](API/DataStoreClass.md#ds) or the [`Open datastore`](API/DataStoreClass.md#open-datastore) command, 4D automatically references tables and fields of the corresponding 4D structure as properties of the returned [datastore](#datastore) object:
+
+
+## Structure mapping
+
+When you call a datastore using the [`ds`](API/DataStoreClass.md#ds) or the [`Open datastore`](API/DataStoreClass.md#open-datastore) command, tables and fields of the corresponding structure are automatically referenced as properties of the returned [datastore](#datastore) object:
 
 *	Tables are mapped to dataclasses.
 *	Fields are mapped to storage attributes.
-*	Relations are mapped to relation attributes - relation names, defined in the Structure editor, are used as relation attribute names.
-
-![](assets/en/ORDA/datastoreMapping.png)
+*	Relations are mapped to relation attributes - relation names are used as relation attribute names.
  
 
 ### General rules
 
 The following rules are applied for any conversions:
 
-* Table, field, and relation names are mapped to object property names. Make sure that such names comply with general object naming rules, as explained in the [object naming conventions](Concepts/identifiers.md) section.
-*	A datastore only references tables with a single primary key. The following tables are not referenced:
+- Table, field, and relation names are mapped to object property names. 
+- A datastore only references tables with a single primary key. The following tables are not referenced:
 	*	Tables without a primary key
 	*	Tables with composite primary keys.
-*	BLOB fields are automatically available as attributes of the [Blob object](Concepts/dt_blob.md#blob-types) type. 
 
-> ORDA mapping does not take into account:  
-> - the "Invisible" option for tables or fields, 
-> - the virtual structure defined through `SET TABLE TITLES` or `SET FIELD TITLES`,
-> - the "Manual" or "Automatic" property of relations.
+### Remote access control
 
+Tables and fields of a remote datastore accessed through the [`Open datastore`](API/DataStoreClass.md#open-datastore) command or [REST requests](REST/gettingStarted.md) must usually be explicitely exposed to REST requests to be available remotely. 
 
-### Rules for remote access control
-
-When accessing a remote datastore through the `Open datastore` command or [REST requests](REST/gettingStarted.md), only tables and fields with the **Expose as REST resource** property are available remotely. 
-
-This option must be selected at the 4D structure level for each table and each field that you want to be exposed as dataclass and attribute in the datastore:
-
-![](assets/en/ORDA/ExposeDataclass.png)
-
+:::
+[ORDA class functions], including [computed attribute functions], must be explicitely exposed to REST requests. 
+:::
 
 ### Data model update  
 
@@ -50,7 +44,7 @@ Any modifications applied at the level of the database structure invalidate the 
 *	renaming of a table, a field, or a relation
 *	changing a core property of a field (type, unique, index, autoincrement, null value support)
 
-When the current ORDA model layer has been invalidated, it is automatically reloaded and updated in subsequent calls of the local `ds` datastore on 4D and 4D Server. Note that existing references to ORDA objects such as entities or entity selections will continue to use the model from which they have been created, until they are regenerated.
+When the current ORDA model layer has been invalidated, it is automatically reloaded and updated in subsequent calls of the local `ds` datastore. Note that existing references to ORDA objects such as entities or entity selections will continue to use the model from which they have been created, until they are regenerated.
 
 However, the updated ORDA model layer is not automatically available in the following contexts:
 
