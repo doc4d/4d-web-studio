@@ -68,7 +68,7 @@ However, webform rendering outside 4D Web Studio is served by the [standard 4D w
 ## About webforms
 4D Web Studio does not generate HTML code directly. When you drop components on the canvas, when you map datasources to components, or when you configure an event, 4D Web Studio places your work in a json file. This json file, the webform, cannot directly be opened in a web browser. It is “rendered” either when you preview it in the webstudio, or when you choose to render it in a dedicated browser tab.
 
-## About Rest
+## About REST 
 All 4D code executed from a webform is in fact triggered through the 4D REST API. This makes it possible for you to use your browser’s developer’s tools to inspect your rendered webform and troubleshoot REST requests and responses.
 
 ## Debugging 4D Code
