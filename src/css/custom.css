@@ -90,8 +90,13 @@ ol.interface-numbers {
   transition: all 0.5s;
   }
   
-.get-started:hover{
+.get-started:hover {
     background-color: rgb(213, 205, 255);
     color:#000
   }
     
+.preview {
+ background-color:rgb(251, 217, 251);
+ padding: 10px 0;
+ color: #000;
+}

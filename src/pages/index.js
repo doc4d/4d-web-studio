@@ -63,6 +63,11 @@ export default function Home() {
       title={`${siteConfig.title}`}
       description="Description will go into a meta tag in <head />"
     >
+      <div className="preview">
+        <div className="text--center">
+          4D Web Studio is still in development. This is unreleased documentation for the preview version.
+        </div>
+      </div>
       <header className={clsx("hero hero--primary", styles.heroBanner)}>
         <div className="container">
           <h1 className="hero__title">{siteConfig.title}</h1>
@@ -97,6 +102,6 @@ export default function Home() {
           </section>
         )}
       </main>
-    </Layout>
+    </Layout >
   );
 }
