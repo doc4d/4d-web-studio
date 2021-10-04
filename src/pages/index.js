@@ -24,7 +24,7 @@ const features = [
     imageUrl: "img/wysiwig.png",
     description: (
       <>
-        Design professional, responsive, and custom web applications using a visual canvas.
+        Design professional and custom web applications using a visual canvas.
 
       </>
     ),
