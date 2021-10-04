@@ -11,7 +11,7 @@ title: Overview
 
 :::
 
-After several months of research and development, we've decided to provide a very first preview version of 4D Web Studio.
+After several months of research and development, we've decided to release a very first preview version of 4D Web Studio.
 
 ![alt-text](img/web-studio-intro.png)
 

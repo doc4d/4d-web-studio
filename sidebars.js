@@ -16,30 +16,42 @@ module.exports = {
         'webforms/rendering'
       ],
     },
+  ],
+  apiSidebar: [
     {
-      type: 'category',
-      label: 'API',
-      items: [
-        {
-          type: 'category',
-          label: 'ORDA',
-          items: [
-            'API/orda/DataStoreClass',
-            'API/orda/DataClassClass',
-            'API/orda/EntityClass',
-            'API/orda/EntitySelectionClass',
-          ],
-        },
-        {
-          type: 'category',
-          label: 'Webform Editor',
-          items: [
-            'API/web-form-editor/WebFormClass',
-            'API/web-form-editor/WebFormItemClass',
-            'API/web-form-editor/web-event',
-          ],
-        },
-      ],
+      type: 'doc',
+      id: 'API/orda/DataStoreClass',
+      label: "DataStore"
+    },
+    {
+      type: 'doc',
+      id: 'API/orda/DataClassClass',
+      label: "DataClass"
+    },
+    {
+      type: 'doc',
+      id: 'API/orda/EntityClass',
+      label: "Entity"
+    },
+    {
+      type: 'doc',
+      id: 'API/orda/EntitySelectionClass',
+      label: "EntitySelection"
+    },
+    {
+      type: 'doc',
+      id: 'API/web-form-editor/WebFormClass',
+      label: "WebForm"
+    },
+    {
+      type: 'doc',
+      id: 'API/web-form-editor/WebFormItemClass',
+      label: "WebFormItem"
+    },
+    {
+      type: 'doc',
+      id: 'API/web-form-editor/web-event',
+      label: "Web Event"
     },
   ],
 };

@@ -30,7 +30,7 @@ const features = [
     ),
   },
   {
-    title: "ORDA",
+    title: "Powered by 4D and ORDA",
     imageUrl: "img/orda.png",
     description: (
       <>

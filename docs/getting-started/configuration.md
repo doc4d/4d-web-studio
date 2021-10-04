@@ -13,7 +13,7 @@ The web studio supports the following web browsers:
 - FireFox
 
 The recommended resolution is 1920x1080.
-## Enabling access to the web studio
+## Enabling access to 4D Web Studio
 
 By default, access to the web studio is not granted. You need to enable access to it on the project database level and on the `WebAdmin` web server level.
 

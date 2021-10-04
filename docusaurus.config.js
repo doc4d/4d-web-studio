@@ -31,7 +31,7 @@ module.exports = {
         {
           type: "doc",
           position: "left",
-          docId: "API/web-form-editor/WebFormClass",
+          docId: "API/orda/DataStoreClass",
           label: "API",
         },
       ],
