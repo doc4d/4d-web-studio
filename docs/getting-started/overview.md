@@ -48,7 +48,9 @@ Having used a recent version of 4D, such as 4D v18 or v19, is also recommended
 
 If you are not familiar with the concepts listed above, we suggest following one of our dedicated training sessions.
 
-## A few things to know before you start using 4D Web Studio
+## Before you start
+
+Here are a few things to know before you start using 4D Web Studio.
 
 ## Use cases
 
