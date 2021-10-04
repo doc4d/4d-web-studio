@@ -5,15 +5,15 @@ title: Overview
 
 ## Welcome to 4D Web Studio preview version
 
-After several months of research and development, we've decided to provide a very first preview version of 4D Web Studio.
-
-![alt-text](img/web-studio-intro.png)
-
 :::info
 
  4D Web studio is still a **code name** and may not be the final product's name.
 
 :::
+
+After several months of research and development, we've decided to provide a very first preview version of 4D Web Studio.
+
+![alt-text](img/web-studio-intro.png)
 
 ## What is 4D Web Studio?
 
@@ -33,22 +33,22 @@ At the end of the road, 4D developers will be able to build complete web busines
 
 By joining this preview, you will discover a totally new web UI. You will get familiar with the concept of datasources and learn how to create webforms by placing components on a page, how to map components to data, how to trigger 4D code (dataclass functions or project methods) by configuring events.
 
-By early preview, you also have to expect an unfinished product, and bugs. If you'd rather have a bug-free experience, we recommend waiting a few more months.
+Since this is a preview version, you'll be using an unfinished product, and you can expect bugs to happen. If you'd rather have a bug-free experience, we recommend waiting a few more months.
 
 As usual in such situations, we do not recommend using this product in a production environment yet.
 
-## Prerequisites
+## Who should use 4D Web Studio
 
 In order to get the best experience, 4D Web Studio currently requires a precise set of 4D skills:
-	• Knowledge of project mode is required: 4D Web Studio won’t run in binary mode.
-	• ORDA skills are also recommended: 4D Web Studio relies heavily on dataclasses.
-	• Being familiar with 4D Rest server and API is a big plus.
-	• Having used a recent version of 4D, such as 4D v18 or v19, is also recommended.
-	• Time exploring this new set of tools
+	• Knowledge of project mode: 4D Web Studio won’t run in binary mode
+	• Knowledge of ORDA: 4D Web Studio relies heavily on dataclasses
+	• Being familiar with the 4D REST server and API
 
-If you are not familiar with the concepts listed above, we suggest you to follow one of our dedicated training sessions.
+Having used a recent version of 4D, such as 4D v18 or v19, is also recommended
 
-## A few things to know before you start using 4D Web Studio.
+If you are not familiar with the concepts listed above, we suggest following one of our dedicated training sessions.
+
+## A few things to know before you start using 4D Web Studio
 
 ## Use cases
 
@@ -56,7 +56,7 @@ With 4D Web Studio, you can either build a new web application from scratch, but
 
 :::info Important
 
-4D web studio won’t allow you to ‘convert’ a 4D desktop form into a 4D webform.
+4D web studio doest not allow "converting" a 4D desktop form into a 4D webform.
 
 :::
 
