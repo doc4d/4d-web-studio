@@ -34,7 +34,7 @@ const features = [
     imageUrl: "img/orda.png",
     description: (
       <>
-        Tap into data sources and simplify the flow of data in your web applications.
+        Tap into datasources and simplify the flow of data in your web applications.
       </>
     ),
   },

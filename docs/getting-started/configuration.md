@@ -21,11 +21,11 @@ By default, access to the web studio is not granted. You need to enable access t
 
 	To do this, go to **Settings** > **Web** > **Web features** and check **Enable access to the web studio**.
 
-2.  To enable access to the web studio on the [`WebAdmin`](../Admin/webAdmin.md) web server, go to **File** > **Web Administration** > **Settings...** and check **Enable access to the web studio**.
+2.  To enable access to the web studio on the [`WebAdmin` web server](../Admin/webAdmin.md), go to **File** > **Web Administration** > **Settings...** and check **Enable access to the web studio**.
 
 :::note Reminder
 
-The WebAdmin settings apply to the running 4D application. For the new settings to be taken into account, you'll need to restart the WebAdmin web server. 
+The WebAdmin settings apply to the 4D application currently running. For the new settings to be taken into account, you'll need to restart the `WebAdmin` web server. 
 
 :::
 
@@ -42,7 +42,7 @@ There are two ways to access the web studio:
 
 *	from your 4D single-user application, go to **Design** > **Web Studio...**. 
  
- 	If the `WebAdmin` server is already running, depending on your web server configuration, your default browser opens at `IPaddress:HTTPPort/studio` or `IPaddress:HTTPSPort/studio`. Otherwise, you will be prompted if you want to start the `WebAdmin` web server first.
+ 	If the `WebAdmin` web server is already running, depending on your web server configuration, your default browser opens at `IPaddress:HTTPPort/studio` or `IPaddress:HTTPSPort/studio`. Otherwise, you will be prompted if you want to start the `WebAdmin` web server first.
 
 *	on a browser, with the `WebAdmin` web server running (launched from 4D or 4D Server), enter the following address:
  	
@@ -56,4 +56,4 @@ There are two ways to access the web studio:
 
 		localhost:7080/studio
 
-	You will then be prompted to enter the [access key](../Admin/webAdmin.md#access-key) to open a `WebAdmin` session on the server.
+	You will then be prompted to enter the [access key](../Admin/webAdmin.md#access-key) to open a WebAdmin session on the server.
