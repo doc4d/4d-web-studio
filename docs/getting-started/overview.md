@@ -11,7 +11,7 @@ title: Overview
 
 :::
 
-After several months of research and development, we've decided to release a very first preview version of 4D Web Studio.
+After several months of research and development, we've decided to release a preview version of 4D Web Studio.
 
 ![alt-text](img/web-studio-intro.png)
 
@@ -31,7 +31,10 @@ At the end of the road, 4D developers will be able to build complete web busines
 
 ## What to expect from this preview version
 
-By joining this preview, you will discover a totally new web UI. You will get familiar with the concept of datasources and learn how to create webforms by placing components on a page, how to map components to data, how to trigger 4D code (dataclass functions or project methods) by configuring events.
+In 4D Web Studio, you will discover a totally new web UI, get familiar with the concept of datasources, and learn how to:
+* create webforms by placing components on a page
+* map components to data
+* trigger 4D code (dataclass functions or project methods) by configuring events
 
 Since this is a preview version, you'll be using an unfinished product, and you can expect bugs to happen. If you'd rather have a bug-free experience, we recommend waiting a few more months.
 
