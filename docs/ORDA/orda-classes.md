@@ -1,5 +1,5 @@
 ---
-id: ordaClasses
+id: orda-classes
 title: Data Model Classes
 ---
 
