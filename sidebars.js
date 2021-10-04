@@ -21,8 +21,8 @@ module.exports = {
       label: 'ORDA',
       items: [
         'ORDA/overview',
-        'ORDA/data-model'
-        'ORDA/orda-classes'
+        'ORDA/data-model',
+        'ORDA/orda-classes',
       ],
     },
 

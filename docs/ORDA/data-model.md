@@ -63,10 +63,10 @@ The datastore is the interface object to a database. It builds a representation 
 
 When handled through the code, the datastore is an object whose properties are all of the [dataclasses](#dataclass) which have been specifically exposed. 
 
-4D allows you to handle the following datastores:
+You can handle the following datastores:
 
-- the local datastore, based on the current 4D database, returned by the `ds` command (the main datastore).
-- one or more remote datastore(s) exposed as REST resources in remote 4D databases, returned by the `Open datastore` command. 
+- a local datastore, based on the current 4D database, returned by the `ds` command (the main datastore).
+- one or more remote datastore(s) exposed as REST resources, returned by the `Open datastore` command. 
 
 A datastore references only a single local or remote database.
 
@@ -96,11 +96,11 @@ A dataclass is the equivalent of a table. It is used as an object model and refe
 
 All dataclasses in a 4D project are available as a property of the `ds` datastore. For remote datastores accessed through `Open datastore` or [REST requests](REST/gettingStarted.md), the **Expose as REST resource** option must be selected at the 4D structure level for each exposed table that you want to be exposed as dataclass in the datastore. 
 
-For example, consider the following table in the 4D structure:
+For example, consider the following database table:
 
-![](assets/en/ORDA/companyTable.png)
+![](img/structure.png)
 
-The `Company` table is automatically available as a dataclass in the `ds` datastore. You can write:
+The `Company` table is available as a [dataclass](#dataclass) in the `ds` datastore. You can write:
 
 ```4d 
 var $compClass : cs.Company //declares a $compClass object variable of the Company class
@@ -111,8 +111,9 @@ A dataclass object can contain:
 
 *	attributes
 *	relation attributes
+*	[computed attributes](###)
 
-The dataclass offers an abstraction of the physical database and allows handling a conceptual data model. The dataclass is the only means to query the datastore. A query is done from a single dataclass. Queries are built around attributes and relation attribute names of the dataclasses. So the relation attributes are the means to involve several linked tables in a query.
+The dataclass offers an abstraction of the physical database and allows handling a conceptual data model with specific features such as computed attributes. The dataclass is the only means to query the datastore. A query is done from a single dataclass. Queries are built around attributes and relation attribute names of the dataclasses. So the relation attributes are the means to involve several linked tables in a query.
 
 The dataclass object itself cannot be copied as an object:
 
@@ -138,21 +139,21 @@ Dataclass properties are attribute objects describing the underlying fields or r
  $revenuesAttribute:=ds.Company["revenues"] //alternate way
 ```
 
-This code assigns to `$nameAttribute` and `$revenuesAttribute` references to the name and revenues attributes of the `Company` class. This syntax does NOT return values held inside of the attribute, but instead returns references to the attributes themselves. To handle values, you need to go through [Entities](#entity).
+This code assigns to `$nameAttribute` and `$revenuesAttribute` references to the `name` and `revenues` attributes of the `Company` class. This syntax does NOT return values held inside of the attribute, but instead returns references to the attributes themselves. To handle values, you need to go through [Entities](#entity).
 
-All eligible fields in a table are available as attributes of their parent [dataclass](#dataclass). For remote datastores accessed through `Open datastore` or [REST requests](REST/gettingStarted.md), the **Expose as REST resource** option must be selected at the 4D structure level for each field that you want to be exposed as a dataclass attribute. 
+All eligible fields in a table are available as attributes of their parent [dataclass](#dataclass). Remote datastores accessed through `Open datastore` or [REST requests](REST/gettingStarted.md) must expose as REST resource each field to be used as a dataclass attribute. 
 
 
 #### Storage and Relation attributes  
 
-Dataclass attributes come in several kinds: storage, relatedEntity, and relatedEntities. Attributes that are scalar (*i.e.*, provide only a single value) support all the standard 4D data types (integer, text, object, etc.).
+Dataclass attributes come in several kinds: storage, relatedEntity, relatedEntities, or computed (*aka* calculated). Attributes that are scalar (*i.e.*, provide only a single value) support all the standard data types (integer, text, object, etc.).
 
-*	A **storage attribute** is equivalent to a field in the 4D database and can be indexed. Values assigned to a storage attribute are stored as part of the entity when it is saved. When a storage attribute is accessed, its value comes directly from the datastore. Storage attributes are the most basic building block of an entity and are defined by name and data type.
+*	A **storage attribute** is equivalent to a field in a database and can be indexed. Values assigned to a storage attribute are stored as part of the entity when it is saved. When a storage attribute is accessed, its value comes directly from the datastore. Storage attributes are the most basic building block of an entity and are defined by name and data type.
 *	A **relation attribute** provides access to other entities. Relation attributes can result in either a single entity (or no entity) or an entity selection (0 to N entities). Relation attributes are built upon "classic" relations in the relational structure to provide direct access to related entity or related entities. Relation attributes are directy available in ORDA using their names.
 
 For example, consider the following partial database structure and the relation properties:
 
-![](assets/en/ORDA/relationProperties.png)
+![](img/structure2.png)
 
 All storage attributes will be automatically available:
 
@@ -164,17 +165,28 @@ In addition, the following relation attributes will also be automatically availa
 *	in the Project dataclass: **theClient** attribute, of the "relatedEntity" kind; there is at most one Company for each Project (the client)
 *	in the Company dataclass: **companyProjects** attribute, of the "relatedEntities" kind; for each Company there is any number of related Projects.
 
->The Manual or Automatic property of a database relation has no effect in ORDA.
-
 All dataclass attributes are exposed as properties of the dataclass:
 
-![](assets/en/ORDA/dataclassProperties.png)
+```4d  
+	// Company available attributes
+ds.Company.companyProjects  //relatedEntities
+ds.Company.discount  
+ds.Company.ID
+ds.Company.name
+	  
+	//Project available attributes
+ds.Project.companyID  
+ds.Project.ID  
+ds.Project.name
+ds.Project.theClient //relatedEntity
 
-Keep in mind that these objects describe attributes, but do not give access to data. Reading or writing data is done through [entity objects](entities.md#using-entity-attributes).
+```
+
+Keep in mind that these objects describe attributes, but do not give access to data. Reading or writing data is done through [entity objects](#entity).
 
 #### Computed attributes
 
-[Computed attributes](ordaClasses.md#computed-attributes) are declared using a `get <attributeName>` function in the [Entity class definition](ordaClasses.md#entity-class). Their value is not stored but evaluated each time they are accessed. They do not belong to the underlying database structure, but are built upon it and can be used as any attribute of the data model. 
+[Computed attributes](orda-classes.md#computed-attributes) are declared using a `get <attributeName>` function in the [Entity class definition](orda-classes.md#entity-class). Their value is not stored but evaluated each time they are accessed. They do not belong to the underlying database structure, but are usually built upon it and can be used as any attribute of the data model. 
 
 
 ### Entity
@@ -182,6 +194,18 @@ Keep in mind that these objects describe attributes, but do not give access to d
 An entity is the equivalent of a record. It is actually an object that references a record in the database. It can be seen as an instance of a [dataclass](#dataclass), like a record of the table matching the dataclass. However, an entity also contains data correlated to the database related to the datastore. 
 
 The purpose of the entity is to manage data (create, update, delete). When an entity reference is obtained by means of an entity selection, it also retains information about the entity selection which allows iteration through the selection.
+
+For example, to create an entity:
+
+```4d
+ var $status : Object
+ var $employee : cs.EmployeeEntity //declares a variable of the EmployeeEntity class type
+ 
+ $employee:=ds.Employee.new()
+ $employee.firstName:="Mary"
+ $employee.lastName:="Smith"
+ $status:=$employee.save()
+```
 
 The entity object itself cannot be copied as an object:
 
@@ -234,22 +258,23 @@ The entity selection properties are however enumerable:
 
 #### Ordered or unordered entity selection
 
-For optimization reasons, by default 4D ORDA usually creates unordered entity selections, except when you use the `orderBy( )` method or use specific options. In this documentation, unless specified, "entity selection" usually refers to an "unordered entity selection".
+For optimization reasons, by default ORDA usually creates unordered entity selections, except when you call the `orderBy( )` function or use specific options. In this documentation, unless specified, "entity selection" usually refers to an "unordered entity selection".
 
 Ordered entity selections are created only when necessary or when specifically requested using options, i.e. in the following cases:
 
 *	result of an `orderBy()` on a selection (of any type) or an `orderBy()` on a dataclass
-*	result of the `newSelection()` method with the `dk keep ordered` option
+*	result of the `newSelection()` function with the `dk keep ordered` option
 
 Unordered entity selections are created in the following cases:
 
 *	result of a standard `query()` on a selection (of any type) or a `query()` on a dataclass,
-*	result of the `newSelection()` method without option,
+*	result of the `newSelection()` function without option,
 *	result of any of the comparison methods, whatever the input selection types: `or()`, `and()`, `minus()`.
 
->The following entity selections are always **ordered**:
->
->*	entity selections returned by 4D Server to a remote client 
->*	entity selections built upon remote datastores.
+:::
+
+Entity selections built upon remote datastores are always ordered. 
+
+:::
 
 Note that when an ordered entity selection becomes an unordered entity selection, any repeated entity references are removed.
