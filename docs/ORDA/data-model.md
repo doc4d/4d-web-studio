@@ -232,13 +232,6 @@ Example:
 var $e : cs.EmployeeSelection //declares a $e object variable of the EmployeeSelection class type
 $e:=ds.Employee.all() //assigns the resulting entity selection reference to the $e variable
 ``` 
- 
-Entity selections can be:
-
-- "shareable" or "non-shareable",
-- "sorted" or "unsorted".
-
-These points are discussed below. 
 
 The entity selection object itself cannot be copied as an object:
 
