@@ -6,6 +6,7 @@ import Link from "@docusaurus/Link";
 import useDocusaurusContext from "@docusaurus/useDocusaurusContext";
 import useBaseUrl from "@docusaurus/useBaseUrl";
 import styles from "./styles.module.css";
+import useThemeContext from '@theme/hooks/useThemeContext';
 
 const features = [
   {
@@ -42,15 +43,20 @@ const features = [
 
 function Feature({ imageUrl, title, description }) {
   const imgUrl = useBaseUrl(imageUrl);
+  const { isDarkTheme, setLightTheme, setDarkTheme } = useThemeContext();
   return (
     <div className={clsx("col col--4", styles.feature)}>
-      {imgUrl && (
-        <div className="text--center">
-          <img className={styles.featureImage} src={imgUrl} alt={title} />
-        </div>
-      )}
-      <h3>{title}</h3>
-      <p>{description}</p>
+      <Link to={useBaseUrl(
+        "docs/getting-started/overview"
+      )} style={{ textDecoration: 'none', color: isDarkTheme ? "#fff" : "#000" }}>
+        {imgUrl && (
+          <div className="text--center">
+            <img className={styles.featureImage} src={imgUrl} alt={title} />
+          </div>
+        )}
+        <h3>{title}</h3>
+        <p>{description}</p>
+      </Link>
     </div>
   );
 }
