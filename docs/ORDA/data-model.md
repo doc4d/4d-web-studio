@@ -32,8 +32,10 @@ The following rules are applied for any conversions:
 
 Tables and fields of a remote datastore accessed through the [`Open datastore`](API/DataStoreClass.md#open-datastore) command or [REST requests](REST/gettingStarted.md) must usually be explicitely exposed to REST requests to be available remotely. 
 
-:::
+:::note
+
 [ORDA class functions], including [computed attribute functions], must be explicitely exposed to REST requests. 
+
 :::
 
 ### Data model update  
@@ -160,6 +162,7 @@ All storage attributes will be automatically available:
 *	in the Project dataclass: "ID", "name", and "companyID"
 *	in the Company dataclass: "ID", "name", and "discount"
 
+
 In addition, the following relation attributes will also be automatically available:
 
 *	in the Project dataclass: **theClient** attribute, of the "relatedEntity" kind; there is at most one Company for each Project (the client)
@@ -201,6 +204,7 @@ For example, to create an entity:
  var $status : Object
  var $employee : cs.EmployeeEntity //declares a variable of the EmployeeEntity class type
  
+
  $employee:=ds.Employee.new()
  $employee.firstName:="Mary"
  $employee.lastName:="Smith"
@@ -264,7 +268,7 @@ Unordered entity selections are created in the following cases:
 *	result of the `newSelection()` function without option,
 *	result of any of the comparison methods, whatever the input selection types: `or()`, `and()`, `minus()`.
 
-:::
+:::note
 
 Entity selections built upon remote datastores are always ordered. 
 
