@@ -7,7 +7,7 @@ title: Overview
 
 :::note info
 
- 4D Web studio is still a **code name** and may not be the final product's name.
+ At this stage, 4D Web Studio is a codename for the product. It may not be its final name.
 
 :::
 
@@ -59,7 +59,7 @@ With 4D Web Studio, you can either build a new web application from scratch, or 
 
 :::note Info
 
-4D web studio does not allow "converting" a 4D desktop form into a 4D webform.
+4D Web Studio does not allow "converting" a 4D desktop form into a 4D webform.
 
 :::
 
