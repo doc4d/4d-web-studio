@@ -5,13 +5,11 @@ title: Overview
 
 ## Welcome to 4D Web Studio preview version
 
-:::info
+:::note info
 
  4D Web studio is still a **code name** and may not be the final product's name.
 
 :::
-
-After several months of research and development, we've decided to release a preview version of 4D Web Studio.
 
 ![alt-text](img/web-studio-intro.png)
 
@@ -59,7 +57,7 @@ Here are a few things to know before you start using 4D Web Studio.
 
 With 4D Web Studio, you can either build a new web application from scratch, or open an already existing 4D project and start adding webforms to your existing application.
 
-:::info Important
+:::note Info
 
 4D web studio does not allow "converting" a 4D desktop form into a 4D webform.
 
