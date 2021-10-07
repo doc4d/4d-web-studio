@@ -16,7 +16,7 @@ The following diagram can help you understand how data flows to and from the stu
 * Once the servers are running and access to data via REST requests is enabled, 4D developers can access 4D Web Studio and create webforms. The data handled in these webforms is stored in a json file. 
 * The webforms are deployed with the application, and the end user renders them in their browser.
 
-![rendering-diagram](img/rendering.png)
+![workflow-diagram](img/workflow.png)
 
 
 ## Configuration

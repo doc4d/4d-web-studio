@@ -5,11 +5,11 @@ title: Using the Webform Editor
 
 ## Creating a Webform
 
-In 4D WebStudio, everything starts with a Webform. A Webform is a container that holds all the other components (buttons, grids, style boxes, etc.) of your application.
+In 4D Web Studio, everything starts with a webform. A webform is a container that holds all the other components (buttons, grids, style boxes, etc.) of your application.
 
-To create a WebForm:
-* from the homepage, click **Webform** and enter a name for the new Webform. The WebForm editor opens.
-* from the WebForm editor, click the **New +** tab > **Webform**
+To create a webform:
+* from the homepage, click **Webform** and enter a name for the new Webform. The Webform editor opens.
+* from the Webform editor, click the **New +** tab > **Webform**
 
 ## Webform Editor Interface
 
