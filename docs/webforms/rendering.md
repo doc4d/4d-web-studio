@@ -4,7 +4,7 @@ title: Rendering Webforms
 ---
 ## Overview
 
-At runtime, webforms are generated and interpreted by a built-in renderer engine. No additional Javascript or React code is required. 
+At runtime, webforms are generated and interpreted by a built-in renderer engine. No additional Javascript is required. 
 
 Each webform has its own URL on the [4D web server](https://developer.4d.com/docs/en/WebServer/webServer.html), and the rendering engine communicates with the web server using REST Requests.
 

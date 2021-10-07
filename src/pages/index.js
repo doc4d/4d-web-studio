@@ -47,7 +47,7 @@ function Feature({ imageUrl, title, description }) {
   return (
     <div className={clsx("col col--4", styles.feature)}>
       <Link to={useBaseUrl(
-        "docs/getting-started/overview"
+        "docs/overview"
       )} style={{ textDecoration: 'none', color: isDarkTheme ? "#fff" : "#000" }}>
         {imgUrl && (
           <div className="text--center">
@@ -85,7 +85,7 @@ export default function Home() {
                 styles.getStarted
               )}
               to={useBaseUrl(
-                "docs/getting-started/overview"
+                "docs/overview"
               )}
             >
               Get Started
