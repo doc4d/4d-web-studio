@@ -8,8 +8,8 @@ title: Using the Webform Editor
 In 4D Web Studio, everything starts with a webform. A webform is a container that holds all the other components (buttons, grids, style boxes, etc.) of your application.
 
 To create a webform:
-* from the homepage, click **Webform** and enter a name for the new Webform. The Webform editor opens.
-* from the Webform editor, click the **New +** tab > **Webform**
+* from the homepage, click **Webform** and enter a name for the new webform
+* from the Webform Editor, click the **New +** tab > **Webform**
 
 ## Webform Editor Interface
 
@@ -91,7 +91,7 @@ The Styles Library offers two types of styles:
 
 Unlike Theme classes, Local styles can only be used in the Webforms in which they are created. 
 
-To create a local CSS class, click the "+" button and enter a name. Then, you can manually edit the css class in the editing panel.
+To create a local CSS class, click the "+" button and enter a name. CSS classes can be edited in the Editor panel at the bottom.
 
 ### Properties Panel
 

@@ -10,13 +10,13 @@ Each webform has its own URL on the [4D web server](https://developer.4d.com/doc
 
 The following diagram can help you understand how data flows to and from the studio:
 
+![workflow-diagram](img/workflow.png)
+
 4D developers configure their environment by enabling access to the web studio: 
 * The 4D WebAdmin web server provides a secured web access to 4D Web Studio and allows previewing webforms inside the studio.
 * The 4D web server allows accessing data stored in your 4D applications through REST requests. REST requests provide direct access to any database operation such as adding, reading, editing, ordering, or searching data. The renderer engine uses REST requests to communicate with the Web Server.
 * Once the servers are running and access to data via REST requests is enabled, 4D developers can access 4D Web Studio and create webforms. The data handled in these webforms is stored in a json file. 
 * The webforms are deployed with the application, and the end user renders them in their browser.
-
-![workflow-diagram](img/workflow.png)
 
 
 ## Configuration
