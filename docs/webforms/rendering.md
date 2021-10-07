@@ -8,7 +8,7 @@ At runtime, webforms are generated and interpreted by a built-in renderer engine
 Each webform has its own URL on the [4D web server](https://developer.4d.com/docs/en/WebServer/webServer.html), and the rendering engine communicates with the web server using REST Requests.
 
 
-The following diagram can help you understand how data flows to and from the studio:
+The following diagram describes how data flows to and from the studio:
 
 ![workflow-diagram](img/workflow.png)
 
