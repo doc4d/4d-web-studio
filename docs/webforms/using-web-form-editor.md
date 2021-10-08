@@ -146,7 +146,7 @@ The following components are available:
 |Component|Description|
 |---|---|
 |Webform| Base container that holds all the other components| 
-|Style box| Container used to keep the content centered and legible |
+|Stylebox| Container used to keep the content centered and legible |
 |Grid| Allows you to produce complex and responsive layouts faster. Grid areas can be edited directly on the canvas |
 |Columns|Displays data inside columns|
 |Tabs|Organizes and allows navigation between groups of content that are related and at the same level of hierarchy|
@@ -157,11 +157,11 @@ The following components are available:
 |Select box|Allows selecting an item in a list|
 |Image|Displays an image|
 |Icon|Displays an icon|
-|Check box|Allows the user to make a binary choice (boolean value)|
+|Checkbox|Allows the user to make a binary choice (boolean value)|
 |Text|Displays text on a web page|
 |Datatable|Displays data in the form of a table. You can select a row to interact with the server|
 |Matrix| Container of repeated style boxes|
-|Webform Loader| Allows you to embed a Webform inside another
+|Webform loader| Allows you to embed a Webform inside another
 
 > More components will be available in the future, and existing components will be enhanced.
 
