@@ -20,22 +20,30 @@ The recommended resolution is 1920x1080.
 
 ## Enabling access to 4D Web Studio
 
-4D Web Studio is served by the [WebAdmin web server](https://developer.4d.com/docs/en/Admin/webAdmin.html) and displays data handled by the [4D web server](https://developer.4d.com/docs/en/WebServer/webServer.html). By default, access to the studio is not granted. 
+By default, access to the studio is not granted. 
 
-To enable access to the studio, the **Enable access to the web studio** option must be activated in two places:
-* in the Web Administration settings
-* in the 4D web server's settings
+4D Web Studio is served by the [WebAdmin web server](https://developer.4d.com/docs/en/Admin/webAdmin.html) and displays the data from 4D projects handled by the [4D web server](https://developer.4d.com/docs/en/WebServer/webServer.html). 
 
-### On the WebAdmin web server
-To enable access to the studio on the [WebAdmin web server](https://developer.4d.com/docs/en/Admin/webAdmin.html), go to **File** > **Web Administration** > **Settings...** and check **Enable access to the web studio**.
+To enable access to the studio, you must explicitly allow it at two levels: 
+* at the 4D application level, for global access
+* at every project level
 
-:::note
+If one of the two levels (or both) are not enabled, access to the studio is denied (a 403 page is returned).
+
+### Application level
+
+As the first security level, you need to allow access to the studio on the [WebAdmin web server](https://developer.4d.com/docs/en/Admin/webAdmin.html): go to **File** > **Web Administration** > **Settings...** and check **Enable access to the web studio**.
 
 This setting applies to the 4D application (4D or 4D Server) on the host machine. All projects opened with that 4D application take this setting into account.
 
-:::
+Keep this option unchecked if you want to make sure no access to the studio is allowed on the application. 
 
-### On the 4D web server
+Check this option to make it possible to access the studio. However, you still need to enable it at every project level.
+
+
+### Project level
+
+After you have enabled access to the studio at the application level, you need to explicitly designate every project that can be accessed. The **Enable access to the Web Studio** option must be enabled on the web server's configuration page.
 
 In order for the studio to access the data of a 4D project handled by the [4D web server](https://developer.4d.com/docs/en/WebServer/webServer.html), the **Enable access to the web studio** option must be enabled on the web server's configuration page.
 
@@ -43,20 +51,19 @@ To do this, in your 4D application, go to **Settings** > **Web** > **Web Feature
 
 :::note 
 
-Just like other user settings, **Enable access to the web studio** can be externalized and customized. See [User settings](https://doc.4d.com/4Dv19R2/4D/19-R2/User-settings.300-5516428.en.html) for more information.
+Just like other user settings, **Enable access to the web studio** can be externalized and customized **FOR ??? NEEDS (Deployment?)**. See [User settings](https://doc.4d.com/4Dv19R2/4D/19-R2/User-settings.300-5516428.en.html) for more information.
 
 :::
-
 
 ## Activating authentication
 
 Authentication on the WebAdmin web server is granted using an access key. For more details, see [Access key](https://developer.4d.com/docs/en/Admin/webAdmin.html#access-key).
 
-## Opening the web studio
+## Opening 4D Web Studio
 
 The web studio page is available when the [WebAdmin web server is running](https://developer.4d.com/docs/en/Admin/webAdmin.html#starting-the-webadmin-web-server) and [authentication is activated](#activating-authentication). 
 
-There are two ways to access the web studio:
+There are two ways to access the studio:
 
 *	from your 4D single-user application, go to **Design** > **Web Studio...**. 
  
