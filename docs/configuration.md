@@ -16,7 +16,7 @@ The recommended resolution is 1920x1080.
 
 ## Enabling access to 4D Web Studio
 
-4D Web Studio runs on the [WebAdmin web server](https://developer.4d.com/docs/en/Admin/webAdmin.html) and displays data handled by the [4D web server](https://developer.4d.com/docs/en/WebServer/webServer.html). By default, access to the studio is not granted. 
+4D Web Studio is served by the [WebAdmin web server](https://developer.4d.com/docs/en/Admin/webAdmin.html) and displays data handled by the [4D web server](https://developer.4d.com/docs/en/WebServer/webServer.html). By default, access to the studio is not granted. 
 
 To enable access to the studio, the **Enable access to the web studio** option must be activated in two places:
 * in the Web Administration settings
@@ -70,4 +70,4 @@ There are two ways to access the web studio:
 
 	`localhost:7080/studio`
 
-	You will then be prompted to enter the [access key](https://developer.4d.com/docs/en/Admin/webAdmin.html#access-key) to open a WebAdmin session on the server.
+	You will then be prompted to enter the [access key](https://developer.4d.com/docs/en/Admin/webAdmin.html#access-key) to access the studio.
