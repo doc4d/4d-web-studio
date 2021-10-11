@@ -23,7 +23,7 @@ To enable access to the studio, the **Enable access to the web studio** option m
 * in the 4D web server's settings
 
 ### On the WebAdmin web server
-To enable access to the studio on the [`WebAdmin` web server](https://developer.4d.com/docs/en/Admin/webAdmin.md), go to **File** > **Web Administration** > **Settings...** and check **Enable access to the web studio**.
+To enable access to the studio on the [WebAdmin web server](https://developer.4d.com/docs/en/Admin/webAdmin.md), go to **File** > **Web Administration** > **Settings...** and check **Enable access to the web studio**.
 
 :::note
 
@@ -46,19 +46,19 @@ Just like other user settings, **Enable access to the web studio** can be extern
 
 ## Activating authentication
 
-Authentication on the `WebAdmin` web server is granted using an access key. For more details, see [Access key](https://developer.4d.com/docs/en/Admin/webAdmin.md#access-key).
+Authentication on the WebAdmin web server is granted using an access key. For more details, see [Access key](https://developer.4d.com/docs/en/Admin/webAdmin.md#access-key).
 
 ## Opening the web studio
 
-The web studio page is available when the [`WebAdmin` web server is running](https://developer.4d.com/docs/en/Admin/webAdmin.md#starting-the-webadmin-web-server) and [authentication is activated](#activating-authentication). 
+The web studio page is available when the [WebAdmin web server is running](https://developer.4d.com/docs/en/Admin/webAdmin.md#starting-the-webadmin-web-server) and [authentication is activated](#activating-authentication). 
 
 There are two ways to access the web studio:
 
 *	from your 4D single-user application, go to **Design** > **Web Studio...**. 
  
- 	If the `WebAdmin` web server is already running, depending on your web server configuration, your default browser opens at `IPaddress:HTTPPort/studio` or `IPaddress:HTTPSPort/studio`. Otherwise, you will be prompted if you want to start the `WebAdmin` web server first.
+ 	If the WebAdmin web server is already running, depending on your web server configuration, your default browser opens at `IPaddress:HTTPPort/studio` or `IPaddress:HTTPSPort/studio`. Otherwise, you will be prompted if you want to start the WebAdmin web server first.
 
-*	on a browser, with the `WebAdmin` web server running (launched from 4D or 4D Server), enter the following address:
+*	on a browser, with the WebAdmin web server running (launched from 4D or 4D Server), enter the following address:
  	
 	`IPaddress:HTTPPort/studio`
 		
