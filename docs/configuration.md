@@ -23,7 +23,7 @@ To enable access to the studio, the **Enable access to the web studio** option m
 * in the 4D web server's settings
 
 ### On the WebAdmin web server
-To enable access to the studio on the [WebAdmin web server](https://developer.4d.com/docs/en/Admin/webAdmin.md), go to **File** > **Web Administration** > **Settings...** and check **Enable access to the web studio**.
+To enable access to the studio on the [WebAdmin web server](https://developer.4d.com/docs/en/Admin/webAdmin.html), go to **File** > **Web Administration** > **Settings...** and check **Enable access to the web studio**.
 
 :::note
 
@@ -46,11 +46,11 @@ Just like other user settings, **Enable access to the web studio** can be extern
 
 ## Activating authentication
 
-Authentication on the WebAdmin web server is granted using an access key. For more details, see [Access key](https://developer.4d.com/docs/en/Admin/webAdmin.md#access-key).
+Authentication on the WebAdmin web server is granted using an access key. For more details, see [Access key](https://developer.4d.com/docs/en/Admin/webAdmin.html#access-key).
 
 ## Opening the web studio
 
-The web studio page is available when the [WebAdmin web server is running](https://developer.4d.com/docs/en/Admin/webAdmin.md#starting-the-webadmin-web-server) and [authentication is activated](#activating-authentication). 
+The web studio page is available when the [WebAdmin web server is running](https://developer.4d.com/docs/en/Admin/webAdmin.html#starting-the-webadmin-web-server) and [authentication is activated](#activating-authentication). 
 
 There are two ways to access the web studio:
 
@@ -70,4 +70,4 @@ There are two ways to access the web studio:
 
 	`localhost:7080/studio`
 
-	You will then be prompted to enter the [access key](https://developer.4d.com/docs/en/Admin/webAdmin.md#access-key) to open a WebAdmin session on the server.
+	You will then be prompted to enter the [access key](https://developer.4d.com/docs/en/Admin/webAdmin.html#access-key) to open a WebAdmin session on the server.
