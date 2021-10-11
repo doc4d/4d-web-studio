@@ -14,6 +14,10 @@ The web studio supports the following web browsers:
 
 The recommended resolution is 1920x1080.
 
+### Projects 
+
+4D Web Studio only works with 4D projects (binary databases are not supported).
+
 ## Enabling access to 4D Web Studio
 
 4D Web Studio is served by the [WebAdmin web server](https://developer.4d.com/docs/en/Admin/webAdmin.html) and displays data handled by the [4D web server](https://developer.4d.com/docs/en/WebServer/webServer.html). By default, access to the studio is not granted. 
