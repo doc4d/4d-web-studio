@@ -28,7 +28,7 @@ The options and menu items described on this page won't appear if the 4D Web Stu
 
 By default, access to the studio is not granted. 
 
-4D Web Studio is served by the [WebAdmin web server](https://developer.4d.com/docs/en/Admin/webAdmin.html) and displays the data from 4D projects handled by the [4D web server](https://developer.4d.com/docs/en/WebServer/webServer.html). 
+4D Web Studio is served by the [WebAdmin web server](https://developer.4d.com/docs/en/Admin/webAdmin.html) and displays data from 4D projects handled by the [4D web server](https://developer.4d.com/docs/en/WebServer/webServer.html). 
 
 To enable access to the studio, you must explicitly allow it at two levels: 
 * at the 4D application level, for global access
