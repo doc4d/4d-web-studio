@@ -43,9 +43,7 @@ Check this option to make it possible to access the studio. However, you still n
 
 ### Project level
 
-After you have enabled access to the studio at the application level, you need to explicitly designate every project that can be accessed. The **Enable access to the Web Studio** option must be enabled on the web server's configuration page.
-
-In order for the studio to access the data of a 4D project handled by the [4D web server](https://developer.4d.com/docs/en/WebServer/webServer.html), the **Enable access to the web studio** option must be enabled on the web server's configuration page.
+After you have enabled access to the studio at the application level, you need to explicitly designate every project that can be accessed. The **Enable access to the Web Studio** option must be enabled on the [main 4D web server](https://developer.4d.com/docs/en/WebServer/webServer.html)'s configuration page.
 
 To do this, in your 4D application, go to **Settings** > **Web** > **Web Features** and check **Enable access to the web studio**.
 
