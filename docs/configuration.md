@@ -20,7 +20,7 @@ The recommended resolution is 1920x1080.
 
 ## Enabling access to 4D Web Studio
 
-::: note
+:::note
 
 The options and menu items described on this page won't appear if the 4D Web Studio license is not activated.
 
