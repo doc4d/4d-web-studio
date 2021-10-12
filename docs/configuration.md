@@ -20,6 +20,12 @@ The recommended resolution is 1920x1080.
 
 ## Enabling access to 4D Web Studio
 
+::: note
+
+The options and menu items described on this page won't appear if the 4D Web Studio license is not activated.
+
+:::
+
 By default, access to the studio is not granted. 
 
 4D Web Studio is served by the [WebAdmin web server](https://developer.4d.com/docs/en/Admin/webAdmin.html) and displays the data from 4D projects handled by the [4D web server](https://developer.4d.com/docs/en/WebServer/webServer.html). 
