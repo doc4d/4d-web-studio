@@ -15,9 +15,13 @@ The following diagram describes how data flows to and from the studio:
 
 4D developers configure their environment by enabling access to the web studio: 
 * The 4D WebAdmin web server provides a secured web access to 4D Web Studio and allows previewing webforms inside the studio.
-* The 4D web server allows accessing data stored in your 4D applications through REST requests. REST requests provide direct access to any database operation such as adding, reading, editing, ordering, or searching data. The renderer engine uses REST requests to communicate with the Web Server.
-* Once the servers are running and access to data via REST requests is enabled, 4D developers can access 4D Web Studio and create webforms. The data handled in these webforms is stored in a json file. 
-* The webforms are deployed with the application, and the end user renders them in their browser.
+* The 4D web server allows accessing data stored in your 4D applications through REST requests. REST requests provide direct access to any database operation such as adding, reading, editing, ordering, or searching data. The renderer engine uses [REST requests](https://developer.4d.com/docs/en/REST/gettingStarted.html) to communicate with the Web Server.
+* Once the servers are running, 4D developers can access 4D Web Studio and create webforms. The data handled in these webforms is stored in a json file. 
+* The webforms are deployed with the application, and the end user renders them in their browser. Note that the project database must be [exposed as REST resource](https://developer.4d.com/docs/en/REST/configuration.html#starting-the-rest-server) to allow webform rendering. 
+
+## Licence
+
+To render webforms, you need an available REST licence, as rendering a webform opens a session on the project database's main web server.
 
 
 ## Configuration
@@ -32,7 +36,7 @@ To enable webform rendering, the following options must be set:
 
 For more information on server configuration, see [Server Configuration](https://developer.4d.com/docs/en/REST/configuration.html) on developer.4d.com/docs.
 
-## Rendering webforms from the 4D WebStudio IDE
+## Rendering webforms from the 4D Web Studio IDE
 
 When you click on the **Render** button, a new browser tab opens at the following address:
 
@@ -42,7 +46,7 @@ When you click on the **Render** button, a new browser tab opens at the followin
 
 ## Rendering webforms from 4D Server
 
-When deploying a 4D web server using 4D Server only, you can access the rendered 
+When deploying a 4D web server using 4D Server, you can also access the rendered 
 webforms in the supported browsers, at the following address:
 
 `IP:port/$lib/renderer/?w=WebFormName`

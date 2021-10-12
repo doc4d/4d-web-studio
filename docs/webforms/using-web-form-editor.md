@@ -221,7 +221,7 @@ Events can also be triggered when a data source is updated.
 
 ![alt-text](img/events.png)
 
-In 4D WebStudio, events are used to execute code on the 4D server. There's no need to write additional Javascript or React code.
+In 4D WebStudio, events are used to execute code on the 4D server. There's no need to write additional Javascript code.
 
 Events are executed in the defined order, and you can map class functions to several events or one event to several class functions.
 
@@ -254,3 +254,9 @@ To assign a server-side reference to a component, enter a value in the Propertie
 ![alt-text](img/image-server-side.png)
 
 You can then modify the behavior of your components using events and functions, such as [4D.WebFormItem class functions](../API/WebFormItemClass.md).
+
+## Code editor
+
+4D web Studio has an embedded code editor that allows you to edit your class function and methods. The code can still be edited from a 4D Desktop application. 
+
+When you edit a class function's code, and it is open in the studio, the Tab displays "Outdated" and you can refresh the tab with a right click.
