@@ -55,7 +55,7 @@ After you have enabled access to the studio at the application level, you need t
 
 To do this, in your 4D application, go to **Settings** > **Web** > **Web Features** and check **Enable access to the web studio**.
 
-Keep in mind that [user settings](https://doc.4d.com/4Dv19R2/4D/19-R2/User-settings.300-5516428.en.html) can be defined at several levels, and priorities apply.
+Keep in mind that [user settings](https://doc.4d.com/4Dv19R2/4D/19-R2/User-settings.300-5516428.en.html) can be defined at several levels, and that priorities apply.
 
 ## Activating authentication
 
