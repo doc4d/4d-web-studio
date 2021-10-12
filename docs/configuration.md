@@ -30,9 +30,11 @@ To enable access to the studio, you must explicitly allow it at two levels:
 
 If one of the two levels (or both) are not enabled, access to the studio is denied (a 403 page is returned).
 
-### Application level
+### At the application level
 
-As the first security level, you need to allow access to the studio on the [WebAdmin web server](https://developer.4d.com/docs/en/Admin/webAdmin.html): go to **File** > **Web Administration** > **Settings...** and check **Enable access to the web studio**.
+As the first security level, you need to allow access to the studio on the [WebAdmin web server](https://developer.4d.com/docs/en/Admin/webAdmin.html).
+
+To do this, go to **File** > **Web Administration** > **Settings...** and check **Enable access to the web studio**.
 
 This setting applies to the 4D application (4D or 4D Server) on the host machine. All projects opened with that 4D application take this setting into account.
 
@@ -41,7 +43,7 @@ Keep this option unchecked if you want to make sure no access to the studio is a
 Check this option to make it possible to access the studio. However, you still need to enable it at every project level.
 
 
-### Project level
+### At the project level
 
 After you have enabled access to the studio at the application level, you need to explicitly designate every project that can be accessed. The **Enable access to the Web Studio** option must be enabled on the [main 4D web server](https://developer.4d.com/docs/en/WebServer/webServer.html)'s configuration page.
 
