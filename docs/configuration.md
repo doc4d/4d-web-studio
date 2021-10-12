@@ -14,7 +14,7 @@ The web studio supports the following web browsers:
 
 The recommended resolution is 1920x1080.
 
-### Projects 
+### 4D application
 
 4D Web Studio only works with 4D projects (binary databases are not supported).
 
@@ -49,11 +49,7 @@ After you have enabled access to the studio at the application level, you need t
 
 To do this, in your 4D application, go to **Settings** > **Web** > **Web Features** and check **Enable access to the web studio**.
 
-:::note 
-
-Just like other user settings, **Enable access to the web studio** can be externalized and customized **FOR ??? NEEDS (Deployment?)**. See [User settings](https://doc.4d.com/4Dv19R2/4D/19-R2/User-settings.300-5516428.en.html) for more information.
-
-:::
+Keep in mind that [user settings](https://doc.4d.com/4Dv19R2/4D/19-R2/User-settings.300-5516428.en.html) can be defined at several levels, and priorities apply.
 
 ## Activating authentication
 
