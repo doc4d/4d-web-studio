@@ -40,12 +40,8 @@ As usual in such situations, we do not recommend using this product in a product
 
 In order to get the best experience possible, 4D Web Studio currently requires a precise set of 4D skills:
 * Knowledge of project mode: 4D Web Studio won’t run in binary mode
-* Knowledge of ORDA: 4D Web Studio relies heavily on dataclasses
-* Being familiar with the 4D REST server and API
-
-Having used a recent version of 4D, such as 4D v18 or v19, is also recommended.
-
-If you are not familiar with the concepts listed above, we suggest following one of our dedicated training sessions.
+* Knowledge of [ORDA](https://developer.4d.com/docs/en/ORDA/overview.html): 4D Web Studio relies heavily on [dataclasses](https://developer.4d.com/docs/en/ORDA/dsmapping.html#dataclass)
+* Being familiar with the [4D REST server](https://developer.4d.com/docs/en/REST/gettingStarted.html) and API
 
 ## Before you start
 

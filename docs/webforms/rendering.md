@@ -8,18 +8,16 @@ title: Rendering Webforms
 
 At runtime, webforms are generated and interpreted by a built-in renderer engine.
 
-Each webform has its own URL on the [4D web server](https://developer.4d.com/docs/en/WebServer/webServer.html), and the rendering engine communicates with the web server using REST Requests.
+Each webform has its own URL on the [4D web server](https://developer.4d.com/docs/en/WebServer/webServer.html), and the rendering engine communicates with the web server using [REST requests](https://developer.4d.com/docs/en/REST/gettingStarted.html).
 
 The following diagram describes how data flows to and from the studio:
 
 ![workflow-diagram](img/workflow.png)
 
-4D developers configure their environment by enabling access to the web studio: 
-* The 4D WebAdmin web server provides a secured web access to 4D Web Studio and allows previewing webforms inside the studio.
-* The 4D web server allows accessing data stored in your 4D applications through REST requests. REST requests provide direct access to any database operation such as adding, reading, editing, ordering, or searching data. The renderer engine uses [REST requests](https://developer.4d.com/docs/en/REST/gettingStarted.html) to communicate with the Web Server.
-* Once the servers are running, 4D developers can access 4D Web Studio and create webforms. The data handled in these webforms is stored in a json file. 
-* The webforms are deployed with the application, and the end user renders them in their browser. Note that the project database must be [exposed as REST resource](https://developer.4d.com/docs/en/REST/configuration.html#starting-the-rest-server) to allow webform rendering. 
 
+* The 4D WebAdmin web server provides a secured web access to 4D Web Studio and allows previewing webforms inside the studio.
+* The 4D web server allows accessing data stored in your 4D applications through REST requests. 
+* The webforms are deployed with the application, and the end user renders them in their browser. Note that the database must be [exposed as REST resource](https://developer.4d.com/docs/en/REST/configuration.html#starting-the-rest-server) to allow webform rendering. 
 ## Licence
 
 To render webforms, you need an available REST licence, as rendering a webform opens a session on the project database's main web server.
@@ -27,13 +25,15 @@ To render webforms, you need an available REST licence, as rendering a webform o
 
 To enable webform rendering, the following options must be set:
 
-* The **Settings** > **Expose as REST server** option must be activated 
+* The project's **Settings** > **Expose as REST server** option must be activated 
 * The [4D web server](https://developer.4d.com/docs/en/WebServer/webServer.html) must be running
 
 > You can configure The web server's IP and HTTP/HTTPS ports in **Settings** > 
 **Configuration**.
 
-For more information on server configuration, see [Server Configuration](https://developer.4d.com/docs/en/REST/configuration.html) on developer.4d.com/docs.
+When rendering webforms, depending on the main 4D web server configuration (similar to the [WebAdmin web server configuration](https://developer.4d.com/docs/en/Admin/webAdmin.html#accept-http-connections-on-localhost)), the renderer will try connecting to the HTTP or HTTPS port.
+
+For more information on server configuration, see [Server Configuration](https://developer.4d.com/docs/en/REST/configuration.html) on developer.4d.com
 
 ## Rendering webforms from the 4D Web Studio IDE
 
