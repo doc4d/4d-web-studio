@@ -164,85 +164,6 @@ The following components are available:
 |Webform loader| Allows you to embed a Webform inside another
 
 > More components will be available in the future, and existing components will be enhanced.
-
-## About data sources
-
-Data sources contain data. You can bind them to your Webform components to determine where the data is displayed in your application.
-
-The **Data Sources** section groups the available data sources:
-
-![alt-text](img/data-sources.png)
-
-In this section, you'll find the following:
-
-*  The **Catalog** holds:
-    * data from your database: You can designate entities or entity selections from your [datastore](../ORDA/dsMapping.md#datastore), and they will be handled by the server as **Remote** data sources.
-    * Class functions: The Catalog displays the functions defined in each class. 
-
-*  **Remote** data sources: Entities and entity selections, handled on the server, that can be assigned to components. 
-They offer functions defined on the ORDA classes that they instantiate ([Entity class](../API/EntityClass.md), [Entity Selection class](../API/EntitySelectionClass.md)).
-
-> When working with 4D projects, only the dataclasses and dataclass attributes [exposed as REST resources](https://developer.4d.com/docs/en/REST/configuration.html#exposing-tables-and-fields) will be available at run time. Unexposed datasources are greyed out.
-
-*  **Local** data sources: Scalar types handled with the browser's memory. Can be assigned to variables. No request is sent to the server to access local data sources.
-
-Only [exposed functions](../ORDA/ordaClasses.md#exposed-vs-non-exposed-functions) can be used when configuring an event. Functions that are not exposed are greyed out.
-
-## Creating a data source
-
-To create a data source: 
-
-* From the Catalog: 
-    1. In the Data Sources section, choose Catalog > Data Classes
-    2. Click the "+" icon next to a dataclass
-    3. Select Entity or Entity Selection and click **Confirm**. The newly created Entity or Entity selection now appears as a Remote data source
-
-* From a Remote data source, click the "+" icon:
-    * next to an entity selection to create an entity
-    * next to an entity's relation to create an entity selection or an entity  
-
-> Unexposed data sources appear in the IDE but are greyed out
-
-## Binding a data source to a component: 
-
-There are several ways to bind a data source to a component:
-
-* Drag it from the Data Source section and drop it on a component
-* Enter the name of the data source in the Properties panel > Data source
-
-## Events, methods and class functions
-
-## Events
-
-Events are usually used as a means of triggering certain behaviors. They are used in conjuction with methods and class functions. 
-
-For example, if the user clicks a button on a webpage, you can choose how to react.
-Events can also be triggered when a data source is updated. 
-
-![alt-text](img/events.png)
-
-In 4D WebStudio, events are used to execute code on the 4D server. There's no need to write additional Javascript code.
-
-Events are executed in the defined order, and you can map class functions to several events or one event to several class functions.
-
-## 4D class Functions
-
-Some 4D class functions allow you to set the behavior of your components.
-
-For example, to display or hide a component when an event occurs, you can use the [4D.WebFormItem class functions](../API/web-form-editor/WebFormItemClass.md)
-
-## Custom class functions
-
-You can also write your own class functions to handle data and events.
-
-For example, to make a search bar, you can attach an `onchange` event to a Text input component and write a class function that taps into a [dataclass](../ORDA/dsMapping.md) to suggest a list of items as the user is typing. 
-
-:::note 
-
-Methods also allow you to determine how to react to certain events, but they need to be defined as datastore, dataclass, entity or entity class functions. We highly recommend using class functions over methods.
-
-:::
-
 ## Server-side reference
 
 The server-side reference of a component is its "address" on the server. To set the behavior of a component, you can assign a server-side reference to it, and then [use that reference in class functions](../API/web-form-editor/WebFormItemClass.md).
@@ -259,4 +180,4 @@ You can then modify the behavior of your components using events and functions, 
 
 4D web Studio has an embedded code editor that allows you to edit your class function and methods. The code can still be edited from a 4D Desktop application. 
 
-When you edit a class function's code, and it is open in the studio, the Tab displays "Outdated" and you can refresh the tab with a right click.
+When a class function is open in the studio, and that class function is edited elsewhere, its Tab will display "Outdated", meaning that the code displayed is not the latest version. To obtain the latest version, right click the Tab and refresh it.

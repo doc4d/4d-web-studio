@@ -15,17 +15,15 @@ title: Overview
 
 ## What is 4D Web Studio?
 
-4D Web Studio is a powerful platform for web design and development powered by 4D and ORDA. It introduces a new way of building complete web applications. 
+4D Web Studio is a new way of building business web applications, powered by 4D. Our vision is to provide developers a 100% web browser experience by allowing them to:
 
-The goal is to provide developers with an experience that takes place exclusively in the web browser. This includes: 
-* designing webforms by dragging and dropping components on a canvas
-* previewing pages directly in the browser
-* mapping data easily thanks to ORDA data classes
-* directly executing 4D code on a web event or a datasource event 
-* coding & debugging in the browser
-* editing a data model
-
-At the end of the road, 4D developers will be able to build complete web business applications using only their web browsers and 4D coding skills. There is no Javascript involved.
+* design web forms visually by drag and dropping components on a canvas
+* preview pages instantly
+* easily map data with ORDA data classes
+* directly execute 4D code on web events or datasource events
+* code & debug in the browser
+* and even edit a data model
+At the end of the road, developers will be able to build complete web business applications using only a web browser and their 4D coding skills. There is no Javascript involved.
 
 ## What to expect from this preview version
 
@@ -38,7 +36,7 @@ Since this is a preview version, you'll be using an unfinished product, and you 
 
 As usual in such situations, we do not recommend using this product in a production environment yet.
 
-## Who should use 4D Web Studio
+## Technologies used
 
 In order to get the best experience possible, 4D Web Studio currently requires a precise set of 4D skills:
 * Knowledge of project mode: 4D Web Studio won’t run in binary mode
@@ -66,16 +64,6 @@ With 4D Web Studio, you can either build a new web application from scratch, or 
 ### 4D and 4D Server
 
 You can use 4D Web Studio with both 4D and 4D Server. This allows you to work on your own, or within a team with a version control system (VCS) such as Git, and see the results in a shared 4D Server.
-
-### WebAdmin web server versus 4D web server
-
-4D Web Studio runs through the [4D WebAdmin web server](https://developer.4d.com/docs/en/Admin/webAdmin.html). 4D will prompt you to activate it if necessary. When you use 4D Web Studio as a developer, even when you preview a webform in the studio, you’re using the 4D Web Admin server. This allows you to see dataclasses, functions and attributes that are not exposed as REST resources for example.
-
-However, webform rendering happens outside 4D Web Studio, and is served by the [standard 4D web server](https://developer.4d.com/docs/en/WebServer/webServer.html). In this situation, your web application cannot access assets that are not exposed as REST resources.
-
-### About webforms
-4D Web Studio does not generate HTML code directly. When you drop components on the canvas, when you map datasources to components, or when you configure an event, 4D Web Studio places your work in a JSON file. This JSON file, the webform, cannot directly be opened in a web browser. It is “rendered” either when you preview it in the webstudio, or when you choose to render it in a dedicated browser tab.
-
 ### About REST 
 All 4D code executed from a webform is in fact triggered through the 4D REST API. This makes it possible for you to use your browser’s developer tools to inspect your rendered webform and troubleshoot REST requests and responses.
 

@@ -3,16 +3,11 @@ id: WebFormClass
 title: WebForm
 ---
 
-When working in [4D Web Studio](../web-studio/web-studio.md), the `WebForm` class allows you to handle the behavior of your webform and its components on the server side.
+When working in 4D Web Studio, the `WebForm` class allows you to handle the behavior of your webform and its components on the server side.
 
 ### WebForm Objects
 
 `WebForm` objects are instantiated with the [Web Form](#web-form) command.
-
-### Summary 
-||
-|---|
-|[<!-- INCLUDE #_command_.Web Form.Syntax -->](#web-form)<p>&nbsp;&nbsp;&nbsp;&nbsp;<!-- INCLUDE #_command_.Web Form.Summary --></p> |
 
 ## Web Form
 
@@ -36,6 +31,6 @@ The `Web Form` command <!-- REF #_command_.Web Form.Summary --> returns a `4D.We
 
 Each property of the returned object is an object of the [4D.WebFormItem](WebFormItemClass.md) class.
 
-The command returns `Null` if it is called in a request that does not originate from [4D Web Studio](../web-studio/web-studio.md).
+The command returns `Null` if it is called in a request that does not originate from 4D Web Studio.
 
 

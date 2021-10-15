@@ -4,10 +4,11 @@ title: Rendering Webforms
 ---
 ## Overview
 
-At runtime, webforms are generated and interpreted by a built-in renderer engine. No additional Javascript is required. 
+4D Web Studio does not generate HTML code directly. When you drop components on the canvas, when you map datasources to components, or when you configure an event, 4D Web Studio places your work in a JSON file. This JSON file, the webform, cannot directly be opened in a web browser. It is “rendered” either when you preview it in the webstudio, or when you choose to render it in a dedicated browser tab.
+
+At runtime, webforms are generated and interpreted by a built-in renderer engine.
 
 Each webform has its own URL on the [4D web server](https://developer.4d.com/docs/en/WebServer/webServer.html), and the rendering engine communicates with the web server using REST Requests.
-
 
 The following diagram describes how data flows to and from the studio:
 
@@ -22,8 +23,6 @@ The following diagram describes how data flows to and from the studio:
 ## Licence
 
 To render webforms, you need an available REST licence, as rendering a webform opens a session on the project database's main web server.
-
-
 ## Configuration
 
 To enable webform rendering, the following options must be set:

@@ -3,11 +3,6 @@ id: web-event
 title: Web Event
 ---
 
-### Summary 
-||
-|---|
-|[<!-- INCLUDE #_command_.Web Event.Syntax -->](#web-event)<p>&nbsp;&nbsp;&nbsp;&nbsp;<!-- INCLUDE #_command_.Web Event.Summary --></p> |
-
 <!-- REF #_command_.Web Event.Syntax -->
 **Web Form** : Object<!-- END REF -->
 
@@ -21,7 +16,7 @@ title: Web Event
 
 **Web Event** <!-- REF #_command_.Web Event.Summary --> returns an object with information on a triggered event linked to a webform component.<!-- END REF --> 
 
-The function must be called in the context of a web form handled by the web server
+The function must be called in the context of a web form handled by the main 4D web server
 
 The returned object contains the following properties:
 
@@ -29,7 +24,7 @@ The returned object contains the following properties:
 |----|----|----|
 | caller | Text | Server-side reference of the component triggering the event |
 | eventType | Text | Event type (onclick, onchange, onmouseover...) |
-| data	| Object| For Tabs component: contains an index property (Number) with the index of the clicked Tab (index starts at 0) |
+| data	| Object| For Tabs component: contains an index property (Number) with the index of the clicked Tab (indexing starts at 0) |
 
 *eventType* can contain the following events: 
 
