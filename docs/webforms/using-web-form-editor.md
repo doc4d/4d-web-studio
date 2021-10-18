@@ -20,11 +20,13 @@ The Webform Editor provides several tools to customize the interface and content
 <ol class="interface-numbers">
 <li class="interface-item">Explorer: Displays your project's Webforms, methods and classes (assets and data models are not available yet)</li>
 <li class="interface-item">Tabs: They let you keep track of your currently opened elements, such as your forms and methods.</li>
-<li class="interface-item">Tool box panel: Contains the Components, Style libray and Data Sources sections.</li>
-<li class="interface-item">Canvas: This is where you combine your components, styles and data sources. You can drag and drop components onto your canvas, then drag and drop CSS classes and data sources onto these components, and preview or render your webforms.</li>
-<li class="interface-item">Contextual configuration panel: This is where you link events and methods to your components, edit CSS styles, etc.</li>
-<li class="interface-item">Properties panel: Allows for advanced style customization. Also allows binding a data source to a component.</li>
-<li class="interface-item">Header</li>
+<li class="interface-item">Components section: The building blocks of your application.</li>
+<li class="interface-item">Data Sources: Create and explore your datasources.</li>
+<li class="interface-item">Styles Library: holds predefined and customized styles for your components</li>
+<li class="interface-item">Outline: Presents the structure of your webform and allows you to navigate between the different elements. </li>
+<li class="interface-item">Canvas: This is where you combine your components, styles and datasources. You can drag and drop components onto your canvas, then drag and drop CSS classes and datasources onto these components, and preview or render your webforms.</li>
+<li class="interface-item">Contextual configuration panel: Link events and methods to your components, edit CSS styles, etc.</li>
+<li class="interface-item">Header: Save and preview your work, and access additional settings</li>
 </ol>
 
 ## Adding components to the Webform
@@ -180,4 +182,4 @@ You can then modify the behavior of your components using events and functions, 
 
 4D web Studio has an embedded code editor that allows you to edit your class function and methods. The code can still be edited from a 4D Desktop application. 
 
-When a class function is open in the studio, and that class function is edited elsewhere, its Tab will display "Outdated", meaning that the code displayed is not the latest version. To obtain the latest version, right click the Tab and refresh it.
+When a class function is open in the studio, and that class function is edited elsewhere, its Tab will display "Outdated", meaning that the code displayed is not the latest version. To obtain the latest version, right click the Tab and click **Reload**.
