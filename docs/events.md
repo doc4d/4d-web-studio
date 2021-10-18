@@ -26,31 +26,7 @@ You can map one class function to several events, or one event to several class 
 
 Events are executed in their defined order.
 
-## 4D class functions and project methods
-
-## ORDA Classes
-
-The flow of data in the studio is handled through data model classes. See [ORDA classes](https://developer.4d.com/docs/en/ORDA/ordaClasses.html) for more information.
-
-## 4D classes
-
-Some classes available only in the studio allow you to set the behavior of your components. They are instantiated using 4D commands.
-
-For example, to display or hide a component when an event occurs, you can use the [4D.WebFormItem class functions](../API/web-form-editor/WebFormItemClass.md).
-
-## Using project methods
-
-We recommend using class functions over methods, but you can still use your project methods as REST functions in the studio.
-
-To be used in 4D Web Studio, project methods must be defined as Datastore, Dataclass, Entity or Entity selection class functions. 
-
-To check if a method is available as REST function: 
-1. In the Explorer of your 4D application, **right-click a project method** > **Edit Properties...** to open the Method Properties dialog. 
-2. Check that the **REST Server** option is checked.
-
-Selecting **Scope** > **Catalog** designates the project method as a function of the Datastore class. No table (dataclass) is assigned in this case.
-
-## Example: Creating a search feature using the `onchange` event
+### Example: Creating a search feature using the `onchange` event
 
 In the context of an application that displays information on courses and students, you want to allow end users to search for students by typing in a search box.
 
@@ -77,3 +53,31 @@ $result:=This.query("firstname = :1 or lastname = :1"; $search)
 4. Select the **Input** component and attach an **onchange** event to it. The event must call the search function and update the datasource `student` previously created:
 
 ![search](img/search-event.png)
+
+## 4D class functions and project methods
+
+## ORDA Classes
+
+The flow of data in the studio is handled through data model classes. See [ORDA classes](https://developer.4d.com/docs/en/ORDA/ordaClasses.html) for more information.
+
+## 4D classes
+
+Some classes available only in the studio allow you to set the behavior of your components. They are instantiated using 4D commands.
+
+For example, to display or hide a component when an event occurs, you can use the [4D.WebFormItem class functions](../API/web-form-editor/WebFormItemClass.md).
+
+## Using project methods
+
+We recommend using class functions over methods, but you can still use your project methods as REST functions in the studio.
+
+To be used in 4D Web Studio, project methods must be defined as Datastore, Dataclass, Entity or Entity selection class functions. 
+
+To check if a method is available as REST function: 
+1. In the Explorer of your 4D application, **right-click a project method** > **Edit Properties...** to open the Method Properties dialog. 
+2. Check that the **REST Server** option is checked.
+
+Selecting **Scope** > **Catalog** designates the project method as a function of the Datastore class. No table (dataclass) is assigned in this case.
+
+## Events on datasources
+
+You can attach an event to a datasource to perform an action when the datasource is updated on the client side.
