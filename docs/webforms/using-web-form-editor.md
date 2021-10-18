@@ -3,7 +3,7 @@ id: using-web-form-editor
 title: Using the Webform Editor
 ---
 
-## Creating a Webform
+## Creating a webform
 
 In 4D Web Studio, everything starts with a webform. A webform is a container that holds all the other components (buttons, grids, style boxes, etc.) of your application.
 
@@ -18,7 +18,7 @@ The Webform Editor provides several tools to customize the interface and content
 ![interface](img/web-form-editor-interface.png)
 
 <ol class="interface-numbers">
-<li class="interface-item">Explorer: Displays your project's Webforms, methods and classes (assets and data models are not available yet)</li>
+<li class="interface-item">Explorer: Displays your project's webforms, methods and classes.</li>
 <li class="interface-item">Tabs: They let you keep track of your currently opened elements, such as your forms and methods.</li>
 <li class="interface-item">Components: The building blocks of your application.</li>
 <li class="interface-item">Data Sources: Create and explore your datasources.</li>
@@ -27,7 +27,7 @@ The Webform Editor provides several tools to customize the interface and content
 <li class="interface-item">Canvas: This is where you combine your components, styles and datasources. You can drag and drop components onto your canvas, then drag and drop CSS classes and datasources onto these components, and preview or render your webforms.</li>
 <li class="interface-item">Properties panel: Allows for advanced style customization. Also allows binding datasources to components.</li>
 <li class="interface-item">Contextual configuration panel: Link events and methods to your components, edit CSS styles, etc.</li>
-<li class="interface-item">Header: Save and preview your work, and access additional settings.</li>
+<li class="interface-item-2">Header: Save and preview your work, and access additional settings.</li>
 </ol>
 
 ## Adding components to a webform
@@ -84,7 +84,7 @@ If you're not familiar with CSS properties and styles, or you need a refresher, 
 
 ### Styles Library 
 
-One way of styling components is by dragging CSS classes from the Styles library and dropping them on the components.
+One way of styling components is by dragging CSS classes from the Styles Library and dropping them on the components.
 
 The Styles Library offers two types of styles: 
 * Local: Styles you create
@@ -129,9 +129,9 @@ You can [export the new values](Exporting-styles-as-css-classes-for-reuse) to cr
 ## Exporting styles as CSS classes for reuse 
 
 You can export the style of an element as a CSS class to reuse it later: 
-1. Select a an element on the canvas, the tooltip appears
-2. Click the CSS icon in the tooltip and enter a name for the new CSS class
-3. Click **Export**
+1. Select a an element on the canvas, the tooltip appears.
+2. Click the CSS icon in the tooltip and enter a name for the new CSS class.
+3. Click **Export**.
 
 :::note
 
@@ -186,7 +186,7 @@ To assign a server-side reference to a component, enter a value in the Propertie
 
 You can then modify the behavior of your components using events and functions, such as [4D.WebFormItem class functions](../API/WebFormItemClass.md).
 
-## Code editor
+## Code Editor
 
 4D web Studio has an embedded code editor that allows you to edit your class function and methods. The code can still be edited from a 4D Desktop application. 
 
