@@ -34,14 +34,14 @@ See [Exposed vs non-exposed functions](../ORDA/ordaClasses.md#exposed-vs-non-exp
 
 To create a datasource: 
 
-From the Catalog: 
-    1. In the Data Sources section, choose **Catalog** > **Data Classes**
-    2. Click the "+" icon next to a dataclass
-    3. Select Entity or Entity Selection and click **Confirm**. The newly created Entity or Entity selection now appears as a Remote datasource
+From the Catalog:
+1. In the Data Sources section, choose **Catalog** > **Data Classes**
+2. Click the "+" icon next to a dataclass
+3. Select Entity or Entity Selection and click **Confirm**. The newly created Entity or Entity selection now appears as a Remote datasource
 
 From a Remote datasource, click the "+" icon:
-    * next to an entity selection to create an entity
-    * next to an entity's relation to create an entity selection or an entity  
+* next to an entity selection to create an entity
+* next to an entity's relation to create an entity selection or an entity  
 
 ## Binding a datasource to a component: 
 
