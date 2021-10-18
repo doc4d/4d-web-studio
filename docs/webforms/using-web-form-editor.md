@@ -49,7 +49,7 @@ To select any parent component displayed in the breadcrumbs trail, click its nam
 
 ### Outline
 
-The outline section displays the hierarchy of your Webform. You can click an element in the list to select it, or click and drag it anywhere in the outline to move it somewhere else.
+The outline section displays the hierarchy of your webform. You can click an element in the list to select it, or click and drag it anywhere in the outline to move it somewhere else.
 
 To display or hide an element, click the eye icon.
 

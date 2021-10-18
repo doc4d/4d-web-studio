@@ -50,7 +50,7 @@ To check if a method is available as REST function:
 
 Selecting **Scope** > **Catalog** designates the project method as a function of the Datastore class. No table (dataclass) is assigned in this case.
 
-## Example: Creating a search feature by linking an event to a datasource
+## Example: Creating a search feature using the `onchange` event
 
 In the context of an application that displays information on courses and students, you want to allow end users to search for students by typing in a search box.
 
