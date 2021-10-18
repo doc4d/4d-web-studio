@@ -50,17 +50,17 @@ To check if a method is available as REST function:
 
 Selecting **Scope** > **Catalog** designates the project method as a function of the Datastore class. No table (dataclass) is assigned in this case.
 
-## Example: Creating a search feature by triggering an event on a datasource
+## Example: Creating a search feature by linking an event to a datasource
 
-In the context of an application that displays information on courses and students, you want to allows end users to search for students by typing in a search box.
+In the context of an application that displays information on courses and students, you want to allow end users to search for students by typing in a search box.
 
-1. In the Webform Editor, go to the **Data Sources** section and create a local datasource. 
+1. In the Webform Editor, go to the **Data Sources** section and create a local datasource and name it `student`. 
 
 2. Create a search box that contains an **Input** component, and assign the local datasource to it using the Properties Panel:
 
 ![search](img/search-component.png)
 
-2. Create a class called Student that includes a function to perform a query and return the result in a variable:
+3. Create a class called Student that includes a function to perform a query and return the result in a variable:
 
 ```4d
 
@@ -74,6 +74,6 @@ $result:=This.query("firstname = :1 or lastname = :1"; $search)
     
 ```
 
-3. Attach an **onchange** event to the **Input** component, and have it return the result to the datasource linked to the component:
+4. Select the **Input** component and attach an **onchange** event to it. The event must call the search function and update the datasource `student` previously created:
 
 ![search](img/search-event.png)
