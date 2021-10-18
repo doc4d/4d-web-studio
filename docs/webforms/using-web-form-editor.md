@@ -30,7 +30,7 @@ The Webform Editor provides several tools to customize the interface and content
 <li class="interface-item">Header: Save and preview your work, and access additional settings.</li>
 </ol>
 
-## Adding components to the Webform
+## Adding components to a webform
 
 Components are the building blocks of your application. To add a component, drag it from the Components section and drop it on the canvas.
 
@@ -73,7 +73,7 @@ The tooltip is contextual. This means that some actions are only available to ce
 
 Inside a WebForm, you can style components using the Properties panel and the Styles library and see the result directly on the canvas.
 
-### Resources and Tools
+### Resources and tools
 
 If you're not familiar with CSS properties and styles, or you need a refresher, here are a few useful links:
 
@@ -125,12 +125,19 @@ Selecting a component displays its style properties in the Properties Panel. Val
 Modifying these values overrides the initial value for that property. Overriden CSS properties have a blue dot in front of them. 
 
 You can [export the new values](Exporting-styles-as-css-classes-for-reuse) to create a new CSS class.
+
 ## Exporting styles as CSS classes for reuse 
 
 You can export the style of an element as a CSS class to reuse it later: 
 1. Select a an element on the canvas, the tooltip appears
 2. Click the CSS icon in the tooltip and enter a name for the new CSS class
 3. Click **Export**
+
+:::note
+
+This does not export all the styles of the component, only the properties you override.
+
+:::
 
 This exports the [new style properties](#overriding-style-properties) of the element as a new local CSS class. Now it appears as a choice in the Styles library and in the property list, and you can apply the class to other elements on your canvas. 
 
