@@ -16,7 +16,7 @@ module.exports = {
     },
     navbar: {
       hideOnScroll: true,
-      title: "Web Studio",
+      title: "Web Studio (Preview)",
       logo: {
         alt: "4D Logo",
         src: "img/logo.png",
@@ -31,7 +31,7 @@ module.exports = {
         {
           type: "doc",
           position: "left",
-          docId: "API/orda/DataStoreClass",
+          docId: "API/web-form-editor/web-event",
           label: "API",
         },
       ],
