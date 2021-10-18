@@ -5,26 +5,42 @@ title: Events, methods and class functions
 
 ## Events
 
-Events are usually used as a means of triggering certain behaviors. They are used in conjuction with methods and class functions. 
+Events are usually used as a means of triggering certain behaviors. They are used in conjunction with methods and class functions. 
 
 For example, if the user clicks a button on a webpage, you can choose how to react.
 Events can also be triggered when a datasource is updated. 
 
 ![alt-text](img/events.png)
 
-In 4D WebStudio, events are used to execute code on the 4D server. There's no need to write additional Javascript code.
+With 4D Web Studio, events are used to execute code on the 4D server.
 
-Events are executed in the defined order, and you can map class functions to several events or one event to several class functions.
+## Triggering events
+
+Events can be triggered: 
+
+* When certain actions are taken on your components 
+* When a webform is loaded
+* When a datasource is updated on the client side
+
+You can map one class function to several events, or one event to several class functions. 
+
+Events are executed in their defined order.
 
 ## 4D class functions and project methods
 
-4D class functions allow you to set the behavior of your components.
+## ORDA Classes
 
-For example, to display or hide a component when an event occurs, you can use the [4D.WebFormItem class functions](../API/web-form-editor/WebFormItemClass.md)
+The flow of data in the studio is handled through data model classes. See [ORDA classes](https://developer.4d.com/docs/en/ORDA/ordaClasses.html) for more information.
 
-### Using project methods
+## 4D classes
 
-We recommend using class functions over methods, but you can still use your project methods as REST functions in 4D Web Studio.
+Some classes available only in the studio allow you to set the behavior of your components. They are instantiated using 4D commands.
+
+For example, to display or hide a component when an event occurs, you can use the [4D.WebFormItem class functions](../API/web-form-editor/WebFormItemClass.md).
+
+## Using project methods
+
+We recommend using class functions over methods, but you can still use your project methods as REST functions in the studio.
 
 To be used in 4D Web Studio, project methods must be defined as Datastore, Dataclass, Entity or Entity selection class functions. 
 
@@ -33,3 +49,31 @@ To check if a method is available as REST function:
 2. Check that the **REST Server** option is checked.
 
 Selecting **Scope** > **Catalog** designates the project method as a function of the Datastore class. No table (dataclass) is assigned in this case.
+
+## Example: Creating a search feature by triggering an event on a datasource
+
+In the context of an application that displays information on courses and students, you want to allows end users to search for students by typing in a search box.
+
+1. In the Webform Editor, go to the **Data Sources** section and create a local datasource. 
+
+2. Create a search box that contains an **Input** component, and assign the local datasource to it using the Properties Panel:
+
+![search](img/search-component.png)
+
+2. Create a class called Student that includes a function to perform a query and return the result in a variable:
+
+```4d
+
+Class extends DataClass
+
+exposed Function search($search : Text)->$result : cs.StudentsSelection
+	
+$search:="@"+$search+"@"
+	
+$result:=This.query("firstname = :1 or lastname = :1"; $search)
+    
+```
+
+3. Attach an **onchange** event to the **Input** component, and have it return the result to the datasource linked to the component:
+
+![search](img/search-event.png)

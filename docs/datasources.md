@@ -50,4 +50,8 @@ To create a datasource:
 There are several ways to bind a datasource to a component:
 
 * Drag it from the Data Source section and drop it on a component
-* Enter the name of the datasource in the **Properties panel** > **Data source** 
+* Enter the name of the datasource in the **Properties panel** > **DataSource** 
+
+## Attaching events to datasources 
+
+You can attach events to datasources to trigger certain actions when a datasource is updated. See [Events on datasources](events.md#events-on-datasources) for more information.
