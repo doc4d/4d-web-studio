@@ -20,13 +20,14 @@ The Webform Editor provides several tools to customize the interface and content
 <ol class="interface-numbers">
 <li class="interface-item">Explorer: Displays your project's Webforms, methods and classes (assets and data models are not available yet)</li>
 <li class="interface-item">Tabs: They let you keep track of your currently opened elements, such as your forms and methods.</li>
-<li class="interface-item">Components section: The building blocks of your application.</li>
+<li class="interface-item">Components: The building blocks of your application.</li>
 <li class="interface-item">Data Sources: Create and explore your datasources.</li>
-<li class="interface-item">Styles Library: holds predefined and customized styles for your components</li>
+<li class="interface-item">Styles Library: Holds predefined and customized styles for your components.</li>
 <li class="interface-item">Outline: Presents the structure of your webform and allows you to navigate between the different elements. </li>
 <li class="interface-item">Canvas: This is where you combine your components, styles and datasources. You can drag and drop components onto your canvas, then drag and drop CSS classes and datasources onto these components, and preview or render your webforms.</li>
+<li class="interface-item">Properties panel: Allows for advanced style customization. Also allows binding datasources to components.</li>
 <li class="interface-item">Contextual configuration panel: Link events and methods to your components, edit CSS styles, etc.</li>
-<li class="interface-item">Header: Save and preview your work, and access additional settings</li>
+<li class="interface-item">Header: Save and preview your work, and access additional settings.</li>
 </ol>
 
 ## Adding components to the Webform
