@@ -43,7 +43,7 @@ From a Remote datasource, click the "+" icon:
 * next to an entity selection to create an entity
 * next to an entity's relation to create an entity selection or an entity  
 
-## Binding a datasource to a component: 
+## Binding a datasource to a component
 
 There are several ways to bind a datasource to a component:
 
