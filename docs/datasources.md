@@ -3,7 +3,7 @@ id: datasources
 title: Datasources
 ---
 
-## What is a datasource
+## What is a datasource?
 
 Data sources contain data. You can bind them to your Webform components to determine where the data is displayed in your application.
 

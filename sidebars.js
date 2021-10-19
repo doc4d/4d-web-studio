@@ -32,17 +32,17 @@ module.exports = {
   apiSidebar: [
     {
       type: 'doc',
-      id: 'API/web-form-editor/web-event',
+      id: 'API/web-event',
       label: "Web Event"
     },
     {
       type: 'doc',
-      id: 'API/web-form-editor/WebFormClass',
+      id: 'API/WebFormClass',
       label: "WebForm"
     },
     {
       type: 'doc',
-      id: 'API/web-form-editor/WebFormItemClass',
+      id: 'API/WebFormItemClass',
       label: "WebFormItem"
     }
   ],

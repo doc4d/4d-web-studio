@@ -3,13 +3,13 @@ id: WebFormItemClass
 title: WebFormItem
 ---
 
-When working in [4D Web Studio](../web-studio/web-studio.md), the `WebFormItem` class allows you to handle the behavior of webform components on the server side.
+When working in [4D Web Studio](../webforms/using-web-form-editor.md), the `WebFormItem` class allows you to handle the behavior of webform components on the server side.
 
 ### WebFormItem Objects
 
 `4D.WebFormItem` objects are properties of the `4D.WebForm` object returned by the `Web Form` command. 
 
-When you call the `Web Form` command, the returned `4D.WebForm` object holds as many `4D.WebFormItems` as there are components with [server-side references](../web-studio/web-studio.md#server-side-references) in your webform.
+When you call the `Web Form` command, the returned `4D.WebForm` object holds as many `4D.WebFormItems` as there are components with [server-side references](../webforms/using-web-form-editor.md#server-side-references) in your webform.
 
 For example, `WebFormObject.myImage` refers to the image component with `myImage` as server reference.
 
