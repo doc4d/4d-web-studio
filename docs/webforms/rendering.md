@@ -8,7 +8,7 @@ title: Rendering Webforms
 
 At runtime, webforms are generated and interpreted by a built-in renderer engine.
 
-Each webform has its own URL on the [4D web server](https://developer.4d.com/docs/en/WebServer/webServer.html), and the rendering engine communicates with the web server using [REST requests](https://developer.4d.com/docs/en/REST/gettingStarted.html).
+Each webform has its own URL on the [4D web server](https://developer.4d.com/docs/en/WebServer/webServer.html)
 
 The following diagram describes how data flows to and from the studio:
 
@@ -16,11 +16,12 @@ The following diagram describes how data flows to and from the studio:
 
 
 * The 4D WebAdmin web server provides a secured web access to 4D Web Studio and allows previewing webforms inside the studio.
-* The 4D web server allows accessing data stored in your 4D applications through REST requests. 
+* The renderer uses [REST requests](https://developer.4d.com/docs/en/REST/gettingStarted.html) to communicate with the main 4D web server.
 * The webforms are deployed with the application, and the end user renders them in their browser. Note that the database must be [exposed as REST resource](https://developer.4d.com/docs/en/REST/configuration.html#starting-the-rest-server) to allow webform rendering. 
 ## Licence
 
 To render webforms, you need an available REST licence, as rendering a webform opens a session on the project database's main web server.
+
 ## Configuration
 
 To enable webform rendering, the following options must be set:
@@ -31,22 +32,23 @@ To enable webform rendering, the following options must be set:
 > You can configure The web server's IP and HTTP/HTTPS ports in **Settings** > 
 **Configuration**.
 
-When rendering webforms, depending on the main 4D web server configuration (similar to the [WebAdmin web server configuration](https://developer.4d.com/docs/en/Admin/webAdmin.html#accept-http-connections-on-localhost)), the renderer will try connecting to the HTTP or HTTPS port.
+When rendering webforms, the renderer tries to connect to the HTTP port if enabled, otherwise the HTTPS port is used. (This is the same connection pattern as for the [WebAdmin web server](https://developer.4d.com/docs/en/Admin/webAdmin.html#accept-http-connections-on-localhost).
 
-For more information on server configuration, see [Server Configuration](https://developer.4d.com/docs/en/REST/configuration.html) on developer.4d.com
+For more information on REST server configuration, see [Server Configuration](https://developer.4d.com/docs/en/REST/configuration.html) on developer.4d.com.
 
-## Rendering webforms from the 4D Web Studio IDE
+## Rendering webforms 
+
+Webforms can be rendered from the 4D Web Studio IDE, or directly in the browser. This second option is useful if your web server is launched using 4D Server.
+
+## From the 4D Web Studio IDE
 
 When you click on the **Render** button, a new browser tab opens at the following address:
 
 `IP:port/$lib/renderer/?w=WebFormName`
 
-> When the rendering is launched from 4D WebStudio's IDE, the HTTP port is used by default if enabled, otherwise the HTTPS port is used.
+## Directly in a browser window
 
-## Rendering webforms from 4D Server
-
-When deploying a 4D web server using 4D Server, you can also access the rendered 
-webforms in the supported browsers, at the following address:
+A webform can be rendered directly from a browser window, by typing the following address:
 
 `IP:port/$lib/renderer/?w=WebFormName`
 
