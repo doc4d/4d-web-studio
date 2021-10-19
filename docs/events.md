@@ -64,7 +64,7 @@ The flow of data in the studio is handled through data model classes. See [ORDA 
 
 Some classes available only in the studio allow you to set the behavior of your components. They are instantiated using 4D commands.
 
-For example, to display or hide a component when an event occurs, you can use the [4D.WebFormItem class functions](../API/WebFormItemClass.md).
+For example, to display or hide a component when an event occurs, you can use the [4D.WebFormItem class functions](API/WebFormItemClass.md).
 
 ## Using project methods
 
@@ -84,5 +84,27 @@ You can attach an event to a datasource to perform an action when the datasource
 
 ### Example 
 
-Say you have a datatable with the `employees` datasource attached. You want this datatable to only display the first three employees after the end-user clicks a button:
+In the image below: 
+
+* The **Datatable** component displays a list of employees, based on an entity selection (the `employees` datasource is attached).
+* The button slices the `employees` entity selection to keep only the first three entities.
+* The `employee` datasource has an `onChange` event attached to it, which updates the `result` local datasource in the **Text** component.
+
+![event-datasource](img/event-datasource.png)
+
+When you click the button, the `employee` datasource is updated, and the `onChange` event updates `result`:
+
+![event-datasource-event](img/event-datasource-event.png)
+
+The `displayValue` function displays text according to the number of entities: 
+
+```4d 
+exposed function displayValue() -> $result : Text
+$result:="The table now displays " + String(This.length) + " entries"
+```
+
+Here's what you obtain after clicking the button:
+
+![event-datasource-result](img/event-datasource-result.png)
+
 
