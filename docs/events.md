@@ -40,11 +40,11 @@ Events are executed in their defined order.
 
 #### Example 1: Creating a search feature using the `onChange` event
 
-The following example allows end users to search for students:
+The objective is to update a list of students displayed in a **Matrix** component according to what the end user types in an input area.
 
 In the image below: 
-* The **Input** element is bound to the local datasource `search` (of type Text). 
-* The **Matrix** component displays a list of students based on the `students` datasource, which is an entity selection.
+* The **Input** element is bound to the local datasource `search` (of type Text)
+* The **Matrix** component displays a list of students based on the `students` datasource, which is an entity selection
 
 ![search](img/search-component.png)
 
@@ -72,7 +72,7 @@ In the image below:
 
 * The **Datatable** component displays a list of employees, based on an entity selection (the `employees` datasource is attached).
 * The button slices the `employees` entity selection to keep only the first three entities.
-* The `employees` datasource has an `onChange` event attached to it, which updates the `result` local datasource in the **Text** component.
+* The `employees` datasource has an `onChange` event attached to it, which updates the local datasource `result` in the **Text** component.
 
 ![event-datasource](img/event-datasource.png)
 
