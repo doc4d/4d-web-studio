@@ -24,21 +24,15 @@ Click a "+" button in the list to attach the corresponding event to the componen
 
 You can then add parameters and point at a datasource to update.
 
-## Triggering an event
-
-Events can be triggered: 
-
-* When certain actions are taken on your components 
-* When a webform is loaded
-* When a datasource is updated
-
-You can map one class function to several events, or one event to several class functions. 
+You can map one class function to several events, or one event to several class functions.
 
 Events are executed in their defined order.
 
-### Examples 
+## Triggering an event
 
-#### Example 1: Creating a search feature using the `onChange` event
+### From a component
+
+#### Example: Creating a search feature using the `onChange` event
 
 The objective is to update a list of students displayed in a **Matrix** component according to what the end user types in an input area.
 
@@ -64,7 +58,7 @@ An **onChange** event calls the `search` function and passes the text typed in t
 
 Now everytime the text changes inside the **Input** element, a query is sent and the list of students displayed in the **Matrix** component is updated.
 
-#### Example 2: Attaching an event to a datasource
+###  From a datasource
 
 You can attach an event to a datasource to perform an action when the datasource is updated.
 
@@ -76,11 +70,11 @@ In the image below:
 
 ![event-datasource](img/event-datasource.png)
 
-When you click the button, the `employees` datasource is updated, and the `onChange` event calls `displayValue` to update `result`:
+When the button is clicked, the `employees` datasource is updated, and the `onChange` event calls `displayValue` to update `result`:
 
 ![event-datasource-event](img/event-datasource-event.png)
 
-The `displayValue` function displays text according to the number of entities: 
+The `displayValue` function returns text according to the number of entities: 
 
 ```4d 
 exposed function displayValue() -> $result : Text
