@@ -36,7 +36,7 @@ You can trigger an event when certain actions happen. For example, when the **We
 
 #### Example: Creating a search feature using the `onChange` event
 
-The objective is to update a list of students displayed in a **Matrix** component according to what the end user types in an input area.
+The objective is to update a list of students displayed in a **Matrix** component according to what the end-user types in an input area.
 
 In the image below: 
 * The **Input** element is bound to the local datasource `search` (of type Text)
@@ -72,7 +72,7 @@ In the image below:
 
 ![event-datasource](img/event-datasource.png)
 
-When the button is clicked, the `employees` datasource is updated, and the `onChange` event calls `displayValue` to update `result`:
+When the button is clicked, the `employees` datasource is updated, and the `onChange` event calls `displayValue` to update the text displayed in the **Text** component:
 
 ![event-datasource-event](img/event-datasource-event.png)
 
@@ -83,7 +83,7 @@ exposed function displayValue() -> $result : Text
 $result:="The table now displays " + String(This.length) + " entries"
 ```
 
-Here's what you obtain after clicking the button:
+Here's what you obtain after the button is clicked:
 
 ![event-datasource-result](img/event-datasource-result.png)
 
