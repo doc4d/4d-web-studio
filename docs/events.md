@@ -68,11 +68,12 @@ In the image below:
 
 * The **Datatable** component displays a list of employees, based on an entity selection (the `employees` datasource is attached).
 * The button slices the `employees` entity selection to keep only the first three entities.
-* The `employees` datasource has an `onChange` event attached to it, which updates the local datasource `result` in the **Text** component.
 
 ![event-datasource](img/event-datasource.png)
 
-When the button is clicked, the `employees` datasource is updated, and the `onChange` event calls `displayValue` to update the text displayed in the **Text** component:
+When the button is clicked, the `employees` datasource is updated, triggering the `onChange` event. 
+
+This calls `displayValue` to update the text displayed in the **Text** component:
 
 ![event-datasource-event](img/event-datasource-event.png)
 
