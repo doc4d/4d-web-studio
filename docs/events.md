@@ -10,7 +10,7 @@ Events are usually used as a means of triggering certain behaviors. They are use
 For example, if the user clicks a button on a webpage, you can choose how to react.
 Events can also be triggered [when a datasource is updated](#example-2-attaching-an-event-to-a-datasource). 
 
-With 4D Web Studio, events are used to execute code on the 4D server.
+With 4D Web Studio, events are used to execute code on the 4D server. No additional Javascript is needed.
 
 ## Configuring an event
 
