@@ -107,11 +107,11 @@ When you select a component, the tooltip displays its type and offers several ac
 |Barred T|Reset styles (resets the [overriden CSS properties](#overriding-style-properties))|
 |Duplicate icon|Duplicate the component|
 
-The tooltip is contextual. This means that some actions are only available to certain elements, and not others. For example, you can duplicate a Text Input component, but not its individual parts (Label and Input).
+The tooltip is contextual. This means that some actions are only available to certain elements, and not others. For example, you can duplicate a Text input component, but not its individual parts (Label and Input).
 
 ## Styling a component 
 
-Inside a WebForm, you can style components using the Properties panel and the Styles library and see the result directly on the canvas.
+Inside a webform, you can style components using the Properties panel and the Styles library and see the result directly on the canvas.
 
 ### Styles Library 
 
