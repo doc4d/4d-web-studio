@@ -5,7 +5,7 @@ title: Datasources
 
 ## What is a datasource?
 
-Data sources contain data. You can bind them to your Webform components to determine where the data is displayed in your application.
+Datasources contain data. You can bind them to your Webform components to determine where the data is displayed in your application.
 
 The **Data Sources** section groups the available datasources:
 
