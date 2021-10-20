@@ -36,6 +36,44 @@ Components are the building blocks of your application. To add a component, drag
 
 ![add-component-screenshot](img/add-component.png)
 
+## Component list
+
+The Component library lets you search for a component or choose one from the list. Once a component is on the canvas, you can [customize its look](#styling-a-component) and bind a data source to it.
+
+![alt-text](img/components.png)
+
+The following components are available: 
+
+|Component|Description|
+|---|---|
+|Webform| Base container that holds all the other components| 
+|Stylebox| Container used to keep the content centered and legible |
+|Grid| Allows you to produce complex and responsive layouts faster. Grid areas can be edited directly on the canvas |
+|Columns|Displays data inside columns|
+|Tabs|Organizes and allows navigation between groups of content that are related and at the same level of hierarchy|
+|Text input|Allows users to enter data in a form|
+|Button|Triggers actions on a web page|
+|Radio button|Allows selecting one of a set of options (only one option can be selected at any time)|
+|Range input|Allows selecting a value in a range|
+|Select box|Allows selecting an item in a list|
+|Image|Displays an image|
+|Icon|Displays an icon|
+|Checkbox|Allows the user to make a binary choice (boolean value)|
+|Text|Displays text on a web page|
+|Datatable|Displays data in the form of a table. You can select a row to interact with the server|
+|Matrix| Container of repeated style boxes|
+|Webform loader| Allows you to embed a Webform inside another
+
+> More components will be available in the future, and existing components will be enhanced.
+
+## Server-side reference
+
+The server-side reference of a component is its "address" on the server. To set the behavior of a component, you can assign a server-side reference to it, and then [use that reference in class functions](../API/WebFormItemClass.md).
+
+To assign a server-side reference to a component, enter a value in the Properties Panel > Server Side:
+
+![alt-text](img/image-server-side.png)
+
 ## Keeping track of the structure
 
 You can use the following tools to manage your components and keep track of them.
@@ -58,6 +96,8 @@ To display or hide an element, click the eye icon.
 
 When you select a component, the tooltip displays its type and offers several actions:
 
+![tooltip](img/tooltip.png)
+
 |Icon|Action|
 |---|---|
 |Cursor|Move the selected component on the canvas|
@@ -72,14 +112,6 @@ The tooltip is contextual. This means that some actions are only available to ce
 ## Styling a component 
 
 Inside a WebForm, you can style components using the Properties panel and the Styles library and see the result directly on the canvas.
-
-### Resources and tools
-
-If you're not familiar with CSS properties and styles, or you need a refresher, here are a few useful links:
-
-* Learn CSS on the [MDN website](https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/Cascade_and_inheritance)
-* A guide to [flexbox properties](https://css-tricks.com/snippets/css/a-guide-to-flexbox/) on css-tricks.com
-* [Box-shadow examples](https://getcssscan.com/css-box-shadow-examples),[box-shadow generator](https://cssgenerator.org/box-shadow-css-generator.html)
 
 ### Styles Library 
 
@@ -125,7 +157,9 @@ Modifying these values overrides the initial value for that property. Overriden 
 
 You can [export the new values](Exporting-styles-as-css-classes-for-reuse) to create a new CSS class.
 
-## Exporting styles as CSS classes for reuse 
+## Working with CSS 
+
+### Exporting styles as CSS classes for reuse 
 
 You can export the style of an element as a CSS class to reuse it later: 
 1. Select a an element on the canvas, the tooltip appears.
@@ -144,46 +178,13 @@ This exports the [new style properties](#overriding-style-properties) of the ele
 
 Once a local class is created, you can hover over it in the Styles Library and click the **Edit Class** button next to its name to edit the CSS directly. The changes apply to all the components using this class.
 
-## Component List
+### CSS Resources and tools
 
-The Component area lets you search for a component or choose one from the list. Once a component is on the canvas, you can [customize its look](#styling-a-component) and (for some components) assign a data source to it.
+If you're not familiar with CSS properties and styles, or you need a refresher, here are a few useful links:
 
-![alt-text](img/components.png)
-
-The following components are available: 
-
-|Component|Description|
-|---|---|
-|Webform| Base container that holds all the other components| 
-|Stylebox| Container used to keep the content centered and legible |
-|Grid| Allows you to produce complex and responsive layouts faster. Grid areas can be edited directly on the canvas |
-|Columns|Displays data inside columns|
-|Tabs|Organizes and allows navigation between groups of content that are related and at the same level of hierarchy|
-|Text input|Allows users to enter data in a form|
-|Button|Triggers actions on a web page|
-|Radio button|Allows selecting one of a set of options (only one option can be selected at any time)|
-|Range input|Allows selecting a value in a range|
-|Select box|Allows selecting an item in a list|
-|Image|Displays an image|
-|Icon|Displays an icon|
-|Checkbox|Allows the user to make a binary choice (boolean value)|
-|Text|Displays text on a web page|
-|Datatable|Displays data in the form of a table. You can select a row to interact with the server|
-|Matrix| Container of repeated style boxes|
-|Webform loader| Allows you to embed a Webform inside another
-
-> More components will be available in the future, and existing components will be enhanced.
-## Server-side reference
-
-The server-side reference of a component is its "address" on the server. To set the behavior of a component, you can assign a server-side reference to it, and then [use that reference in class functions](../API/WebFormItemClass.md).
-
-For example, `WebForm.myImage` refers to the image component with `myImage` as server-side reference.
-
-To assign a server-side reference to a component, enter a value in the Properties Panel > Server Side:
-
-![alt-text](img/image-server-side.png)
-
-You can then modify the behavior of your components using events and functions, such as [4D.WebFormItem class functions](../API/WebFormItemClass.md).
+* Learn CSS on the [MDN website](https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/Cascade_and_inheritance)
+* A guide to [flexbox properties](https://css-tricks.com/snippets/css/a-guide-to-flexbox/) on css-tricks.com
+* [Box-shadow examples](https://getcssscan.com/css-box-shadow-examples),[box-shadow generator](https://cssgenerator.org/box-shadow-css-generator.html)
 
 ## Code Editor
 

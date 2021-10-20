@@ -32,6 +32,8 @@ Events are executed in their defined order.
 
 ### From a component
 
+You can trigger an event when certain actions happen. For example, when the **Webform** component loads, or when the end user clicks a button. 
+
 #### Example: Creating a search feature using the `onChange` event
 
 The objective is to update a list of students displayed in a **Matrix** component according to what the end user types in an input area.
