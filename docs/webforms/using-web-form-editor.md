@@ -70,7 +70,7 @@ The following components are available:
 
 The server-side reference of a component is its "address" on the server. To set the behavior of a component, you can assign a server-side reference to it, and then [use that reference in class functions](../API/WebFormItemClass.md).
 
-To assign a server-side reference to a component, enter a value in the Properties Panel > Server Side:
+To assign a server-side reference to a component, enter a value in the Properties panel > Server Side:
 
 ![alt-text](img/image-server-side.png)
 
@@ -127,13 +127,13 @@ Unlike Theme classes, Local styles can only be used in the Webforms in which the
 
 To create a local CSS class, click the "+" button and enter a name. CSS classes can be edited in the Editor panel at the bottom.
 
-### Properties Panel
+### Properties panel
 
-The properties panel gives you extremely granular control over your elements. 
+The Properties panel gives you extremely granular control over your elements. 
 
 After you select an element, you can edit its properties using this panel. This includes style properties (as a rule, component properties and styling are separated).
 
-Using the properties panel, you can bind a CSS class to the element and define values individually.
+Using the Properties panel, you can bind a CSS class to the element and define values individually.
 
 ![styles-library](img/properties-panel.png)
 
@@ -147,7 +147,7 @@ drag the `bg-red-500` class from the Styles library and drop it on the Button co
 
 * Using the Properties Panel:
     * Select the Button component, and under Style, choose a red color for the background
-    * Select the Button component, and in the properties panel, select the `bg-red-500` class in the CSS section
+    * Select the Button component, and in the Properties panel, select the `bg-red-500` class in the CSS section
 
 ### Overriding style properties
 
