@@ -30,25 +30,31 @@ However, [webform rendering](webforms/rendering.md) happens outside 4D Web Studi
 
 See [Exposed vs non-exposed functions](https://developer.4d.com/docs/en/ORDA/ordaClasses.html#exposed-vs-non-exposed-functions) and [Exposing tables](https://developer.4d.com/docs/en/REST/configuration.html#exposing-tables) for more information on how to expose assets.
 
-## Creating a datasource
+## Creating a datasource 
 
-To create a datasource: 
+##### From the Catalog
 
-From the Catalog:
 1. In the Data Sources section, choose **Catalog** > **Data Classes**
 2. Click the "+" icon next to a dataclass
 3. Select Entity or Entity Selection and click **Confirm**. The newly created Entity or Entity selection now appears as a Remote datasource
 
-From a Remote datasource, click the "+" icon:
+#### From a Remote datasource
+
+Click the "+" icon:
 * next to an entity selection to create an entity
-* next to an entity's relation to create an entity selection or an entity  
+* next to an entity's relation to create an entity selection or an entity 
+
+#### From a Text component
+
+Select text inside a **Text** component and click the **Toggle Datasource** icon to create a local datasource.
+
 
 ## Binding a datasource to a component
 
 There are several ways to bind a datasource to a component:
 
 * Drag it from the Data Source section and drop it on a component
-* Enter the name of the datasource in the **Properties panel** > **DataSource** 
+* Select a component and enter the name of the datasource in the Properties panel > Data Access > DataSource 
 
 ## Attaching events to datasources 
 

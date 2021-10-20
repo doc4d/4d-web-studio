@@ -30,7 +30,7 @@ Events can be triggered:
 
 * When certain actions are taken on your components 
 * When a webform is loaded
-* When a datasource is updated on the client side
+* When a datasource is updated
 
 You can map one class function to several events, or one event to several class functions. 
 
@@ -43,7 +43,7 @@ Events are executed in their defined order.
 The following example allows end users to search for students:
 
 In the image below: 
-* The **Input** element is bound to the local datasource `search` (of type string). 
+* The **Input** element is bound to the local datasource `search` (of type Text). 
 * The **Matrix** component displays a list of students based on the `students` datasource, which is an entity selection.
 
 ![search](img/search-component.png)
@@ -58,7 +58,7 @@ $search:="@"+$search+"@"
 $result:=This.query("firstname = :1 or lastname = :1"; $search)   
 ```
 
-An **onChange** calls the `search` function and passes the text typed in the **Input** element as a parameter. This updates the `students` datasource:
+An **onChange** event calls the `search` function and passes the text typed in the **Input** element as a parameter. This updates the `students` datasource:
 
 ![search](img/search-event.png)
 
