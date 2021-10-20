@@ -36,47 +36,47 @@ You can map one class function to several events, or one event to several class 
 
 Events are executed in their defined order.
 
-#### Example: Creating a search feature using the `onchange` event
+### Examples 
 
-In the context of an application that displays information on courses and students, you want to allow end users to search for students by typing in a search box.
+#### Example 1: Creating a search feature using the `onChange` event
 
-1. In the Webform Editor, go to the **Data Sources** section, create a local datasource and name it `student`. 
+The following example allows end users to search for students:
 
-2. Create a **Text input** component, and assign the local datasource to it using the Properties Panel:
+In the image below: 
+* The **Input** element is bound to the local datasource `search` (of type string). 
+* The **Matrix** component displays a list of students based on the `students` datasource, which is an entity selection.
 
 ![search](img/search-component.png)
 
-3. Create a class called Student that includes a function to perform a query and return the result in a variable:
+To display results corresponding to the text typed in the **Input** component, we need a `search` function that performs a query:
 
 ```4d
-
-Class extends DataClass
-
 exposed Function search($search : Text)->$result : cs.StudentsSelection
 	
 $search:="@"+$search+"@"
 	
-$result:=This.query("firstname = :1 or lastname = :1"; $search)
-    
+$result:=This.query("firstname = :1 or lastname = :1"; $search)   
 ```
 
-4. Select the **Input** component and attach an **onchange** event to it. The event must call the search function and update the datasource `student` previously created:
+An **onChange** calls the `search` function and passes the text typed in the **Input** element as a parameter. This updates the `students` datasource:
 
 ![search](img/search-event.png)
 
+Now everytime the text changes inside the **Input** element, a query is sent and the list of students displayed in the **Matrix** component is updated.
+
 #### Example 2: Attaching an event to a datasource
 
-You can attach an event to a datasource to perform an action when the datasource is updated on the client side.
+You can attach an event to a datasource to perform an action when the datasource is updated.
 
 In the image below: 
 
 * The **Datatable** component displays a list of employees, based on an entity selection (the `employees` datasource is attached).
 * The button slices the `employees` entity selection to keep only the first three entities.
-* The `employee` datasource has an `onChange` event attached to it, which updates the `result` local datasource in the **Text** component.
+* The `employees` datasource has an `onChange` event attached to it, which updates the `result` local datasource in the **Text** component.
 
 ![event-datasource](img/event-datasource.png)
 
-When you click the button, the `employee` datasource is updated, and the `onChange` event updates `result`:
+When you click the button, the `employees` datasource is updated, and the `onChange` event calls `displayValue` to update `result`:
 
 ![event-datasource-event](img/event-datasource-event.png)
 

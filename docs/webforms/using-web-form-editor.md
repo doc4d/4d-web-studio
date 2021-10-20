@@ -175,7 +175,7 @@ The following components are available:
 > More components will be available in the future, and existing components will be enhanced.
 ## Server-side reference
 
-The server-side reference of a component is its "address" on the server. To set the behavior of a component, you can assign a server-side reference to it, and then [use that reference in class functions](../API/web-form-editor/WebFormItemClass.md).
+The server-side reference of a component is its "address" on the server. To set the behavior of a component, you can assign a server-side reference to it, and then [use that reference in class functions](../API/WebFormItemClass.md).
 
 For example, `WebForm.myImage` refers to the image component with `myImage` as server-side reference.
 
