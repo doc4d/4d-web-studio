@@ -191,3 +191,5 @@ If you're not familiar with CSS properties and styles, or you need a refresher, 
 4D Web Studio has an embedded code editor that allows you to edit your class function and methods. The code can still be edited from a 4D Desktop application. 
 
 When a class function is open in the studio, and that class function is edited elsewhere, its Tab will display "Outdated", meaning that the code displayed is not the latest version. To obtain the latest version, right click the Tab and click **Reload**.
+
+![code-editor](img/code-editor.png)
