@@ -38,8 +38,7 @@ For more information on REST server configuration, see [Server Configuration](ht
 
 ## Rendering webforms 
 
-Webforms can be rendered from the 4D Web Studio IDE, or directly in the browser. This second option is useful if your web server is launched using 4D Server.
-
+Webforms can be rendered from the 4D Web Studio IDE, or directly in the browser. 
 ### From the 4D Web Studio IDE
 
 When you click on the **Render** button, a new browser tab opens at the following address:
@@ -51,6 +50,8 @@ When you click on the **Render** button, a new browser tab opens at the followin
 A webform can be rendered directly from a browser window, by typing the following address:
 
 `IP:port/$lib/renderer/?w=WebFormName`
+
+This second option is useful if your web server is launched using 4D Server.
 
 ## Exposed and non-exposed datasources 
 
