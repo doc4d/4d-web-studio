@@ -58,4 +58,4 @@ There are several ways to bind a datasource to a component:
 
 ## Attaching events to datasources 
 
-You can attach events to datasources to trigger certain actions when a datasource is updated. See [Attaching an event to a datasource](events.md#example-2-attaching-an-event-to-a-datasource) for more information.
+You can attach events to datasources to trigger certain actions when these datasources are updated in the web browser. See [Attaching an event to a datasource](events.md#example-2-attaching-an-event-to-a-datasource) for more information.
