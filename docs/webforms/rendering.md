@@ -50,7 +50,7 @@ A tab will open at `IP:port/$lib/renderer/?w=WebFormName`.
 
 The button is displayed only when the [configuration options](#configuration) are activated.
 
- :::
+:::
 
 ### From a browser window
 
