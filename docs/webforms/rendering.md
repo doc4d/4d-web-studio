@@ -18,7 +18,7 @@ The following diagram describes how data flows to and from the studio:
 * The 4D WebAdmin web server provides a secured web access to 4D Web Studio and allows previewing webforms inside the studio.
 * The renderer uses [REST requests](https://developer.4d.com/docs/en/REST/gettingStarted.html) to communicate with the main 4D web server.
 * The webforms are deployed with the application, and end users render them in their browsers. Note that the database must be [exposed as REST resource](https://developer.4d.com/docs/en/REST/configuration.html#starting-the-rest-server) to allow webform rendering. 
-## Licence
+## License
 
 To render webforms, you must have an available REST licence, as rendering a webform opens a session on the project database's main web server.
 
