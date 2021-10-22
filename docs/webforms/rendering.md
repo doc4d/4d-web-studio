@@ -46,6 +46,12 @@ To open a browser tab and render a webform, click the **Render** button :
 
 A tab will open at `IP:port/$lib/renderer/?w=WebFormName`.
 
+:::note
+
+The button is displayed only when the [configuration options](#configuration) are activated.
+
+ :::
+
 ### From a browser window
 
 Webforms can be rendered directly from a browser window, by typing the following address:
