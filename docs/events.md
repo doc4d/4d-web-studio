@@ -64,6 +64,17 @@ Now everytime the text changes inside the **Input** element, a query is sent and
 
 You can attach an event to a datasource to perform an action when the datasource is updated.
 
+The following table groups the available datasource events: 
+
+|Event|Trigger|
+|---|---|
+|onChange|<ul><li>A local datasource is updated</li><li>An entity selection reference changes in the web browser</li>
+<li>An entity is added to the entity selection</li></ul>|
+|onError|<ul><li>The session has expired</li><li>The session cookie has expired</li>
+<li>An entity is added to the entity selection</li></ul>|
+
+### Example 
+
 In the image below: 
 
 * The **Datatable** component displays a list of employees, based on an entity selection (the `employees` datasource is attached).
@@ -90,7 +101,7 @@ Here's what you obtain after the button is clicked:
 
 ## Class functions and project methods
 
-Events are used in conjunction with class functions to manage the information
+You use events in conjunction with class functions to manage the information inside your web application.
 
 ### ORDA Classes
 
