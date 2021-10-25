@@ -125,7 +125,7 @@ $mydataclass:=OB Copy(ds.Employee) //returns null
 
 The dataclass properties are however enumerable:
 
-```code4d 
+```
 ARRAY TEXT($prop;0)
 OB GET PROPERTY NAMES(ds.Employee;$prop)
 //$prop contains the names of all the dataclass attributes

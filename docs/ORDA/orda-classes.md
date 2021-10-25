@@ -99,7 +99,7 @@ Each table exposed with ORDA offers a DataClass class in the `cs` class store.
 
 #### Example
 
-```4D
+```4d
 // cs.Company class
 
 
@@ -120,8 +120,11 @@ Then you can get an entity selection of the "best" companies by executing:
 	$best:=ds.Company.GetBestOnes()
 ```
 
-> [Computed attributes](#computed-attributes) are defined in the [Entity Class](#entity-class). 
+:::note
 
+[Computed attributes](#computed-attributes) are defined in the [Entity Class](#entity-class). 
+
+:::
 
 #### Example with a remote datastore
 
@@ -139,7 +142,7 @@ The `City Class` provides an API:
 Class extends DataClass
 
 Function getCityName($zipcode : Integer) : Text
-	var $zip : 4D.Entity
+	var $zip : cs.ZipCodeEntity
 
 	$zip:=ds.ZipCode.get($zipcode)
 	$0:="" 
@@ -218,7 +221,7 @@ For more information, please refer to the [Computed attributes](#computed-attrib
 
 Class extends Entity
 
-Function getPopulation() : Number
+Function getPopulation() : Integer
     $0:=This.zips.sum("population")
 
 
@@ -261,9 +264,9 @@ When creating or editing data model classes, you must pay attention to the follo
 
 ### Overview
 
-A computed attribute is a dataclass attribute with a data type that masks a calculation. [Standard 4D classes](Concepts/classes.md) implement the concept of computed properties with `get` (*getter*) and `set` (*setter*) [accessor functions](Concepts/classes.md#function-get-and-function-set). ORDA dataclass attributes benefit from this feature and extend it with two additional functions: `query` and `orderBy`.
+A computed attribute is a dataclass attribute with a data type that masks a calculation.
 
-At the very minimum, a computed attribute requires a `get` function that describes how its value will be calculated. When a *getter* function is supplied for an attribute, 4D does not create the underlying storage space in the datastore but instead substitutes the function's code each time the attribute is accessed. If the attribute is not accessed, the code never executes.
+At the very minimum, a computed attribute requires a `get` function that describes how its value will be calculated. When a *getter* function is supplied for an attribute, ORDA does not create the underlying storage space in the datastore but instead substitutes the function's code each time the attribute is accessed. If the attribute is not accessed, the code never executes.
 
 A computed attribute can also implement a `set` function, which executes whenever a value is assigned to the attribute. The *setter* function describes what to do with the assigned value, usually redirecting it to one or more storage attributes or in some cases other entities.
 
@@ -619,7 +622,7 @@ To allow a data model class function to be called by a remote request, you must 
 exposed Function <functionName>   
 ```
 
-> The `exposed` keyword can only be used with Data model class functions. If used with a [regular user class](Concepts/classes.md) function, it is ignored and an error is returned by the compiler.
+> The `exposed` keyword can only be used with Data model class functions. If used with a [regular user class](Concepts/classes.md) function, it is ignored.
 
 ### Example 
 

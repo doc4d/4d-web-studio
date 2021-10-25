@@ -23,6 +23,7 @@ module.exports = {
         'ORDA/overview',
         'ORDA/data-model',
         'ORDA/orda-classes',
+        'ORDA/data',
       ],
     },
 
