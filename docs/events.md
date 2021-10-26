@@ -69,7 +69,7 @@ The following table groups the available datasource events:
 |Event|Trigger|
 |---|---|
 |onChange|<ul><li>A local datasource is updated</li><li>An entity selection reference changes in the web browser</li><li>An entity is added to the entity selection</li></ul>|
-|onError|<ul><li>The session has expired</li><li>The session cookie has expired</li><li>An entity is added to the entity selection</li></ul>|
+|onError|<ul><li>The session has expired</li><li>The session cookie has expired</li></ul>|
 
 ### Example 
 
