@@ -3,10 +3,6 @@ id: glossary
 title: Glossary
 ---
 
-## Main concepts at a glance  
-
-`![](assets/en/ORDA/mainConcepts.png)`
-
 
 
 ## Attribute 

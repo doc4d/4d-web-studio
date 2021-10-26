@@ -24,6 +24,7 @@ module.exports = {
         'ORDA/data-model',
         'ORDA/orda-classes',
         'ORDA/data',
+        'ORDA/glossary',
       ],
     },
 
