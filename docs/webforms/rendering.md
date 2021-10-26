@@ -20,7 +20,7 @@ The following diagram describes how data flows to and from the studio:
 * The webforms are deployed with the application, and end users render them in their browsers. Note that the database must be [exposed as REST resource](https://developer.4d.com/docs/en/REST/configuration.html#starting-the-rest-server) to allow webform rendering. 
 ## License
 
-To render webforms, you must have an available REST licence, as rendering a webform opens a session on the project database's main web server.
+To render webforms, you must have an available REST license, as rendering a webform opens a session on the project database's main web server.
 
 ## Configuration
 
