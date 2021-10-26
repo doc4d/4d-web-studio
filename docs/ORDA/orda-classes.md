@@ -416,6 +416,7 @@ The `query` function executes whenever a query using the computed attribute is l
 
 > The following features are not supported:
 > - calling a `query` function on computed attributes of type Entity or Entity selection, 
+
 > - using the `order by` keyword in the resulting query string.
 
 The *$event* parameter contains the following properties:
@@ -622,7 +623,11 @@ To allow a data model class function to be called by a remote request, you must 
 exposed Function <functionName>   
 ```
 
-> The `exposed` keyword can only be used with Data model class functions. If used with a [regular user class](Concepts/classes.md) function, it is ignored.
+:::note
+
+The `exposed` keyword can only be used with Data model class functions. If used with a [regular user class](Concepts/classes.md) function, it is ignored.
+
+:::
 
 ### Example 
 

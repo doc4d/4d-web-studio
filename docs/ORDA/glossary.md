@@ -5,6 +5,22 @@ title: Glossary
 
 
 
+## *any* data type  
+
+In this documentation, "any" data type is used to designate the various type of values that can be stored within dataclass attributes. It includes:
+
+*	number
+*	text
+*	null
+*	boolean
+*	date
+*	object
+*	collection
+*	picture(\*)
+
+*(\*) picture type is not supported by statistical methods such as* `entitySelection.max( )`.
+
+
 ## Attribute 
  
 An attribute is the smallest storage cell in a relational database (see also [Relation attribute](#relation-attribute)). Do not confuse dataclass attributes and entity attributes:
@@ -12,16 +28,30 @@ An attribute is the smallest storage cell in a relational database (see also [Re
 *	In a dataclass object, each property is a dataclass attribute that maps to a corresponding field in the corresponding table (same name and type).
 *	In an entity object, entity attributes are properties that contain values for the corresponding datastore attributes.
 
->*Attributes* and *properties* are similar concepts. "Attribute" is used to designate dataclass properties that store data, while "property" is more generic and defines a piece of data stored within an object. 
+*Attributes* and *properties* are similar concepts. "Attribute" is used to designate dataclass properties that store data, while "property" is more generic and defines a piece of data stored within an object. 
 
 ## AttributePath  
 
 An attributePath is the path of an attribute inside a given dataclass or entity. See also [PropertyPath](#propertyPath).
 
+## Calculated attribute
+
+See [Computed attribute](#computed-attribute).
 
 ## Class code
 
 Code for the user class function(s). 
+
+## Class functions
+
+ORDA objects such as datastores, dataclasses, entity selections, and entities, define classes of objects. They provide specific functions to directly interact with them. These functions are called class functions. Such functions are used by calling them on an instance of the object.
+
+For example, the `query()` function is a dataclass class function. If you have stored a dataclass object in the `$myClass` variable, you can write:
+
+```code4d
+$myClass.query("name = smith")
+```
+
 
 
 ## Computed attribute
@@ -57,7 +87,7 @@ A datastore is the interface object provided by ORDA to reference a structure an
 
 A datastore provides:
 
-*	a connection to the 4D database
+*	a connection to a database
 *	a set of dataclasses to work with the database
 
 The database can be a 4D local database (the Main datastore), or a 4D Server database exposed as REST resource (a Remote datastore). 
@@ -75,7 +105,7 @@ Internal name of the generic DataStore class in the `4D` class store.
 
 ## Deep copy 
  
-A deep copy duplicates an object and all the references it contains. After a deep copy, a copied collection contains duplicated elements and thus, new references, of all of the orginal elements. See also Shallow copy.
+A deep copy duplicates an object and all the references it contains. After a deep copy, a copied collection contains duplicated elements and thus, new references, of all of the orginal elements. See also [Shallow copy](#shallow-copy).
 
 ## ds  
 
@@ -87,7 +117,6 @@ An entity is an object that corresponds to a dataclass model. An entity contains
 
 An entity can be seen as an instance of the dataclass, like a record of the table matching the dataclass in its associated datastore. However, an entity also contains related data. The purpose of the entity is to manage data (create, update, delete).
 
-For more information, see Entities.
 
 ## Entity selection  
 
@@ -101,6 +130,9 @@ An entity selection contains:
 
 An entity selection can also be empty.
 
+## Function
+
+See [Class function](#class-function).
 
 ## Generic class
 
@@ -113,46 +145,24 @@ Since entities are managed as references, data is loaded only when necessary, i.
 
 ## Main datastore  
 
-The Datastore object matching the opened 4D database (standalone or client/server). The main datastore is returned by the ds command. 
-
-## Method 
- 
-ORDA objects such as datastores, dataclasses, entity selections, and entities, define classes of objects. They provide specific methods to directly interact with them. These methods are also called member functions. Such methods are used by calling them on an instance of the object.
-
-For example, the `query()` method is a dataclass member function. If you have stored a dataclass object in the `$myClass` variable, you can write:
-
-```code4d
-$myClass.query("name = smith")
-```
-
-## Mixed data type  
-
-In this documentation, "Mixed" data type is used to designate the various type of values that can be stored within dataclass attributes. It includes:
-
-*	number
-*	text
-*	null
-*	boolean
-*	date
-*	object
-*	collection
-*	picture(\*)
-
-*(\*) picture type is not supported by statistical methods such as* `entitySelection.max( )`.
+The Datastore object matching the opened 4D database (standalone or client/server). The main datastore is returned by the `ds` command. 
 
 ## Optimistic Lock  
 
 In "optimistic lock" mode, entities are not locked explicitly before updating them. Each entity has an internal stamp that is automatically incremented each time the entity is saved on disk. The entity.save( ) or entity.drop( ) methods will return an error if the stamp of the loaded entity (in memory) and the stamp of the entity on disk do not match, or if the entity has been dropped. Optimistic locking is only available in ORDA implementation. See also "Pessimistic lock".
 
+## ORDA
+
+Object Relational Data Access. See [What is ORDA?](overview)
+
+
 ## Pessimistic Lock  
 
-A "pessimistic lock" means that an entity is locked prior to its being accessed, using the entity.lock( ) method. Other processes can neither update nor drop the entity until it is unlocked. The classic 4D language only allows pessimistic locks. See "Optimistic lock".
+A "pessimistic lock" means that an entity is locked prior to its being accessed, using the `entity.lock()` function. Other processes can neither update nor drop the entity until it is unlocked. See also [Optimistic lock](#optimistic-lock).
 
 ## Property  
 
 See [Attribute](#attribute).
-
->Attributes and properties are similar concepts. "Attribute" is used to designate dataclass properties that store data, while "property" is more generic and defines a piece of data stored within an object.
 
 ## PropertyPath  
 
@@ -197,11 +207,11 @@ Inactive sessions are automatically closed after a timeout. The default timeout 
 
 ## Shallow copy 
  
-A shallow copy only duplicates the structure of elements, and keeps the same internal references. After a shallow copy, two collections will both share the individual elements. See also Deep copy.
+A shallow copy only duplicates the structure of elements, and keeps the same internal references. After a shallow copy, two collections will both share the individual elements. See also [Deep copy](#deep-copy).
 
 ## Stamp 
  
-Used in "optimistic" locking technology. All entities have an internal counter, the stamp, which is incremented each time the entity is saved. By automatically comparing stamps between an entity being saved and its version stored on disk, 4D can prevent concurrent modifications on the same entities.
+Used in "optimistic" locking technology. All entities have an internal counter, the stamp, which is incremented each time the entity is saved. By automatically comparing stamps between an entity being saved and its version stored on disk, ORDA can prevent concurrent modifications on the same entities.
 
 ## Storage attribute
 

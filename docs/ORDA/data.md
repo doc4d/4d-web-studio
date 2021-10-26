@@ -341,7 +341,10 @@ The `sendMails` method:
 
 You often need to manage possible conflicts that might arise when several users or processes load and attempt to modify the same entities at the same time. Record locking is a methodology used in relational databases to avoid inconsistent updates to data. The concept is to either lock a record upon read so that no other process can update it, or alternatively, to check when saving a record to verify that some other process hasn’t modified it since it was read. The former is referred to as **pessimistic record locking** and it ensures that a modified record can be written at the expense of locking records to other users. The latter is referred to as **optimistic record locking** and it trades the guarantee of write privileges to the record for the flexibility of deciding write privileges only if the record needs to be updated. In pessimistic record locking, the record is locked even if there is no need to update it. In optimistic record locking, the validity of a record’s modification is decided at update time.
 
-ORDA provides you with an automatic "optimistic" mode, suitable for most applications.
+ORDA provides you with two entity locking modes:
+
+- an automatic "optimistic" mode, suitable for most applications,
+- a "pessimistic" mode allowing you to lock entities prior to their access.
 
 ### Automatic optimistic lock  
 
@@ -385,3 +388,13 @@ When this situation occurs, you can, for example, reload the entity from the dis
 
 > Record stamps are not used in **transactions** because only a single copy of a record exists in this context. Whatever the number of entities that reference a record, the same copy is modified thus `entity.save()` operations will never generate stamp errors.
 
+### Pessimistic lock  
+
+You can lock and unlock entities on demand when accessing data. When an entity is getting locked by a process, it is loaded in read/write in this process but it is locked for all other processes. The entity can only be loaded in read-only mode in these processes; its values cannot be edited or saved.
+
+This feature is based upon two functions of the `Entity` class:
+
+*	`entity.lock()`
+*	`entity.unlock()`
+
+For more information, please refer to the descriptions for these functions.
