@@ -3,17 +3,17 @@ id: data
 title: Working with data
 ---
 
-In ORDA, you access data through [entities](dsMapping.md#entity) and [entity selections](dsMapping.md#entity-selection). These objects allow you to create, update, query, or sort the data of the datastore. 
+In ORDA, you access data through [entities](data-model#entity) and [entity selections](data-model#entity-selection). These objects allow you to create, update, query, or sort the data of the datastore. 
 
 
 ## Creating an entity  
 
 There are two ways to create a new entity in a dataclass:
 
-* You create an empty entity using the `dataclass.new( )` function.
-* Since entities are references to database records, you can create entities by referencing them with ORDA functions such as `entity.next( )` or `entityselection.first( )`.
+* You create an empty entity using the `dataclass.new()` function.
+* Since entities are references to database records, you can create entities by referencing them with ORDA functions such as `entity.next()` or `entityselection.first()`.
 
-Keep in mind that the entity is only created in memory. If you want to add it to the datastore, you must call the `entity.save( )` function.
+Keep in mind that the entity is only created in memory. If you want to add it to the datastore, you must call the `entity.save()` function.
 
 Entity attributes are directly available as properties of the entity object. For more information, please refer to [Using entity attributes](#using-entity-attributes).
 
@@ -63,9 +63,9 @@ This is illustrated by the following graphic:
 
 ![](img/entityRef2.png)
 
-Note however that entities refer to the same record. In all cases, if you call the `entity.save( )` method, the record will be updated (except in case of conflict, see [Entity locking](#entity-locking)).
+Note however that entities refer to the same record. In all cases, if you call the `entity.save()` method, the record will be updated (except in [case of conflict](#entity-locking)).
 
-In fact, `$e1` and `$e2` are not the entity itself, but a reference to the entity. It means that you can pass them directly to any function or method, and it will act like a pointer, and faster than a 4D pointer. For example:
+In fact, `$e1` and `$e2` are not the entity itself, but a reference to the entity. It means that you can pass them directly to any function or method, and it will act like a pointer. For example:
 
 ```4d
  For each($entity;$selection)
@@ -73,10 +73,10 @@ In fact, `$e1` and `$e2` are not the entity itself, but a reference to the entit
  End for each
 ```
  
-And the method is:
+And the *do_Capitalize* method is:
 
 ```4d
- $entity:=$1
+ #DECLARE ($entity : cs.EmployeeEntity)
  $name:=$entity.lastname
  If(Not($name=Null))
     $name:=Uppercase(Substring($name;1;1))+Lowercase(Substring($name;2))
@@ -84,14 +84,17 @@ And the method is:
  $entity.lastname:=$name
 ```
  
-You can handle entities like any other object in 4D and pass their references directly as [parameters](Concepts/parameters.md).
+You can handle entities like any other object and pass their references directly as [parameters](Concepts/parameters.md).
 
->With the entities, there is no concept of "current record" as in the classic 4D language. You can use as many entities as you need, at the same time. There is also no automatic lock on an entity (see [Entity locking](#entity-locking)). When an entity is loaded, it uses the [lazy loading](glossary.md#lazy-loading) mechanism, which means that only the needed information is loaded. Nevertheless, in client/server, the entity can be automatically loaded directly if necessary.
+:::note
 
+You can use as many entities as you need at the same time, there is no automatic lock on an entity (see [Entity locking](#entity-locking)). When an entity is loaded, it uses the [lazy loading](glossary.md#lazy-loading) mechanism, which means that only the needed information is loaded. Nevertheless, in client/server, the entity can be automatically loaded directly if necessary.
+
+:::
 
 ## Using entity attributes  
 
-Entity attributes store data and map corresponding fields in the corresponding table. Entity attributes of the storage kind can be set or get as simple properties of the entity object, while entity of the **relatedEntity** or **relatedEntities** kind will return an entity or an entity selection.
+Entity attributes store data and map corresponding fields in the corresponding table. Entity attributes of the **storage** kind can be set or get as simple properties of the entity object, while entity of the **relatedEntity** or **relatedEntities** kind will return an entity or an entity selection. Entity attributes of the [**calculated**](../orda-classes#computed-attributes) kind can return any value type.  
 
 >For more information on the attribute kind, please refer to the [Storage and Relation attributes](dsMapping.md#storage-and-relation-attributes) paragraph.
 
