@@ -42,7 +42,7 @@ See [Computed attribute](#computed-attribute).
 
 Code for the user class function(s). 
 
-## Class functions
+## Class function
 
 ORDA objects such as datastores, dataclasses, entity selections, and entities, define classes of objects. They provide specific functions to directly interact with them. These functions are called class functions. Such functions are used by calling them on an instance of the object.
 
@@ -216,3 +216,4 @@ Used in "optimistic" locking technology. All entities have an internal counter, 
 ## Storage attribute
 
 A storage attribute (sometimes referred to as a scalar attribute) is the most basic type of attribute in a datastore class and most directly corresponds to a field in a relational database. A storage attribute holds a single value for each entity in the class.
+
