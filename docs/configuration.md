@@ -48,7 +48,7 @@ Keep this option unchecked if you want to make sure no access to the studio is a
 
 Check this option to make it possible to access the studio. However, you still need to enable it at every project level.
 
-Additionally, you can configure the WebAdmin web server's HTTP/HTTPS port used when you [open the studio](#opening-4d-web-studio).
+Additionally, you can configure the WebAdmin web server's HTTP/HTTPS port used when you [open the studio](#opening-4d-web-studio). If enabled, the HTTP port is used, otherwise the HTTPS port is used.
 
 :::note 
 
