@@ -38,9 +38,9 @@ If one of the two levels (or both) are not enabled, access to the studio is deni
 
 ### At the application level
 
-As the first security level, you need to allow access to the studio on the [WebAdmin web server](https://developer.4d.com/docs/en/Admin/webAdmin.html).
+As a first security level, you need to allow access to the studio on the [WebAdmin web server](https://developer.4d.com/docs/en/Admin/webAdmin.html).
 
-To do this, go to **File** > **Web Administration** > **Settings...** and check **Enable access to the web studio**.
+To do this, go to **File** > **Web Administration** > **Settings...** and check **Enable access to the Web studio**.
 
 This setting applies to the 4D application (4D or 4D Server) on the host machine. All projects opened with that 4D application take this setting into account.
 
@@ -48,12 +48,20 @@ Keep this option unchecked if you want to make sure no access to the studio is a
 
 Check this option to make it possible to access the studio. However, you still need to enable it at every project level.
 
+Additionally, you can configure the WebAdmin web server's HTTP/HTTPS port used when you [open the studio](#opening-4d-web-studio).
+
+:::note 
+
+After any change to these settings, you must [restart the WebAdmin web server](https://developer.4d.com/docs/en/Admin/webAdmin.html#start-and-stop) for the new configuration to be effective.
+
+:::
+
 
 ### At the project level
 
 After you have enabled access to the studio at the application level, you need to explicitly designate every project that can be accessed. The **Enable access to the Web Studio** option must be enabled on the [main 4D web server](https://developer.4d.com/docs/en/WebServer/webServer.html)'s configuration page.
 
-To do this, in your 4D application, go to **Settings** > **Web** > **Web Features** and check **Enable access to the web studio**.
+To do this, in your 4D application, go to **Settings** > **Web** > **Web Features** and check **Enable access to the Web studio**.
 
 Keep in mind that [user settings](https://doc.4d.com/4Dv19R2/4D/19-R2/User-settings.300-5516428.en.html) can be defined at several levels, and that priorities apply.
 
@@ -69,7 +77,7 @@ There are two ways to access the studio:
 
 *	from your 4D single-user application, go to **Design** > **Web Studio...**. 
  
- 	If the WebAdmin web server is already running, depending on your web server configuration, your default browser opens at `IPaddress:HTTPPort/studio` or `IPaddress:HTTPSPort/studio`. Otherwise, you will be prompted if you want to start the WebAdmin web server first.
+ 	If the WebAdmin web server is already running, depending on its configuration, your default browser opens at `IPaddress:HTTPPort/studio` or `IPaddress:HTTPSPort/studio`. Otherwise, you will be prompted if you want to start the WebAdmin web server first.
 
 *	on a browser, with the WebAdmin web server running (launched from 4D or 4D Server), enter the following address:
  	
