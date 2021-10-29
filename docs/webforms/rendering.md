@@ -16,8 +16,8 @@ The following diagram describes how data flows to and from the studio:
 
 
 * The 4D WebAdmin web server provides a secured web access to 4D Web Studio and allows previewing webforms inside the studio.
-* The renderer uses [REST requests](https://developer.4d.com/docs/en/REST/gettingStarted.html) to communicate with the main 4D web server.
-* The webforms are deployed with the application, and end users render them in their browsers. Note that the database must be [exposed as REST resource](https://developer.4d.com/docs/en/REST/configuration.html#starting-the-rest-server) to allow webform rendering. 
+* The main 4D web server is [exposed as REST server](https://developer.4d.com/docs/en/REST/configuration.html#starting-the-rest-server), and the renderer communicates with it using [REST requests](https://developer.4d.com/docs/en/REST/gettingStarted.html).
+* The webforms are deployed with the application, and end users render them in their browsers. 
 ## License
 
 To render webforms, you must have an available REST license, as rendering a webform opens a session on the project database's main web server.
@@ -26,14 +26,16 @@ To render webforms, you must have an available REST license, as rendering a webf
 
 The following options must be set:
 
-* The project's **Settings** > **Expose as REST server** option must be activated 
+* The project's **Settings** > **Web** > **Web Features** > **Expose as REST server** option must be activated 
 * The [4D web server](https://developer.4d.com/docs/en/WebServer/webServer.html) must be running
 
-> You can configure The web server's IP and HTTP/HTTPS ports in **Settings** > **Configuration**.
-
-When rendering webforms, the renderer tries to connect to the HTTP port if enabled, otherwise the HTTPS port is used. It is the same connection pattern as for the [WebAdmin web server](https://developer.4d.com/docs/en/Admin/webAdmin.html#accept-http-connections-on-localhost).
-
 For more information on REST server configuration, see [Server Configuration](https://developer.4d.com/docs/en/REST/configuration.html) on developer.4d.com.
+
+Additionally, you can configure the 4D web server's IP and HTTP/HTTPS ports in **Settings** > **Web** > **Configuration**.
+
+When rendering webforms, the renderer will connect to the 4D web server through HTTP or HTTPS, depending on the settings, following the same HTTP/HTTPS connection pattern as for the [WebAdmin web server](https://developer.4d.com/docs/en/Admin/webAdmin.html#accept-http-connections-on-localhost).
+
+
 
 ## Rendering webforms 
 
