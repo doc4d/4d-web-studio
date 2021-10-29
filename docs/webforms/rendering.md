@@ -14,7 +14,6 @@ The following diagram describes how data flows to and from the studio:
 
 ![workflow-diagram](img/workflow.png)
 
-
 * The 4D WebAdmin web server provides a secured web access to 4D Web Studio and allows previewing webforms inside the studio.
 * The main 4D web server is [exposed as REST server](https://developer.4d.com/docs/en/REST/configuration.html#starting-the-rest-server), and the renderer communicates with it using [REST requests](https://developer.4d.com/docs/en/REST/gettingStarted.html).
 * The webforms are deployed with the application, and end users render them in their browsers. 
