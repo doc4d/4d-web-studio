@@ -49,7 +49,7 @@ The objective is to display help when the user hovers over the component:
 
 ![alt-text](img/web-event-2.png)
 
-This is done by attaching an `onmouseover` event to an Input Text component that displays the information:
+This is done by attaching an `onmouseover` event to an **Input Text** component that displays the information:
 
 ![alt-text](img/web-event-1.png)
 
