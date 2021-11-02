@@ -8,7 +8,7 @@ title: Rendering Webforms
 
 At runtime, webforms are generated and interpreted by a built-in renderer engine.
 
-Each webform has its own URL on the [4D web server](https://developer.4d.com/docs/en/WebServer/webServer.html)
+Each webform has its own URL on the [4D web server](https://developer.4d.com/docs/en/WebServer/webServer.html).
 
 The following diagram describes how data flows to and from the studio:
 
