@@ -8,7 +8,7 @@ title: Events, methods and class functions
 Events are usually used as a means of triggering certain behaviors. They are used in conjunction with methods and class functions. 
 
 For example, if the user clicks a button on a webpage, you can choose how to react.
-Events can also be triggered [when a datasource is updated](#example-2-attaching-an-event-to-a-datasource). 
+Events can also be triggered [when a datasource is updated](#from-a-datasource). 
 
 With 4D Web Studio, events are used to execute code on the 4D server. No additional Javascript is needed.
 
