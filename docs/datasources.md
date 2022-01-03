@@ -41,7 +41,7 @@ See [Exposed vs non-exposed functions](https://developer.4d.com/docs/en/ORDA/ord
 #### From a Remote datasource
 
 Click the "+" icon:
-* next to an entity selection to create an entity
+* next to an entity selection to create an entity (current element of the entity selection)
 * next to an entity's relation to create an entity selection or an entity 
 
 #### From a Text component

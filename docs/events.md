@@ -102,7 +102,7 @@ You use events in conjunction with class functions to manage the information ins
 
 ### ORDA Classes
 
-The flow of data in the studio is handled through data model classes. See [ORDA classes](https://developer.4d.com/docs/en/ORDA/ordaClasses.html) for more information.
+The flow of data in the studio is handled through data model classes that allow you to manage your business logic. See [ORDA classes](https://developer.4d.com/docs/en/ORDA/ordaClasses.html) for more information.
 
 ### 4D classes
 
