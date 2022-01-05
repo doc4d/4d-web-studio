@@ -12,6 +12,11 @@ module.exports = {
       label: "Configuration"
     },
     {
+      type: 'doc',
+      id: 'license-usage',
+      label: "License usage"
+    },
+    {
       type: 'category',
       label: 'Webforms',
       items: ['webforms/using-web-form-editor',
