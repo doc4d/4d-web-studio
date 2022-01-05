@@ -39,9 +39,9 @@ For more information on the SameSite attribute, check out [this blog post](https
 
 To avoid using more licenses than necessary, we recommend doing one of the following:
 
-- Run the renderer on another browser tab (by entering the rendered URL of your Web form: IP:port/$lib/renderer/?w=WebFormName).
+- Run the renderer on another browser tab (by entering the rendered URL of your Web form: `IP:port/$lib/renderer/?w=WebFormName`).
 
 - Ensure the Web Studio and your database are reached on the same URL scheme.
 
-- Use the `Lax` value for the [session cookie](https://developer.4d.com/docs/en/WebServer/webServerConfig.html#session-cookie-samesite) of your project database's 4D web server. 
+- Use the `Lax` value for the [session cookie](https://developer.4d.com/docs/en/WebServer/webServerConfig.html#session-cookie-samesite) of your project database's web server. 
 
