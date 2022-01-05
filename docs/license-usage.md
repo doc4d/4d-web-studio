@@ -21,7 +21,7 @@ If you run the renderer from the studio and these two web servers are not reache
 
 ![alt-text](img/schemes.png)
 
-3. In the studio, you click on the **rendering icon**. You are warned that the two web servers are started on different schemes but despite this you click on the **Confirm** button. 
+3. In the studio, you click on the **rendering icon**. You are warned that the two web servers are started on different schemes, but despite this you click on the **Confirm** button. 
 
 ![alt-text](img/render-button.png)
 
@@ -29,11 +29,11 @@ As a result, two licenses are retained.
 
 ## SameSite attribute
 
-The behavior previously described is due to the session cookie of the 4D web server. This session cookie has a SameSite attribute that determines if the session cookie is sent to the web server.
+The behavior previously described is due to the session cookie of the 4D web server. This session cookie has a `SameSite` attribute that determines if the session cookie is sent to the web server.
 
-If the SameSite attribute's value is “Strict” (default value), the session cookie is not sent to the web server, so a new session is opened each time a page is rendered or refreshed.
+If the `SameSite` attribute's value is `Strict` (default), the session cookie is not sent to the web server, so a new session is opened each time a page is rendered or refreshed.
 
-For more information on the SameSite attribute, check out [this blog post](https://blog.4d.com/get-ready-for-the-new-samesite-and-secure-attributes-for-cookies/).
+For more information on the `SameSite` attribute, check out [this blog post](https://blog.4d.com/get-ready-for-the-new-`SameSite`-and-secure-attributes-for-cookies/).
 
 ## Recommendations
 
@@ -43,5 +43,5 @@ To avoid using more licenses than necessary, we recommend doing one of the follo
 
 - Ensure the Web Studio and your database are reached on the same URL scheme.
 
-- Use the `Lax` value for the [session cookie](https://developer.4d.com/docs/en/WebServer/webServerConfig.html#session-cookie-samesite) of your project database's web server. 
+- Use the `Lax` value for the [session cookie](https://developer.4d.com/docs/en/WebServer/webServerConfig.html#session-cookie-`SameSite`) of your project database's web server. 
 
