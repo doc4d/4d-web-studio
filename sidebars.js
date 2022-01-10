@@ -33,6 +33,11 @@ module.exports = {
       id: 'events',
       label: "Events"
     },
+    {
+      type: 'doc',
+      id: 'function-event',
+      label: "Class functions and methods"
+    },
   ],
   apiSidebar: [
     {

@@ -64,14 +64,7 @@ Now everytime the text changes inside the **Input** element, a query is sent and
 
 You can attach an event to a datasource to perform an action when the datasource is updated.
 
-The following table groups the available datasource events: 
-
-|Event|Trigger|
-|---|---|
-|onChange|<ul><li>A local datasource is updated</li><li>An entity selection reference changes in the web browser</li><li>An entity is added to the entity selection</li></ul>|
-|onError|<ul><li>The session has expired</li><li>The session cookie has expired</li></ul>|
-
-### Example 
+#### Example 
 
 In the image below: 
 
@@ -96,31 +89,17 @@ Here's what you obtain after the button is clicked:
 
 ![event-datasource-result](img/event-datasource-result.png)
 
-## Class functions and project methods
+### Datasource event list
 
-You use events in conjunction with class functions to manage the information inside your web application.
+#### onChange
 
-### ORDA Classes
+The following table groups the triggers for the `onChange` event: 
 
-The flow of data in the studio is handled through data model classes that allow you to manage your business logic. See [ORDA classes](https://developer.4d.com/docs/en/ORDA/ordaClasses.html) for more information.
-
-### 4D classes
-
-Some classes available only in the studio allow you to set the behavior of your components. They are instantiated using 4D commands.
-
-For example, to display or hide a component when an event occurs, you can use the [4D.WebFormItem class functions](API/WebFormItemClass.md).
-
-### Using project methods
-
-We recommend using class functions over methods, but you can still use your project methods as REST functions in the studio.
-
-To be used in 4D Web Studio, project methods must be defined as Datastore, Dataclass, Entity or Entity selection class functions. 
-
-To check if a method is available as REST function: 
-1. In the Explorer of your 4D application, **right-click a project method** > **Edit Properties...** to open the Method Properties dialog. 
-2. Check that the **REST Server** option is checked.
-
-Selecting **Scope** > **Catalog** designates the project method as a function of the Datastore class. No table (dataclass) is assigned in this case.
-
+|Element|Trigger|
+|---|---|
+|Entity datasource|<ul><li>The datasource points at a reference. If that reference changes in the web browser (not on the server), the event is triggered.</li><li>The entity is [touched](https://developer.4d.com/docs/en/API/EntityClass.html#touched-)</li></ul> **Note:** Upon saving, a new entity is returned and the reference changes|
+|Entity attribute|A change is detected in the contents of an entity attribute with a scalar type.
+|Local datasource|A change is detected in the contents of the local datasource (scalar types, object, array).
+|Entity selection|<ul><li>The reference pointed by the datasource changes in the web browser (not on the server)</li><li>An entity is added to the entity selection</li></ul>
 
 
