@@ -35,7 +35,7 @@ module.exports = {
     },
     {
       type: 'doc',
-      id: 'function-event',
+      id: 'function-method',
       label: "Class functions and methods"
     },
   ],
