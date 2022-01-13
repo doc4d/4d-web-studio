@@ -3,7 +3,7 @@ id: coding-and-debugging
 title: Coding
 ---
 
-You use events in conjunction with class functions to manage the information inside your web application.
+You use [events](design-webforms/events/configuring-event.md) in conjunction with class functions to manage the information inside your web application.
 
 ### ORDA Classes
 
@@ -26,3 +26,11 @@ To check if a method is available as REST function:
 2. Check that the **REST Server** option is checked.
 
 Selecting **Scope** > **Catalog** designates the project method as a function of the Datastore class. No table (dataclass) is assigned in this case.
+
+## Code Editor
+
+4D Web Studio has an embedded code editor that allows you to edit your class function and methods. The code can still be edited from a 4D Desktop application. 
+
+When a class function is open in the studio, and that class function is edited elsewhere, its Tab will display "Outdated", meaning that the code displayed is not the latest version. To obtain the latest version, right click the Tab and then choose **Reload**.
+
+![code-editor](img/code-editor.png)

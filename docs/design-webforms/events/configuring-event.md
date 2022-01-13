@@ -1,13 +1,11 @@
 ---
 id: configuring-event
-title: Configuring an event
+title: Events
 ---
 
 Events are usually used as a means of triggering certain behaviors. They are used in conjunction with methods and class functions. 
 
-For example, if the user clicks a button on a webpage, you can choose how to react by calling a function or opening another webpage.
-
-Events can also be triggered [when a datasource is updated](#from-a-datasource). 
+For example, if the user clicks a button on a webpage, you can choose how to react by calling a function or opening another webpage. Events can also be triggered [when a datasource is updated](datasource-events.md). 
 
 With 4D Web Studio, events are used to execute code on the 4D server. No additional Javascript is needed.
 
@@ -23,7 +21,9 @@ Click a "+" button in the list to attach the corresponding event to the componen
 
 A class function can be mapped to several events, and you can assign several events to the same class function.
 
-### Navigation 
+### Function event
+
+### Navigation event
 
 To create navigation in your application, you can attach a navigation action to an event. That way, when the event triggers, it opens a webform in the current browser tab or in a new one.
 

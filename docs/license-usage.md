@@ -9,7 +9,7 @@ title: About license usage
 
 As explained in the [configuration](configuration.md) section, the 4D [WebAdmin web server](https://developer.4d.com/docs/en/Admin/webAdmin.html) provides a secured web access to 4D Web Studio.
 
-On the other hand, the [renderer](webforms/rendering.md) communicates with the 4D web server of the database using REST requests. As such, it behaves like a conventional 4D Client.
+On the other hand, the [renderer](rendering.md) communicates with the 4D web server of the database using REST requests. As such, it behaves like a conventional 4D Client.
 
 If you run the renderer from the studio and these two web servers are not reached through the same URL scheme (HTTP or HTTPS), it might lead to wrong licence counting.
 

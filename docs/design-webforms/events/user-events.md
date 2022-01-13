@@ -3,9 +3,7 @@ id: user-events
 title: User events
 ---
 
-### User-action events
-
-You can set events to trigger when end-users perform certain actions, such as clicking a button.
+You can set events to trigger when your end-users perform certain actions, such as clicking a button.
 
 #### Example: Creating a search feature using the `onChange` event
 

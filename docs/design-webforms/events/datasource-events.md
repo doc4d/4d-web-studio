@@ -3,11 +3,11 @@ id: datasource-events
 title: Datasource events
 ---
 
-Aside from events triggered by end-user actions, events can trigger automatically when datasources are updated.
+Aside from events triggered by end-user actions, events can trigger automatically when [datasources](../datasources.md) are updated.
 
 For a list of datasource events, see [List of available events](#list-of-datasource-events).
 
-### Example 
+## Example 
 
 In the image below: 
 
