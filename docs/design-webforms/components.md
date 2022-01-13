@@ -9,7 +9,7 @@ Components are the building blocks of your application. To add a component, drag
 
 ## Component list
 
-The Component library lets you search for a component or choose one from the list. Once a component is on the canvas, you can [customize its look](#styling-a-component) and bind a data source to it.
+The Component library lets you search for a component or choose one from the list. Once a component is on the canvas, you can [customize its look](styling.md) and bind a data source to it.
 
 ![alt-text](img/components.png)
 
@@ -60,8 +60,8 @@ When you select a component, the tooltip displays its type and offers several ac
 |Cursor|Move the selected component on the canvas|
 |Arrow|Select the parent component|
 |Delete|Remove the selected component from the canvas|
-|CSS|Export the [overriden CSS properties](#overriding-style-properties) to a new CSS class|
-|Barred T|Reset styles (resets the [overriden CSS properties](#overriding-style-properties))|
+|CSS|Export the [overriden CSS properties](styling.md#overriding-style-properties) to a new CSS class|
+|Barred T|Reset styles (resets the [overriden CSS properties](styling.md#overriding-style-properties))|
 |Duplicate icon|Duplicate the component|
 
 The tooltip is contextual. This means that some actions are only available to certain elements, and not others. For example, you can duplicate a Text input component, but not its individual parts (Label and Input).

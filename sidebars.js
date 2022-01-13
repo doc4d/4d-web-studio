@@ -12,11 +12,6 @@ module.exports = {
       label: "Configuration"
     },
     {
-      type: 'doc',
-      id: 'license-usage',
-      label: "License usage"
-    },
-    {
       type: 'category',
       label: 'Designing a webform',
       items: ['design-webforms/create-webform',
@@ -37,6 +32,11 @@ module.exports = {
       type: 'doc',
       id: 'rendering',
       label: "Rendering a webform"
+    },
+    {
+      type: 'doc',
+      id: 'license-usage',
+      label: "License usage"
     },
     {
       type: 'doc',

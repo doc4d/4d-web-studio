@@ -3,7 +3,7 @@ id: rendering
 title: Rendering a webform
 ---
 
-A webform describes your application's look and behavior. After (and even while) you design a webform, you can *render* it to see its final result.
+A webform describes your application's look and behavior. After or while you design a webform, you can *render* it to see its final result.
 
 ## Overview
 

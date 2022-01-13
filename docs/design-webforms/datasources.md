@@ -3,9 +3,9 @@ id: datasources
 title: Datasources
 ---
 
-## What is a datasource?
-
 Datasources contain data. You can bind them to your Webform components to determine where the data is displayed in your application.
+
+## Datasource types
 
 Inside the Webform Editor, the **Data Sources** section groups the available datasources:
 
@@ -14,13 +14,13 @@ Inside the Webform Editor, the **Data Sources** section groups the available dat
 In this section, you'll find:
 
 *  The **Catalog**, which holds:
-    * data from your database: You can designate entities or entity selections from your [datastore](https://developer.4d.com/docs/en/ORDA/dsmapping.html), and they will be handled by the server as **Remote** datasources.
+    * data from your database: You can designate entities or entity selections from your [datastore](https://developer.4d.com/docs/en/ORDA/dsmapping.html), and they will be handled by the server as Remote datasources.
     * Class functions: The Catalog displays the functions defined in each class. 
 
-*  **Remote** datasources: Entities and entity selections, handled on the server, that can be assigned to components. 
+*  **Remote datasources**: Entities and entity selections, handled on the server, that can be assigned to components. 
 They offer functions defined on the [ORDA classes](https://developer.4d.com/docs/en/ORDA/ordaClasses.html#class-description) that they instantiate (Entity class, Entity Selection class).
 
-*  **Local** datasources: Scalar types handled with the browser's memory. Can be assigned to variables. No request is sent to the server to access local datasources.
+*  **Local datasources**: Scalar types handled with the browser's memory. Can be assigned to variables. No request is sent to the server to access local datasources.
 
 ### Exposed and non-exposed assets
 
@@ -32,7 +32,7 @@ See [Exposed vs non-exposed functions](https://developer.4d.com/docs/en/ORDA/ord
 
 ## Creating a datasource 
 
-##### From the Catalog
+#### From the Catalog
 
 1. In the Data Sources section, choose **Catalog** > **Data Classes**
 2. Click the "+" icon next to a dataclass
@@ -63,8 +63,5 @@ You can store data in local and remote datasources. For example, you can configu
 
 ## Keeping track of your datasources
 
-The inspect button allows you to check where your datasources are used in your webforms.
+The **Inspect** option ![styles-library](img/inspect-button.png) allows you to check where your datasources are used in your webforms. Toggle the option by clicking the icon, then mouse over a datasource to highlight its location in your webform.
 
-Toggle the inspect button and mouse over a datasource to highlight its location in your webform:
-
-![styles-library](img/inspect-button.png)

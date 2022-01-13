@@ -20,7 +20,7 @@ To create a local CSS class, click the "+" button and enter a name. CSS classes 
 
 #### Inspect button
 
-The **inspect button**  ![styles-library](img/inspect-button.png)  allows you to check where your CSS classes are used in your webforms. Toggle the inspect button and mouse over a CSS class to highlight its location in your webform. 
+The **Inspect** option ![styles-library](img/inspect-button.png)  allows you to check where your CSS classes are used in your webforms. Toggle the option by clicking the icon, then mouse over a CSS class to highlight its location in your webform. 
 
 ### Properties panel
 
@@ -50,7 +50,7 @@ Selecting a component displays its style properties in the Properties Panel. Val
 
 Modifying these values overrides the initial value for that property. Overriden CSS properties have a blue dot in front of them. 
 
-You can [export the new values](Exporting-styles-as-css-classes-for-reuse) to create a new CSS class.
+You can export the new values to create a new CSS class.
 
 ## Working with CSS 
 
