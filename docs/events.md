@@ -22,11 +22,24 @@ The configuration panel displays the events compatible with the element selected
 
 Click a "+" button in the list to attach the corresponding event to the component or datasource.
 
-You can then add parameters and point at a datasource to update.
+You can then add parameters (datasources or hard coded values) and point at a datasource to update.
 
 You can map one class function to several events, or one event to several class functions.
 
 Events are executed in their defined order.
+### Navigation events
+
+Some events allow you for navigation inside your application. 
+
+When triggered, a navigation event opens a designated webform in the current browser tab or in a new browser tab.
+
+To define a navigation event:
+
+1. Select a component and the event to attach to it
+2. Select the webform to open when the event triggers
+3. Define if the webform opens in the current browser tab or a new one.
+
+![search](img/navigation-event.png)
 
 ## Triggering an event
 
@@ -121,6 +134,5 @@ To check if a method is available as REST function:
 2. Check that the **REST Server** option is checked.
 
 Selecting **Scope** > **Catalog** designates the project method as a function of the Datastore class. No table (dataclass) is assigned in this case.
-
 
 

@@ -59,3 +59,11 @@ There are several ways to bind a datasource to a component:
 ## Attaching events to datasources 
 
 You can attach events to datasources to trigger certain actions when these datasources are updated in the web browser. See [Attaching an event to a datasource](events.md#from-a-datasource) for more information.
+
+## Keeping track of your datasources
+
+The inspect button allows you to check where your datasources are used in your webforms.
+
+Toggle the inspect button and mouse over a datasource to highlight its location in your webform:
+
+![styles-library](/webforms/img/inspect-button.png)

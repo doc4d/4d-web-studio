@@ -127,6 +127,14 @@ Unlike Theme classes, Local styles can only be used in the Webforms in which the
 
 To create a local CSS class, click the "+" button and enter a name. CSS classes can be edited in the Contextual Configuration panel at the bottom.
 
+#### Inspect 
+
+The inspect button allows you to check where your CSS classes are used in your webforms.
+
+Toggle the inspect button and mouse over a CSS class to highlight its location in your webform: 
+
+![styles-library](img/inspect-button.png)
+
 ### Properties panel
 
 The Properties panel gives you extremely granular control over your elements. 
