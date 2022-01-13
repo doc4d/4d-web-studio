@@ -66,4 +66,4 @@ The inspect button allows you to check where your datasources are used in your w
 
 Toggle the inspect button and mouse over a datasource to highlight its location in your webform:
 
-![styles-library](/webforms/img/inspect-button.png)
+![styles-library](img/inspect-button.png)
