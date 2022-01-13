@@ -39,7 +39,7 @@ The following components are available:
 
 ## Server-side reference
 
-The server-side reference of a component is its "address" on the server. To set the behavior of a component, you can assign a server-side reference to it, and then [use that reference in class functions](../API/WebFormItemClass.md).
+The server-side reference of a component is its "address" on the server. To set the behavior of a component, you can give it a server-side reference, and then [use that reference in class functions](../API/WebFormItemClass.md).
 
 To assign a server-side reference to a component, enter a value in the Properties panel > Server Side:
 
@@ -60,7 +60,7 @@ When you select a component, the tooltip displays its type and offers several ac
 |Cursor|Move the selected component on the canvas|
 |Arrow|Select the parent component|
 |Delete|Remove the selected component from the canvas|
-|CSS|Export the [[overriden CSS properties](#overriding-style-properties) to a new CSS class|
+|CSS|Export the [overriden CSS properties](#overriding-style-properties) to a new CSS class|
 |Barred T|Reset styles (resets the [overriden CSS properties](#overriding-style-properties))|
 |Duplicate icon|Duplicate the component|
 

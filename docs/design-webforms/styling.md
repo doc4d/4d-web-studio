@@ -3,6 +3,7 @@ id: styling
 title: Styling
 ---
 
+Once you've placed a component on the canvas, you can customize its look using the following tools.
 ### Styles Library 
 
 One way of styling components is by dragging CSS classes from the Styles Library and dropping them on the components.
@@ -17,13 +18,9 @@ Unlike Theme classes, Local styles can only be used in the Webforms in which the
 
 To create a local CSS class, click the "+" button and enter a name. CSS classes can be edited in the Contextual Configuration panel at the bottom.
 
-#### Inspect 
+#### Inspect button
 
-The inspect button allows you to check where your CSS classes are used in your webforms.
-
-Toggle the inspect button and mouse over a CSS class to highlight its location in your webform: 
-
-![styles-library](img/inspect-button.png)
+The **inspect button**  ![styles-library](img/inspect-button.png)  allows you to check where your CSS classes are used in your webforms. Toggle the inspect button and mouse over a CSS class to highlight its location in your webform. 
 
 ### Properties panel
 
@@ -35,17 +32,17 @@ Using the Properties panel, you can bind a CSS class to the element and define v
 
 ![styles-library](img/properties-panel.png)
 
-Some visual properties, such as grid areas or column size in datatables, can be edited directly on the canvas.
+Some visual properties such as grid areas or datatable columns can be edited directly on the canvas.
 
 #### Example 
 
 To add a red background to a Button component: 
-* From the Styles library:
-drag the `bg-red-500` class from the Styles library and drop it on the Button component
+* from the Styles library:
+drag the `bg-red-500` class from the Styles library and drop it on the Button component.
 
-* Using the Properties Panel:
-    * Select the Button component, and under Style, choose a red color for the background
-    * Select the Button component, and in the Properties panel, select the `bg-red-500` class in the CSS section
+* using the Properties Panel:
+    * select the Button component, and under Style, choose a red color for the background.
+    * select the Button component, then in the Properties panel, select the `bg-red-500` class in the CSS section.
 
 ### Overriding style properties
 
