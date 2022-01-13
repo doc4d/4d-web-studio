@@ -1,6 +1,6 @@
 ---
 id: rendering
-title: Rendering Webforms
+title: Rendering a webform
 ---
 ## Overview
 

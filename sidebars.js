@@ -19,7 +19,7 @@ module.exports = {
     {
       type: 'category',
       label: 'Webforms',
-      items: ['webforms/using-web-form-editor',
+      items: ['webforms/design-webform',
         'webforms/rendering'
       ],
     },
@@ -29,9 +29,17 @@ module.exports = {
       label: "Datasources"
     },
     {
+      type: 'category',
+      label: "Events and interactions",
+      items: ['events/configuring-event',
+        'events/user-events',
+        'events/datasource-events'
+      ],
+    },
+    {
       type: 'doc',
-      id: 'events',
-      label: "Events"
+      id: 'coding-and-debugging',
+      label: "Coding and debugging"
     },
   ],
   apiSidebar: [

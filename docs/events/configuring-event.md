@@ -1,0 +1,128 @@
+---
+id: configuring-event
+title: Configuring an event
+---
+
+Events are usually used as a means of triggering certain behaviors. They are used in conjunction with methods and class functions. 
+
+For example, if the user clicks a button on a webpage, you can choose how to react by calling a function or opening another webpage.
+
+Events can also be triggered [when a datasource is updated](#from-a-datasource). 
+
+With 4D Web Studio, events are used to execute code on the 4D server. No additional Javascript is needed.
+
+## Configuring an event
+
+To configure an event, you must first select a component or a datasource.
+
+The configuration panel displays the events compatible with the element selected:
+
+![event-datasource-event](img/event-datasource-event.png)
+
+Click a "+" button in the list to attach the corresponding event to the component or datasource. You can then add parameters (datasources or values) and point at a datasource to update.
+
+A class function can be mapped to several events, and you can assign several events to the same class function.
+
+### Navigation 
+
+To create navigation in your application, you can attach a navigation action to an event. That way, when the event triggers, it opens a webform in the current browser tab or in a new one.
+
+To define a navigation event:
+
+1. Select a component or a datasource and attach an event to it
+2. Select the webform to open when the event triggers
+3. Define if the webform opens in the current browser tab or a new one:
+
+![search](img/navigation-event.png)
+
+:::note
+
+Webforms do not currently share their contexts. This means that datasources are currently not shared between webforms. For example, you cannot use webform1's datasources in webform2.  
+
+:::
+
+## Triggering an event
+
+### User-action events
+
+You can set events to trigger when end-users perform certain actions, such as clicking a button.
+
+#### Example: Creating a search feature using the `onChange` event
+
+The objective is to update a list of students displayed in a **Matrix** component according to what the end-user types in an input area.
+
+In the image below: 
+* The **Input** element is bound to the local datasource `search` (of type Text)
+* The **Matrix** component displays a list of students based on the `students` datasource, which is an entity selection
+
+![search](img/search-component.png)
+
+To display results corresponding to the text typed in the **Input** component, we need a `search` function that performs a query:
+
+```4d
+exposed Function search($search : Text)->$result : cs.StudentsSelection
+	
+$search:="@"+$search+"@"
+	
+$result:=This.query("firstname = :1 or lastname = :1"; $search)   
+```
+
+An **onChange** event calls the `search` function and passes the text typed in the **Input** element as a parameter. This updates the `students` datasource:
+
+![search](img/search-event.png)
+
+Now everytime the text changes inside the **Input** element, a query is sent and the list of students displayed in the **Matrix** component is updated.
+
+###  From a datasource
+
+Aside from events triggered by end-user actions, events can trigger automatically when datasources are updated.
+
+For a list of datasource events, see [List of available events](#list-of-available-events).
+
+### Example 
+
+In the image below: 
+
+* The **Datatable** component displays a list of employees, based on an entity selection (the `employees` datasource is attached).
+* The button slices the `employees` entity selection datasource to keep only the first three entities.
+* An `onChange` event is attached to the `employees` datasource.
+* The **Text** component contains a local datasource of type Text, called *result*.
+
+![event-datasource](img/event-datasource.png)
+
+When the end-user clicks the button, the `employees` datasource is updated, triggering the `onChange` event. This calls `displayValue` to update *result*:
+
+![event-datasource-event](img/event-datasource-event.png)
+
+The `displayValue` function returns text according to the number of entities: 
+
+```4d 
+exposed function displayValue() -> $result : Text
+$result:="The table now displays " + String(This.length) + " entries"
+```
+
+Here's what you obtain after the button is clicked:
+
+![event-datasource-result](img/event-datasource-result.png)
+
+## List of datasource events  
+
+### On Change
+
+An On Change event attached a datasource triggers in the following cases:
+
+|Trigger|Description|
+|---|---|
+|Datasource|<ul><li>The reference pointed by the datasource changes in the web browser (not on the server)</li><li>The entity is [touched](https://developer.4d.com/docs/en/API/EntityClass.html#touched)</li></ul>|
+|Entity attribute|The contents of the entity attribute change.|
+|Local datasource|The contents of the local datasource change.|
+|Entity selection datasource| <li>The reference pointed by the datasource changes in the web browser (not on the server)</li>
+<li>An entity is added to the entity selection</li>|
+
+## Chaining actions
+
+You can attach several events to a component or datasource. 
+
+When the event triggers, 
+
+Events are executed in their defined order. 

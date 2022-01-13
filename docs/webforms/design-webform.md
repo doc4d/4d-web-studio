@@ -1,6 +1,6 @@
 ---
-id: using-web-form-editor
-title: Using the Webform Editor
+id: design-webform
+title: Designing a webform
 ---
 
 ## Creating a webform
@@ -62,7 +62,7 @@ The following components are available:
 |Text|Displays text on a web page|
 |Datatable|Displays data in the form of a table. You can select a row to interact with the server|
 |Matrix| Container of repeated style boxes|
-|Webform loader| Allows you to embed a Webform inside another
+|Webform loader| Allows you to embed a Webform inside another to create navigation in your application
 
 > More components will be available in the future, and existing components will be enhanced.
 

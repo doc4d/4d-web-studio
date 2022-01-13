@@ -7,13 +7,13 @@ title: Datasources
 
 Datasources contain data. You can bind them to your Webform components to determine where the data is displayed in your application.
 
-The **Data Sources** section groups the available datasources:
+Inside the Webform Editor, the **Data Sources** section groups the available datasources:
 
 ![alt-text](img/data-sources.png)
 
-In this section, you'll find the following:
+In this section, you'll find:
 
-*  The **Catalog** holds:
+*  The **Catalog**, which holds:
     * data from your database: You can designate entities or entity selections from your [datastore](https://developer.4d.com/docs/en/ORDA/dsmapping.html), and they will be handled by the server as **Remote** datasources.
     * Class functions: The Catalog displays the functions defined in each class. 
 
@@ -47,18 +47,19 @@ Click the "+" icon:
 #### From a Text component
 
 Select text inside a **Text** component and click the **Toggle Datasource** icon to create a local datasource.
-
-
 ## Binding a datasource to a component
 
 There are several ways to bind a datasource to a component:
 
 * Drag it from the Data Source section and drop it on a component
 * Select a component and enter the name of the datasource in the Properties panel > Data Access > DataSource 
-
 ## Attaching events to datasources 
 
-You can attach events to datasources to trigger certain actions when these datasources are updated in the web browser. See [Attaching an event to a datasource](events.md#from-a-datasource) for more information.
+You can attach events to datasources to trigger certain actions when these datasources are updated in the web browser. See [datasource events](events/datasource-events.md) for more information.
+
+## Storing data in a datasource
+
+You can store data in local and remote datasources. For example, you can configure an event that calls a function, and store the result of that function in a datasource.
 
 ## Keeping track of your datasources
 
