@@ -48,6 +48,11 @@ To create navigation in your application, you can attach a navigation action to 
 Webforms do not currently share their contexts. This means that datasources are currently not shared between webforms. For example, you cannot use webform1's datasources in webform2.  
 
 :::
+### Chaining actions
+
+You can attach several events to a component or datasource. 
+
+Events are executed in their defined order. When an event triggers, its actions are executed sequentially. This means that each action starts only when the previous one has finished executing.
 
 ## Event types
 
@@ -132,8 +137,3 @@ An On Change event attached a datasource triggers in the following cases:
 The On Error event is not available yet.
 
 :::
-## Chaining actions
-
-You can attach several events to a component or datasource. 
-
-Events are executed in their defined order. When an event triggers, its actions are executed sequentially. This means that each action starts only when the previous one has finished executing.
