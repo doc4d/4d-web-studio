@@ -5,7 +5,7 @@ title: Events and interactions
 
 Events are usually used as a means of triggering certain behaviors. They are used in conjunction with different actions to create interactions in an application.
 
-For example, if the user clicks a button on a webpage, you can choose how to react by calling a function or opening another webpage. Events can also be triggered [when a datasource is updated](datasource-events.md). 
+For example, if the user clicks a button on a webpage, you can choose how to react by calling a function or opening another webpage. Events can also be triggered [when a datasource is updated](#datasource-events). 
 
 With 4D Web Studio, events are used to execute code on the 4D web server. No additional Javascript is needed.
 

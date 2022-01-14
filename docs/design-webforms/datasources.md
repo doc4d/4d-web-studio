@@ -55,11 +55,11 @@ There are several ways to bind a datasource to a component:
 * Select a component and enter the name of the datasource in the Properties panel > Data Access > DataSource 
 ## Attaching events to datasources 
 
-You can attach events to datasources to trigger certain actions when these datasources are updated in the web browser. See [datasource events](events/datasource-events.md) for more information.
+You can attach events to datasources to trigger certain actions when these datasources are updated in the web browser. See [datasource events](design-webforms/events/events.md#datasource-events) for more information.
 
 ## Storing data in a datasource
 
-You can store data in local and remote datasources. For example, you can configure an event that calls a function, and store the result of that function in a datasource.
+You can store data in local and remote datasources. For example, you can configure an event that calls a function, and store the result of that function in a datasource. See the [example from the user events section](design-webforms/events/events.md#example-search-feature-using-the-onchange-event).
 
 ## Keeping track of your datasources
 
