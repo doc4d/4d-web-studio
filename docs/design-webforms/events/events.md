@@ -124,6 +124,4 @@ An On Change event attached a datasource triggers in the following cases:
 
 You can attach several events to a component or datasource. 
 
-When the event triggers, 
-
-Events are executed in their defined order. 
+Events are executed in their defined order. When an event triggers, its actions are executed sequentially. This means that each action starts only when the previous one has finished executing.
