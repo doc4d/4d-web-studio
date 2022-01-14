@@ -30,7 +30,7 @@ A class function can be mapped to several events, and you can assign several eve
 To create navigation in your application, you can attach a navigation action to an event. That way, when the event triggers, it opens a webform in the current browser tab or in a new one.
 
 1. Select a component or a datasource and attach an event to it
-2. Select the webform to open when the event triggers
+2. Select the navigation action to perform when the event triggers
 3. Define if the webform opens in the current browser tab or a new one:
 
 ![search](img/navigation-event.png)
@@ -43,12 +43,12 @@ Webforms do not currently share their contexts. This means that datasources are 
 
 ## Event types
 
-Events can be set to trigger when end-users perform certain actions, or when datasources are updated.
+Events can be set to trigger when end-users perform certain actions or when datasources are updated.
 ### User events
 
 You can set events to trigger when end-users perform certain actions, such as clicking a button.
 
-#### Example: Creating a search feature using the `onChange` event
+#### Example: Search feature using the `onChange` event
 
 The objective is to update a list of students displayed in a **Matrix** component according to what the end-user types in an input area.
 
@@ -80,7 +80,7 @@ Aside from events triggered by end-user actions, events can trigger automaticall
 
 For a list of datasource events, see [List of available events](#list-of-available-events).
 
-### Example 
+### Example - Updating an entity selection
 
 In the image below: 
 
@@ -120,6 +120,11 @@ An On Change event attached a datasource triggers in the following cases:
 |Entity selection datasource| <li>The reference pointed by the datasource changes in the web browser (not on the server)</li>
 <li>An entity is added to the entity selection</li>|
 
+:::note 
+
+The On Error event is not available yet.
+
+:::
 ## Chaining actions
 
 You can attach several events to a component or datasource. 
