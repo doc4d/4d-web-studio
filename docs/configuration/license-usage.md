@@ -3,13 +3,19 @@ id: license-usage
 title: About license usage 
 ---
 
+To render webforms, you must have an available license, as rendering a webform opens a session on the project database's main web server.
+
 4D Web Studio's URL scheme configuration (HTTP and HTTPS) determines how many licenses are retained when rendering webforms. With the right configuration, you can avoid unnecessary license retaining.
+
+For deployment, The 4D Web Admin server is not necessary. 
+
+End-user access to your Web application made with 4D Web Studio is based on the 4D REST protocol. As such, it works as through a conventional 4D Client.
 
 ## URL Schemes
 
-As explained in the [configuration](configuration.md) section, the 4D [WebAdmin web server](https://developer.4d.com/docs/en/Admin/webAdmin.html) provides a secured web access to 4D Web Studio.
+As explained in the [configuration](./4d-settings.md) section, the 4D [WebAdmin web server](https://developer.4d.com/docs/en/Admin/webAdmin.html) provides a secured web access to 4D Web Studio.
 
-On the other hand, the [renderer](rendering.md) communicates with the 4D web server of the database using REST requests. As such, it behaves like a conventional 4D Client.
+On the other hand, the [renderer](../rendering.md) communicates with the 4D web server of the database using REST requests. As such, it behaves like a conventional 4D Client.
 
 If you run the renderer from the studio and these two web servers are not reached through the same URL scheme (HTTP or HTTPS), it might lead to wrong licence counting.
 

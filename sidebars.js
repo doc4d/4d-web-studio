@@ -7,9 +7,11 @@ module.exports = {
       label: "Overview"
     },
     {
-      type: 'doc',
-      id: 'configuration',
-      label: "Configuration"
+      type: 'category',
+      label: "Configuration",
+      items: ['configuration/4d-settings',
+        'configuration/license-usage'
+      ],
     },
     {
       type: 'category',
@@ -25,11 +27,6 @@ module.exports = {
       type: 'doc',
       id: 'rendering',
       label: "Rendering a webform"
-    },
-    {
-      type: 'doc',
-      id: 'license-usage',
-      label: "License usage"
     },
     {
       type: 'doc',

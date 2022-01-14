@@ -19,35 +19,13 @@ The following diagram describes how data flows to and from the studio:
 
 * The 4D WebAdmin web server provides a secured web access to 4D Web Studio and allows previewing webforms inside the studio.
 * The main 4D web server is [exposed as REST server](https://developer.4d.com/docs/en/REST/configuration.html#starting-the-rest-server), and the renderer communicates with it using [REST requests](https://developer.4d.com/docs/en/REST/gettingStarted.html).
-* The webforms are deployed with the application, and end users render them in their browsers. 
-
-## License
-
-To render webforms, you must have an available REST license, as rendering a webform opens a session on the project database's main web server.
-
-## Configuration
-
-The following options must be set:
-
-* The project's **Settings** > **Web** > **Web Features** > **Expose as REST server** option must be activated 
-* The [4D web server](https://developer.4d.com/docs/en/WebServer/webServer.html) must be running
-
-For more information on REST server configuration, see [Server Configuration](https://developer.4d.com/docs/en/REST/configuration.html) on developer.4d.com.
-
-Additionally, you can configure the 4D web server's IP and HTTP/HTTPS ports in **Settings** > **Web** > **Configuration**.
-
-When rendering webforms, the renderer will connect to the 4D web server through HTTP or HTTPS, depending on the settings, following the same HTTP/HTTPS connection pattern as for the [WebAdmin web server](https://developer.4d.com/docs/en/Admin/webAdmin.html#accept-http-connections-on-localhost).
-
-
-
+* The webforms are deployed with the application, and end-users render them in their browsers. 
 ## How to render a webform
 
 Webforms can be rendered from the 4D Web Studio IDE, or directly from a browser window. 
 ### From the 4D Web Studio IDE
 
-To open a browser tab and render a webform, click the **Render** button :
-
-![render-button](img/render-button.png)
+To open a browser tab and render a webform, click the **Render** button (![render-button](img/render-button.png)).
 
 A tab will open at `IP:port/$lib/renderer/?w=WebFormName`.
 
@@ -62,7 +40,3 @@ The button is displayed only when the [configuration options](#configuration) ar
 Webforms can be rendered directly from a browser window, by typing the following address:
 
 `IP:port/$lib/renderer/?w=WebFormName`
-
-## Exposed and non-exposed datasources 
-
-The renderer engine applies the REST resource restrictions defined in your 4D project's database. This means that only exposed datasources are rendered in the browser. 

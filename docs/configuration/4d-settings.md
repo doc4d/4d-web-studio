@@ -1,5 +1,5 @@
 ---
-id: configuration
+id: 4d-settings
 title: Configuration
 ---
 ## Requirements
@@ -48,7 +48,7 @@ Keep this option unchecked if you want to make sure no access to the studio is a
 
 Check this option to make it possible to access the studio. However, you still need to enable it at every project level.
 
-Additionally, you can configure the WebAdmin web server's HTTP/HTTPS port used when you [open the studio](#opening-4d-web-studio). If enabled, the HTTP port is used, otherwise the HTTPS port is used.
+Additionally, you can [configure the WebAdmin web server's HTTP/HTTPS port used](https://developer.4d.com/docs/en/Admin/webAdmin.html#accept-http-connections-on-localhost). 
 
 :::note 
 
@@ -92,3 +92,22 @@ There are two ways to access the studio:
 	`localhost:7080/studio`
 
 	You will then be prompted to enter the [access key](https://developer.4d.com/docs/en/Admin/webAdmin.html#access-key) to access the studio.
+
+## Enabling rendering
+
+To enable the [rendering of webforms](../rendering.md) that are created in the studio, the following options must be set.
+
+* The 4D project's **Settings** > **Web** > **Web Features** > **Expose as REST server** option must be activated 
+* The [4D web server](https://developer.4d.com/docs/en/WebServer/webServer.html) must be running
+
+For more information on REST server configuration, see [Server Configuration](https://developer.4d.com/docs/en/REST/configuration.html) on developer.4d.com.
+
+When rendering webforms, the renderer will connect to the 4D web server through HTTP or HTTPS, depending on the settings, following the same HTTP/HTTPS connection pattern as for the [WebAdmin web server](https://developer.4d.com/docs/en/Admin/webAdmin.html#accept-http-connections-on-localhost).
+
+### Exposed and non-exposed datasources 
+
+The renderer engine applies the REST resource restrictions defined in your 4D project's database. This means that only exposed datasources are rendered in the browser. 
+
+## WebAdmin server and deployment 
+
+For deployment, the 4D WebAdmin server is not necessary. End-user access to your web application made with 4D Web Studio is based on the 4D REST protocol, and as such, it works as through a conventional 4D Client.
