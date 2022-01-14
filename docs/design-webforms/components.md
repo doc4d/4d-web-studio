@@ -33,9 +33,9 @@ The following components are available:
 |Text|Displays text on a web page|
 |Datatable|Displays data in the form of a table. You can select a row to interact with the server|
 |Matrix| Container of repeated style boxes|
-|Webform loader| Allows you to embed a Webform inside another to create navigation in your application
+|Webform loader| Allows you to embed a Webform inside another
 
-> More components will be available in the future, and existing components will be enhanced.
+> More components will be available in the future, and the existing components will be enhanced.
 
 ## Server-side reference
 
@@ -76,6 +76,10 @@ To select any parent component displayed in the breadcrumbs trail, click its nam
 
 ### Outline
 
-The outline section displays the hierarchy of your webform. You can click an element in the list to select it, or click and drag it anywhere in the outline to move it somewhere else.
+The outline section displays the hierarchy of your webform:
+
+![outline](img/outline.png)
+
+Click an element in the list to select it, or click and drag it anywhere in the outline to move it somewhere else.
 
 To display or hide an element, click the eye icon.

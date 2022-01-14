@@ -18,14 +18,7 @@ module.exports = {
         'design-webforms/components',
         'design-webforms/styling',
         'design-webforms/datasources',
-        {
-          type: 'category',
-          label: "Events and interactions",
-          items: ['design-webforms/events/configuring-event',
-            'design-webforms/events/user-events',
-            'design-webforms/events/datasource-events'
-          ],
-        },
+        'design-webforms/events/events'
       ],
     },
     {

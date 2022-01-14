@@ -1,33 +1,33 @@
 ---
-id: configuring-event
-title: Events
+id: events
+title: Events and interactions
 ---
 
-Events are usually used as a means of triggering certain behaviors. They are used in conjunction with methods and class functions. 
+Events are usually used as a means of triggering certain behaviors. They are used in conjunction with different actions to create interaction in an application.
 
 For example, if the user clicks a button on a webpage, you can choose how to react by calling a function or opening another webpage. Events can also be triggered [when a datasource is updated](datasource-events.md). 
 
-With 4D Web Studio, events are used to execute code on the 4D server. No additional Javascript is needed.
+With 4D Web Studio, events are used to execute code on the 4D web server. No additional Javascript is needed.
 
 ## Configuring an event
 
-To configure an event, you must first select a component or a datasource.
+You can bind your webform events to different actions such as executing a function or navigating to another webform.
 
-The configuration panel displays the events compatible with the element selected:
+### Bind a class function to an event
 
-![event-datasource-event](img/event-datasource-event.png)
+1. Select a component or a datasource. The configuration panel displays the events compatible with the element selected
 
-Click a "+" button in the list to attach the corresponding event to the component or datasource. You can then add parameters (datasources or values) and point at a datasource to update.
+2. Click a "+" button in the list to attach the corresponding event to the component or datasource. 
+
+3. Select **execute a Member Function**
+
+4. Add parameters (datasources or values) and point at a local or remote datasource to update.
 
 A class function can be mapped to several events, and you can assign several events to the same class function.
 
-### Function event
-
-### Navigation event
+### Bind a navigation action to an event
 
 To create navigation in your application, you can attach a navigation action to an event. That way, when the event triggers, it opens a webform in the current browser tab or in a new one.
-
-To define a navigation event:
 
 1. Select a component or a datasource and attach an event to it
 2. Select the webform to open when the event triggers
@@ -41,9 +41,10 @@ Webforms do not currently share their contexts. This means that datasources are 
 
 :::
 
-## Triggering an event
+## Event types
 
-### User-action events
+Events can be set to trigger when end-users perform certain actions, or when datasources are updated.
+### User events
 
 You can set events to trigger when end-users perform certain actions, such as clicking a button.
 
@@ -73,7 +74,7 @@ An **onChange** event calls the `search` function and passes the text typed in t
 
 Now everytime the text changes inside the **Input** element, a query is sent and the list of students displayed in the **Matrix** component is updated.
 
-###  From a datasource
+###  Datasource events
 
 Aside from events triggered by end-user actions, events can trigger automatically when datasources are updated.
 

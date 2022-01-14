@@ -9,7 +9,7 @@ When working in 4D Web Studio, the `WebFormItem` class allows you to handle the 
 
 `4D.WebFormItem` objects are properties of the `4D.WebForm` object returned by the `Web Form` command. 
 
-When you call the `Web Form` command, the returned `4D.WebForm` object holds as many `4D.WebFormItems` as there are components with [server-side references](../webforms/design-webform.md#server-side-reference) in your webform.
+When you call the `Web Form` command, the returned `4D.WebForm` object holds as many `4D.WebFormItems` as there are components with [server-side references](../design-webforms/create-webform.md#server-side-reference) in your webform.
 
 For example, `WebFormObject.myImage` refers to the image component with `myImage` as server reference.
 

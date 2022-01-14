@@ -75,8 +75,8 @@ Once a local class is created, you can hover over it in the Styles Library and c
 
 ### See also
 
-If you're not familiar with CSS properties and styles, or you need a refresher, here are a few useful links:
+If you're not familiar with CSS properties and styles, or you need a refresher, here are a few useful links and tools:
 
 * Learn CSS on the [MDN website](https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/Cascade_and_inheritance)
 * A guide to [flexbox properties](https://css-tricks.com/snippets/css/a-guide-to-flexbox/) on css-tricks.com
-* [Box-shadow examples](https://getcssscan.com/css-box-shadow-examples),[box-shadow generator](https://cssgenerator.org/box-shadow-css-generator.html)
+* [Box-shadow examples](https://getcssscan.com/css-box-shadow-examples), [box-shadow generator](https://cssgenerator.org/box-shadow-css-generator.html)
