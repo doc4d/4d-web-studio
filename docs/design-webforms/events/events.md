@@ -3,7 +3,7 @@ id: events
 title: Events and interactions
 ---
 
-Events are usually used as a means of triggering certain behaviors. They are used in conjunction with different actions to create interaction in an application.
+Events are usually used as a means of triggering certain behaviors. They are used in conjunction with different actions to create interactions in an application.
 
 For example, if the user clicks a button on a webpage, you can choose how to react by calling a function or opening another webpage. Events can also be triggered [when a datasource is updated](datasource-events.md). 
 
@@ -17,11 +17,19 @@ You can bind your webform events to different actions such as executing a functi
 
 1. Select a component or a datasource. The configuration panel displays the events compatible with the element selected
 
-2. Click a "+" button in the list to attach the corresponding event to the component or datasource. 
+2. Click a **"+"** button in the list to attach the corresponding event to the component or datasource. 
 
 3. Select **execute a Member Function**
 
-4. Add parameters (datasources or values) and point at a local or remote datasource to update.
+4. Add parameters (datasources or values) and point at a local or remote datasource to update:
+
+    ![search](img/toggle-value.png)
+
+    :::note Tip
+
+    Passing values as parameters lets you test the behavior of a function without needing to create a datasource first.
+
+    :::
 
 A class function can be mapped to several events, and you can assign several events to the same class function.
 
@@ -106,7 +114,7 @@ Here's what you obtain after the button is clicked:
 
 ![event-datasource-result](img/event-datasource-result.png)
 
-## List of datasource events  
+### List of datasource events  
 
 ### On Change
 
@@ -117,8 +125,7 @@ An On Change event attached a datasource triggers in the following cases:
 |Datasource|<ul><li>The reference pointed by the datasource changes in the web browser (not on the server)</li><li>The entity is [touched](https://developer.4d.com/docs/en/API/EntityClass.html#touched)</li></ul>|
 |Entity attribute|The contents of the entity attribute change.|
 |Local datasource|The contents of the local datasource change.|
-|Entity selection datasource| <li>The reference pointed by the datasource changes in the web browser (not on the server)</li>
-<li>An entity is added to the entity selection</li>|
+|Entity selection datasource| <li>The reference pointed by the datasource changes in the web browser (not on the server)</li><li>An entity is added to the entity selection</li>|
 
 :::note 
 
