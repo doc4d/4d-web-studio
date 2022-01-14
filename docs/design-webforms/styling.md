@@ -73,7 +73,7 @@ This exports the [new style properties](#overriding-style-properties) of the ele
 
 Once a local class is created, you can hover over it in the Styles Library and click the **Edit Class** button next to its name to edit the CSS directly. The changes apply to all the components using this class.
 
-### See also
+## See also
 
 If you're not familiar with CSS properties and styles, or you need a refresher, here are a few useful links and tools:
 
