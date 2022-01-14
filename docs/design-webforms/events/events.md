@@ -80,7 +80,7 @@ Aside from events triggered by end-user actions, events can trigger automaticall
 
 For a list of datasource events, see [List of available events](#list-of-available-events).
 
-### Example - Updating an entity selection
+#### Example - Updating an entity selection
 
 In the image below: 
 
