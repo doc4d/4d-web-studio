@@ -1,5 +1,5 @@
 ---
-id: coding-and-debugging
+id: coding
 title: Coding
 ---
 
@@ -36,6 +36,3 @@ Selecting **Scope** > **Catalog** designates the project method as a function of
 When a class function is open in the studio, and that class function is edited elsewhere, its Tab will display "Outdated", meaning that the code displayed is not the latest version. To obtain the latest version, right click the Tab and then choose **Reload**.
 
 ![code-editor](img/code-editor.png)
-
-## Debugging 4D Code
-Until the online debugger is available, if you use 4D Web Studio on your local workstation together with 4D, placing a breakpoint in your code makes it possible for you to debug 4D code triggered from a 4D webform.
