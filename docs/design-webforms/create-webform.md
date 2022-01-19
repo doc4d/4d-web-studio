@@ -27,5 +27,5 @@ The Webform Editor provides several tools to customize the interface and content
 <li class="interface-item">Canvas: This is where you combine your components, styles and datasources. You can drag and drop components onto your canvas, then drag and drop CSS classes and datasources onto these components, and preview or render your webforms.</li>
 <li class="interface-item">Properties panel: Allows for advanced style customization. Also allows binding datasources to components.</li>
 <li class="interface-item">Contextual configuration panel: Link events and methods to your components, edit CSS styles, etc.</li>
-<li class="interface-item-2"> Header: Save and preview your work, and access additional settings.</li>
+<li class="interface-item-2"> Header: Save and preview your work, access the Data Explorer as well as additional settings.</li>
 </ol>

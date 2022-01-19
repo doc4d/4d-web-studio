@@ -30,8 +30,8 @@ module.exports = {
     },
     {
       type: 'doc',
-      id: 'coding',
-      label: "Coding"
+      id: 'coding-and-debugging',
+      label: "Coding and debugging"
     },
   ],
   apiSidebar: [

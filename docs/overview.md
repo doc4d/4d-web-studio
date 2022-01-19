@@ -73,4 +73,4 @@ Since 4D Web Studio is still in early stages of development, some features are n
 
  At this stage:
 * The debugger is not available yet
-* Navigation features are still in development, but you can already embed a webform inside another using the [Webform Loader](design-webforms/create-webform.md#component-list)
+* Navigation features are still in development, but you can already embed a webform inside another using the [Webform Loader](design-webforms/create-webform.md#component-list) and attach [navigation actions to events](design-webforms/events/events.md#bind-a-navigation-action-to-an-event).

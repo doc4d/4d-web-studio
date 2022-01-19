@@ -27,7 +27,7 @@ You can bind your webform events to different actions such as executing a functi
 
     :::note Tip
 
-    Passing values as parameters lets you test the behavior of a function without needing to create a datasource first.
+    Passing values as parameters lets you test the behavior of a function without creating a datasource.
 
     :::
 
@@ -128,8 +128,8 @@ An On Change event attached a datasource triggers in the following cases:
 |Trigger|Description|
 |---|---|
 |Datasource|<ul><li>The reference pointed by the datasource changes in the web browser (not on the server)</li><li>The entity is [touched](https://developer.4d.com/docs/en/API/EntityClass.html#touched)</li></ul>|
-|Entity attribute|The contents of the entity attribute change.|
-|Local datasource|The contents of the local datasource change.|
+|Entity attribute|The contents of the entity attribute change|
+|Local datasource|The contents of the local datasource change|
 |Entity selection datasource| <li>The reference pointed by the datasource changes in the web browser (not on the server)</li><li>An entity is added to the entity selection</li>|
 
 :::note 
