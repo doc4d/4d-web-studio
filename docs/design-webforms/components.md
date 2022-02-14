@@ -32,7 +32,7 @@ The following components are available:
 |Checkbox|Allows the user to make a binary choice (boolean value)|
 |Text|Displays text on a web page|
 |Datatable|Displays data in the form of a table. You can select a row to interact with the server|
-|Matrix| Container of repeated style boxes|
+|Matrix| Container of repeated style boxes. Its stylebox must have a fixed height set in pixels|
 |Webform loader| Allows you to embed a Webform inside another
 
 > More components will be available in the future, and the existing components will be enhanced.
