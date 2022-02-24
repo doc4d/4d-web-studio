@@ -26,7 +26,7 @@ title: Overview
 
 At the end of the road, developers will be able to build complete web business applications using only a web browser and their 4D coding skills. There is no Javascript involved.
 
-#### Hello World
+## Hello World
 
 This 5-minute video provides a "Hello World" example and goes on to cover how to enable access to the studio, create a basic interface, and configure an event that greets the user by their name:
 
