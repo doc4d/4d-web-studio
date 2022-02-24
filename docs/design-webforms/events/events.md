@@ -61,6 +61,12 @@ Events can be set to trigger when end-users perform certain actions or when data
 
 You can set events to trigger when end-users perform certain actions, such as clicking a button.
 
+#### Example: Hello User
+
+This 5-minute video provides a "Hello User" example. Starting from a simple database, it covers how to enable access to the studio, create a basic interface, and trigger a search to greet the user by their name:
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/GwIdic4OhPQ" title="YouTube video player" frameborder="0" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
 #### Example: Search feature using the `onChange` event
 
 The objective is to update a list of students displayed in a **Matrix** component according to what the end-user types in an input area.
