@@ -44,8 +44,8 @@ To do this:
 3. Define where the target webform opens:
     * **New Tab**: Opens the target webform in a new browser tab 
     * **Current Tab**: Opens the target webform in the current browser tab, replacing the current webform
-    * **Webform Loader**: Opens the target webform in the selected Webform loader.
-    * **Webform Loader (Self)**: Opens the target webform in the current Webform loader.
+    * **Webform Loader**: Opens the target webform in the selected Webform loader
+    * **Webform Loader (Self)**: Opens the target webform in the current Webform loader
 
 ![search](img/navigation-event.png)
 
