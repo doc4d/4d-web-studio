@@ -35,7 +35,9 @@ A class function can be mapped to several events, and you can assign several eve
 
 ### Bind a navigation action to an event
 
-To create navigation in your application, you can attach a navigation action to an event. That way, when the event triggers, it opens a webform in the current browser tab or in a new one.
+Inside your application, you can create navigation between pages or update the contents of a page by binding navigation actions to events.
+
+To do this: 
 
 1. Select a component or a datasource and select **Add a Navigation Event** in the Contextual panel.
 2. Select a target webform to navigate to.
