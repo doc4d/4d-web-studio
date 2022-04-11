@@ -37,9 +37,13 @@ A class function can be mapped to several events, and you can assign several eve
 
 To create navigation in your application, you can attach a navigation action to an event. That way, when the event triggers, it opens a webform in the current browser tab or in a new one.
 
-1. Select a component or a datasource and attach an event to it
-2. Select the navigation action to perform when the event triggers
-3. Define if the webform opens in the current browser tab or a new one:
+1. Select a component or a datasource and select **Add a Navigation Event** in the Contextual panel.
+2. Select a target webform to navigate to.
+3. Define where the target webform opens:
+    * **New Tab**: Opens the target webform in a new browser tab 
+    * **Current Tab**: Opens the target webform in the current browser tab, replacing the current webform
+    * **Webform Loader**: Opens the target webform in the selected Webform loader.
+    * **Webform Loader (Self)**: Opens the target webform in the current Webform loader.
 
 ![search](img/navigation-event.png)
 
@@ -48,6 +52,7 @@ To create navigation in your application, you can attach a navigation action to 
 Webforms do not currently share their contexts. This means that datasources are currently not shared between webforms. For example, you cannot use webform1's datasources in webform2.  
 
 :::
+
 ### Chaining actions
 
 You can attach several events to a component or datasource. 
