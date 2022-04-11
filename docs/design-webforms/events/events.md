@@ -42,10 +42,10 @@ To do this:
 1. Select a component or a datasource and select **Add a Navigation Event** in the Contextual panel.
 2. Select a target webform to navigate to.
 3. Define where the target webform opens:
-    * **New Tab**: Opens the target webform in a new browser tab 
-    * **Current Tab**: Opens the target webform in the current browser tab, replacing the current webform
-    * **Webform Loader**: Opens the target webform in the selected Webform loader
-    * **Webform Loader (Self)**: Opens the target webform in the current Webform loader
+    * **New Tab**: Opens in a new browser tab 
+    * **Current Tab**: Opens in the current browser tab, replacing the current webform
+    * **Webform Loader**: Opens in the selected Webform loader
+    * **Webform Loader (Self)**: Opens in the current Webform loader
 
 ![search](img/navigation-event.png)
 
