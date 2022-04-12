@@ -57,9 +57,9 @@ When you select a component, the tooltip displays its type and offers several ac
 
 |Icon|Action|
 |---|---|
-|Move|Moves the selected component on the canvas.|
-|Select parent component|Selects the parent component.|
-|Delete Component|Removes the selected component from the canvas.|
+|Move|Moves the selected component on the canvas|
+|Select parent component|Selects the parent component|
+|Delete Component|Removes the selected component from the canvas|
 |Export Styles|Exports the [overridden CSS properties](styling.md#overriding-style-properties) to a new CSS class|
 |Open Events Panel|Opens the bottom panel, allowing you to bind events to the component|
 |Save as Craft|Saves the component, its child components, and their styles as a reusable component|
