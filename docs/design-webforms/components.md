@@ -57,14 +57,18 @@ When you select a component, the tooltip displays its type and offers several ac
 
 |Icon|Action|
 |---|---|
-|Cursor|Move the selected component on the canvas|
+|Move|Move the selected component on the canvas|
 |Arrow|Select the parent component|
-|Delete|Remove the selected component from the canvas|
-|CSS|Export the [overriden CSS properties](styling.md#overriding-style-properties) to a new CSS class|
-|Barred T|Reset styles (resets the [overriden CSS properties](styling.md#overriding-style-properties))|
-|Duplicate icon|Duplicate the component|
+|Delete Component|Remove the selected component from the canvas|
+|Export Styles|Export the [overriden CSS properties](styling.md#overriding-style-properties) to a new CSS class|
+|Open Events Panel|Open the bottom panel, allowing you to bind events to the component|
+|Save as Craft|Saves the component, its child components and their styles as a reusable component|
+|Clear Styles|Reset styles (resets the [overriden CSS properties](styling.md#overriding-style-properties))|
+|Duplicate|Duplicate the component|
 
-The tooltip is contextual. This means that some actions are only available to certain elements, and not others. For example, you can duplicate a Text input component, but not its individual parts (Label and Input).
+In addition to these actions, the contextual panel also offers basic actions such as **Copy**, **Cut**, and **Paste**.
+
+The tooltip is contextual. This means that some actions are available to certain elements, and not others. For example, you can duplicate a Text input component, but not its individual parts (Label and Input). 
 
 ### Breadcrumbs
 
