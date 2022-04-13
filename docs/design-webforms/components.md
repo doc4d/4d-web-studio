@@ -88,17 +88,20 @@ Click an element in the list to select it, or click and drag it anywhere in the 
 
 To display or hide an element, click the eye icon.
 
-### Crafting your own components
+### Crafted components
 
 You can turn your components into reusable chunks by saving them as *crafted components*.
 
+Any component can be saved as crafted component, except for the Webform component, and then reused within the same project. 
+
 A crafted component includes the initial component's:
-* child components and styles, including CSS classes
+* styles, including CSS classes
+* child components and their properties
 * event configuration
+* datasource references
 
-Any component can be saved as crafted component, except for the Webform component. 
-
-To create a crafted component:
+A crafted component's parts, such as Datatable or Matrix components, won't display any data if the target Webform doesn't have datasources that match their references.
+#### Creating a crafted component
 
 1. Select the element you want to turn into a crafted component.
 2. In the **Tooltip**, click **...** and select **Save as craft**.
@@ -106,6 +109,8 @@ To create a crafted component:
 4. Click **Add**.
 
 The newly crafted component is now available in the **Crafts** section and can be moved to the Canvas.
+
+When you drop a crafted component on the canvas, its CSS classes are imported into the target Webform, unless that Webform already has CSS classes with the same name.
 
 ### Templates
 
