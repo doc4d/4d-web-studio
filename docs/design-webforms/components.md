@@ -92,15 +92,13 @@ To display or hide an element, click the eye icon.
 
 You can turn your components into reusable chunks by saving them as *crafted components*.
 
-Any component can be saved as crafted component, except for the Webform component, and then reused within the same project. 
+Any component can be saved as crafted component, except for the Webform component.
 
 A crafted component includes the initial component's:
 * styles, including CSS classes
 * child components and their properties
 * event configuration
 * datasource references
-
-A crafted component's parts, such as Datatable or Matrix components, won't display any data if the target Webform doesn't have datasources that match their references.
 #### Creating a crafted component
 
 1. Select the element you want to turn into a crafted component.
@@ -108,13 +106,17 @@ A crafted component's parts, such as Datatable or Matrix components, won't displ
 3. (Optional) Enter a name for the crafted component.
 4. Click **Add**.
 
-The newly crafted component is now available in the **Crafts** section and can be moved to the Canvas.
+The crafted component is now available in the **Crafts** section and can be moved to the Canvas.
+
+#### Handling styles and datasources
 
 When you drop a crafted component on the canvas, its CSS classes are imported into the target Webform, unless that Webform already has CSS classes with the same name.
 
+Crafted components include datasource references, but not the datasources themselves. For example, when you move a crafted component to a new Webform, Datatable and Matrix components only display data if the Webform has datasources corresponding to the crafted component's references.
+
 ### Templates
 
-Templates are a great way to jump-start your building process. 4D offers templates to help you design things more quickly. These templates come as-is and may require customization.
+Templates are a great way to jump-start your building process. 4D Web Studio offers templates to help you design things more quickly. These templates come as-is and may require customization.
 
 :::note
 
