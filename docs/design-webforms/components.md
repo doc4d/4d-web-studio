@@ -112,7 +112,7 @@ The crafted component is now available in the **Crafts** section and can be move
 
 When you drop a crafted component on the canvas, its CSS classes are imported into the target Webform, unless that Webform already has CSS classes with the same name.
 
-Crafted components include datasource references, but not the datasources themselves. For example, when you move a crafted component to a new Webform, Datatable and Matrix components only display data if the Webform has datasources corresponding to the crafted component's references.
+Crafted components include datasource references, but not the datasources themselves. This means that when you use a crafted component in a webform, components with references to datasources (Datatable or Matrix for example) only display data if that webform has datasources corresponding to those references.
 
 ## Templates
 
