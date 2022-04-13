@@ -88,7 +88,7 @@ Click an element in the list to select it, or click and drag it anywhere in the 
 
 To display or hide an element, click the eye icon.
 
-### Crafted components
+## Crafted components
 
 You can turn your components into reusable chunks by saving them as *crafted components*.
 
@@ -99,7 +99,7 @@ A crafted component includes the initial component's:
 * child components and their properties
 * event configuration
 * datasource references
-#### Creating a crafted component
+### Creating a crafted component
 
 1. Select the element you want to turn into a crafted component.
 2. In the **Tooltip**, click **...** and select **Save as craft**.
@@ -108,13 +108,13 @@ A crafted component includes the initial component's:
 
 The crafted component is now available in the **Crafts** section and can be moved to the Canvas.
 
-#### Handling styles and datasources
+### Handling styles and datasources
 
 When you drop a crafted component on the canvas, its CSS classes are imported into the target Webform, unless that Webform already has CSS classes with the same name.
 
 Crafted components include datasource references, but not the datasources themselves. For example, when you move a crafted component to a new Webform, Datatable and Matrix components only display data if the Webform has datasources corresponding to the crafted component's references.
 
-### Templates
+## Templates
 
 Templates are a great way to jump-start your building process. 4D Web Studio offers templates to help you design things more quickly. These templates come as-is and may require customization.
 
