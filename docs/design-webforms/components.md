@@ -88,6 +88,25 @@ Click an element in the list to select it, or click and drag it anywhere in the 
 
 To display or hide an element, click the eye icon.
 
+### Crafting your own components
+
+You can turn your components into reusable chunks by saving them as *crafted components*.
+
+A crafted component includes the initial component's:
+* child components and styles, including CSS classes
+* event configuration
+
+Any component can be saved as crafted component, except for the Webform component. 
+
+To create a crafted component:
+
+1. Select the element you want to turn into a crafted component.
+2. In the **Tooltip**, click **...** and select **Save as craft**.
+3. (Optional) Enter a name for the crafted component.
+4. Click **Add**.
+
+The newly crafted component is now available in the **Crafts** section and can be moved to the Canvas.
+
 ### Templates
 
 Templates are a great way to jump-start your building process. 4D offers templates to help you design things more quickly. These templates come as-is and may require customization.
