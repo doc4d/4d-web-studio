@@ -14,8 +14,8 @@ Inside the Webform Editor, the **Data Sources** section groups the available dat
 In this section, you'll find:
 
 *  The **Catalog**, which holds:
-    * data from your database: You can designate entities or entity selections from your [datastore](https://developer.4d.com/docs/en/ORDA/dsmapping.html), and they will be handled by the server as Remote datasources.
-    * Class functions: The Catalog displays the functions defined in each class. 
+    * data from your database. From this list, you can designate entities or entity selections from your [datastore](https://developer.4d.com/docs/en/ORDA/dsmapping.html), and they will be handled by the server as remote datasources.
+    * the functions defined in each class
 
 *  **Remote datasources**: Entities and entity selections, handled on the server, that can be assigned to components. 
 They offer functions defined on the [ORDA classes](https://developer.4d.com/docs/en/ORDA/ordaClasses.html#class-description) that they instantiate (Entity class, Entity Selection class).
