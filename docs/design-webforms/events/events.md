@@ -44,8 +44,8 @@ To do this:
 3. Define where the target webform opens:
     * **New Tab**: Opens in a new browser tab 
     * **Current Tab**: Opens in the current browser tab, replacing the current webform
-    * **Webform Loader**: Opens in the selected Webform loader
-    * **Webform Loader (Self)**: Opens in the current Webform loader
+    * **Webform Loader**: Opens in the selected [Webform loader](../components.md#component-list)
+    * **Webform Loader (Self)**: Opens in the current [Webform loader](../components.md#component-list)
 
 ![search](img/navigation-event.png)
 
