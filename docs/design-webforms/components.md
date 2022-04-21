@@ -102,7 +102,7 @@ A crafted component includes the initial component's:
 
 ### How to craft a component
 
-1. Select the element you want to turn into a crafted component.
+1. On the canvas, select the element you want to turn into a crafted component.
 2. In the **Tooltip**, click **...** and select **Save as craft**.
 3. (Optional) Enter a name for the crafted component.
 4. Click **Add**.
