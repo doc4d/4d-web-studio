@@ -90,7 +90,7 @@ To display or hide an element, click the eye icon.
 
 ## Crafted components
 
-You can turn your components into reusable chunks by saving them as *crafted components*.
+You can craft your own components, that is, turn any component and its child components into a reusable component. 
 
 Any component can be saved as crafted component, except for the Webform component.
 
@@ -99,7 +99,8 @@ A crafted component includes the initial component's:
 * child components and their properties
 * event configuration
 * datasource references
-### Creating a crafted component
+
+### How to craft a component
 
 1. Select the element you want to turn into a crafted component.
 2. In the **Tooltip**, click **...** and select **Save as craft**.
