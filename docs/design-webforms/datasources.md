@@ -38,6 +38,12 @@ See [Exposed vs non-exposed functions](https://developer.4d.com/docs/en/ORDA/ord
 2. Click the "+" icon next to a dataclass
 3. Select Entity or Entity Selection and click **Confirm**. The newly created Entity or Entity selection now appears as a Remote datasource
 
+:::note
+
+Datasources are not shared across webforms, so the datasources you create in a webform cannot be used in other webforms.
+
+:::
+
 #### From a Remote datasource
 
 Click the "+" icon:
@@ -47,12 +53,14 @@ Click the "+" icon:
 #### From a Text component
 
 Select text inside a **Text** component and click the **Toggle Datasource** icon to create a local datasource.
+
 ## Binding a datasource to a component
 
 There are several ways to bind a datasource to a component:
 
 * Drag it from the Data Source section and drop it on a component
 * Select a component and enter the name of the datasource in the Properties panel > Data Access > DataSource 
+
 ## Attaching events to datasources 
 
 You can attach events to datasources to trigger certain actions when these datasources are updated in the web browser. See [datasource events](design-webforms/events/events.md#datasource-events) for more information.

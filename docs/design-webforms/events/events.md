@@ -49,12 +49,6 @@ To do this:
 
 ![search](img/navigation-event.png)
 
-:::note
-
-Webforms do not currently share their contexts. This means that datasources are currently not shared between webforms. For example, you cannot use webform1's datasources in webform2.  
-
-:::
-
 ### Chaining actions
 
 You can attach several events to a component or datasource. 
