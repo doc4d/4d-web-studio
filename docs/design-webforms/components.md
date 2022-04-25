@@ -33,7 +33,7 @@ The following components are available:
 |Text|Displays text on a web page|
 |Datatable|Displays data in the form of a table. You can select a row to interact with the server|
 |Matrix| Container of repeated Styleboxes. Its Stylebox must have a fixed height set in pixels|
-|Webform loader| Displays another webform inside the current Webform component|
+|Webform loader| Displays a webform inside the current Webform component|
 
 #### About Webform loaders
 
