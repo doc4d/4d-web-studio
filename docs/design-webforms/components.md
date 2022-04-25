@@ -35,13 +35,17 @@ The following components are available:
 |Matrix| Container of repeated Styleboxes. Its Stylebox must have a fixed height set in pixels|
 |Webform loader| Displays a webform inside the current Webform component|
 
-#### About Webform loaders
-
-A Webform loader's initial value determines which webform it displays when it loads. You can set that initial value in the Properties panel. An initial values set this way is ignored if a datasource of type Text is attached to the Webform loader.
-
-You can get a Webform loader to dynamically display webforms. To do this, bind a local datasource of type Text to it. That way, when the value of the datasource changes, the webform whose name matches that value is displayed. 
-
 > More components will be available in the future, and the existing components will be enhanced.
+
+#### Setting a Webform loader's initial value
+
+A Webform loader's initial value determines which webform it displays when it loads. You can set that initial value in one of the following ways: 
+* using the Properties panel
+* by binding a local datasource of type Text to it and giving it an initial value. 
+
+The initial value must match the name of the webform to display.
+
+The difference between these methods is that using a local datasource allows you to dynamically update the contents of the Webform loader by changing the value of the datasource.
 
 ## Server-side reference
 
