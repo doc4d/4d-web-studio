@@ -24,7 +24,7 @@ The following components are available:
 |Tabs|Organizes and allows navigation between groups of content that are related and at the same level of hierarchy|
 |Text input|Allows users to enter data in a form|
 |Button|Triggers actions on a web page|
-|Radio button|Allows selecting one of a set of options (only one option can be selected at any time)|
+|Radio button|Allows selecting one of a set of options|
 |Range input|Allows selecting a value in a range|
 |Select box|Allows selecting an item in a list|
 |Image|Displays an image|
@@ -32,8 +32,14 @@ The following components are available:
 |Checkbox|Allows the user to make a binary choice (boolean value)|
 |Text|Displays text on a web page|
 |Datatable|Displays data in the form of a table. You can select a row to interact with the server|
-|Matrix| Container of repeated style boxes. Its stylebox must have a fixed height set in pixels|
-|Webform loader| Allows you to embed a Webform inside another
+|Matrix| Container of repeated Styleboxes. Its Stylebox must have a fixed height set in pixels|
+|Webform loader| Displays another webform inside the current Webform component|
+
+#### About Webform loaders
+
+A Webform loader's initial value determines which webform it displays when it loads. You can set that initial value in the Properties panel. 
+
+You can also get a Webform loader to dynamically display webforms. To do this, bind a local datasource of type Text to it. That way, when the value of the datasource changes, the Webform loader displays the webform whose name matches that value.
 
 > More components will be available in the future, and the existing components will be enhanced.
 
@@ -62,7 +68,7 @@ When you select a component, the tooltip displays its type and offers several ac
 |Delete Component|Removes the selected component from the canvas|
 |Export Styles|Exports the [overridden CSS properties](styling.md#overriding-style-properties) to a new CSS class|
 |Open Events Panel|Opens the bottom panel, allowing you to bind events to the component|
-|Save as Craft|Saves the component, its child components, and their styles as a reusable component|
+|Save as craft|Saves the component, its child components, and their styles as a reusable component|
 |Clear Styles|Clears the styles of the selected element (resets the [overridden CSS properties](styling.md#overriding-style-properties))|
 |Duplicate|Duplicates the component|
 
