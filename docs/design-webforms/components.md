@@ -37,7 +37,7 @@ The following components are available:
 
 #### About Webform loaders
 
-A Webform loader's initial value determines which webform it displays when it loads. You can set that initial value in the Properties panel. Initial values set this way are ignored if a datasource of type Text is attached to the Webform loader.
+A Webform loader's initial value determines which webform it displays when it loads. You can set that initial value in the Properties panel. An initial values set this way is ignored if a datasource of type Text is attached to the Webform loader.
 
 You can get a Webform loader to dynamically display webforms. To do this, bind a local datasource of type Text to it. That way, when the value of the datasource changes, the Webform loader displays the webform whose name matches that value. 
 
