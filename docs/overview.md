@@ -15,7 +15,7 @@ title: Overview
 
 ## What is 4D Web Studio?
 
-4D Web Studio is a new way of building business web applications, powered by 4D. Our vision is to provide developers a 100% web browser experience by allowing them to:
+4D Web Studio is a new way of building business web applications, powered by 4D. Our vision is to provide developers a 100% web-browser-based experience by allowing them to:
 
 * design web forms visually by drag and dropping components on a canvas
 * preview pages instantly
