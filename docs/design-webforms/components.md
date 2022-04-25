@@ -122,8 +122,8 @@ The crafted component is now available in the **Components** > **Crafted** secti
 ### Handling styles and datasources
 
 When you drop a crafted component on the Canvas:
-* its CSS classes are imported into the target Webform, unless that Webform already has CSS classes with the same name.
-* its datasources are not imported into the target Webform. That's because crafted components only include references to datasources, not the datasources themselves.
+* its CSS classes are imported into the target webform, unless that Webform already has CSS classes with the same names.
+* its datasources are not imported into the target webform. That's because crafted components only include references to datasources, not the datasources themselves.
 
 ## Templates
 
