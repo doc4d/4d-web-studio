@@ -38,12 +38,6 @@ See [Exposed vs non-exposed functions](https://developer.4d.com/docs/en/ORDA/ord
 2. Click the "+" icon next to a dataclass
 3. Select Entity or Entity Selection and click **Confirm**. The newly created Entity or Entity selection now appears as a Remote datasource
 
-:::note
-
-Datasources are not shared across webforms, so the datasources you create in a webform cannot be used in other webforms.
-
-:::
-
 #### From a Remote datasource
 
 Click the "+" icon:
@@ -72,4 +66,18 @@ You can store data in local and remote datasources. For example, you can configu
 ## Keeping track of your datasources
 
 The **Inspect** option ![styles-library](img/inspect-button.png) allows you to check where your datasources are used in your webforms. Toggle the option by clicking the icon, then mouse over a datasource to highlight its location in your webform.
+
+## Shared datasources 
+
+Inside a project, you can create shared datasources. Shared datasources can be used in several webforms.
+
+Shared datasources are grouped under namespaces. To create a shared datasource, follow the steps to [create a local or remote datasource](#creating-a-datasource) and enter a namespace before choosing **Confirm**. 
+
+When you select a component, the Properties panel allows you to identify if a datasource is shared:
+* If the datasource is shared, its namespace appears next to its name.
+* If the datasource is not shared, *webform* is displayed next to its name.
+
+![shared-datasource](./img/shared-datasources-properties.png)
+
+
 
