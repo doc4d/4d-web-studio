@@ -69,14 +69,14 @@ The **Inspect** option ![styles-library](img/inspect-button.png) allows you to c
 
 ## Shared datasources 
 
-Inside a project, you can create shared datasources. Shared datasources can be used in several webforms.
+Inside a project, you can create *shared datasources*. A shared datasource can be used in several webforms inside the same project.
 
 Shared datasources are grouped under namespaces. To create a shared datasource, follow the steps to [create a local or remote datasource](#creating-a-datasource) and enter a namespace before choosing **Confirm**. 
 
-When you select a component, the Properties panel allows you to identify if a datasource is shared:
+When you select a component linked to a datasource, the Properties panel allows you to identify if that datasource is shared:
 * If the datasource is shared, its namespace appears next to its name.
 * If the datasource is not shared, *webform* is displayed next to its name to indicate that it can only be used in the current webform.
 
 ![shared-datasource](./img/shared-datasources-properties.png)
 
-
+Namespaces of shared datasources are also displayed in the Contextual panel when you configure events that trigger functions.
