@@ -24,7 +24,7 @@ title: Overview
 * code & debug in the browser
 * and even edit a data model
 
-At the end of the road, developers will be able to build complete web business applications using only a web browser and their 4D coding skills. There is no Javascript involved.
+At the end of the road, developers will be able to build complete web business applications using only a web browser and their 4D coding skills. There is no JavaScript involved.
 
 ## Hello, World!
 
