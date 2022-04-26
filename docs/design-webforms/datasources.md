@@ -83,6 +83,6 @@ Namespaces of shared datasources are also displayed in the Contextual panel when
 
 ### Shared functions 
 
-By extension, when entity and entity selections are used as shared datasources, their functions are shared too and can be used in several webforms in the project. 
+By extension, when entity and entity selections are used as shared datasources, their functions are shared too and can be used in several webforms in the same project. 
 
 When you configure a function event, the Contextual panel indicates if the function is shared by displaying its namespace. When the function is not shared, *webform* is displayed. 
