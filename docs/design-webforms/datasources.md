@@ -75,9 +75,8 @@ Shared datasources are grouped under namespaces. To create a shared datasource, 
 
 When you select a component, the Properties panel allows you to identify if a datasource is shared:
 * If the datasource is shared, its namespace appears next to its name.
-* If the datasource is not shared, *webform* is displayed next to its name.
+* If the datasource is not shared, *webform* is displayed next to its name to indicate that it can only be used in the current webform.
 
 ![shared-datasource](./img/shared-datasources-properties.png)
-
 
 
