@@ -15,11 +15,11 @@ You can bind your webform events to different actions such as executing a functi
 
 ### Bind a class function to an event
 
-1. Select a component or a datasource. The configuration panel displays the events compatible with the element selected
+1. Select a component or a datasource. The Contextual panel displays the events that are compatible with the element you selected.
 
-2. Click a **"+"** button in the list to attach the corresponding event to the component or datasource. 
+2. Click a **Add a Function Event** to attach the corresponding event to the component or datasource.
 
-3. Select **execute a Member Function**
+3. Select a function in the list. 
 
 4. Add parameters (datasources or values) and point at a local or remote datasource to update:
 
@@ -58,6 +58,7 @@ Events are executed in their defined order. When an event triggers, its actions 
 ## Event types
 
 Events can be set to trigger when end-users perform certain actions or when datasources are updated.
+
 ### User events
 
 You can set events to trigger when end-users perform certain actions, such as clicking a button.

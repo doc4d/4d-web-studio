@@ -53,7 +53,7 @@ Select text inside a **Text** component and click the **Toggle Datasource** icon
 There are several ways to bind a datasource to a component:
 
 * Drag it from the Data Source section and drop it on a component
-* Select a component and enter the name of the datasource in the Properties panel > Data Access > DataSource 
+* Select a component and enter the name of the datasource in the **Properties** panel > **Data Access** > **DataSource** 
 
 ## Attaching events to datasources 
 
@@ -80,3 +80,9 @@ When you select a component linked to a datasource, the Properties panel allows 
 ![shared-datasource](./img/shared-datasources-properties.png)
 
 Namespaces of shared datasources are also displayed in the Contextual panel when you configure events that trigger functions.
+
+### Shared functions 
+
+By extension, when entity and entity selections are used as shared datasources, their functions are shared too and can be used in several webforms in the project. 
+
+When you configure a function event, the Contextual panel indicates if the function is shared by displaying its namespace. When the function is not shared, *webform* is displayed. 
