@@ -35,12 +35,12 @@ See [Exposed vs non-exposed functions](https://developer.4d.com/docs/en/ORDA/ord
 #### From the Catalog
 
 1. In the Data Sources section, choose **Catalog** > **Data Classes**
-2. Click the "+" icon next to a dataclass
-3. Select Entity or Entity Selection and click **Confirm**. The newly created Entity or Entity selection now appears as a Remote datasource
+2. Click the **+** icon next to a dataclass
+3. Select Entity or Entity Selection and click **Confirm**. The newly created Entity or Entity selection now appears as a remote datasource in the **Remote** section
 
 #### From a Remote datasource
 
-Click the "+" icon:
+Click the **+** icon:
 * next to an entity selection to create an entity (current element of the entity selection)
 * next to an entity's relation to create an entity selection or an entity 
 
@@ -52,7 +52,7 @@ Select text inside a **Text** component and click the **Toggle Datasource** icon
 
 There are several ways to bind a datasource to a component:
 
-* Drag it from the Data Source section and drop it on a component
+* Drag it from the **Data Sources** section and drop it on a component
 * Select a component and enter the name of the datasource in the **Properties** panel > **Data Access** > **DataSource** 
 
 ## Attaching events to datasources 
@@ -69,7 +69,7 @@ The **Inspect** option ![styles-library](img/inspect-button.png) allows you to c
 
 ## Shared datasources 
 
-Inside a project, you can create *shared datasources*. A shared datasource can be used in several webforms inside the same project.
+Inside a project, you can create *shared datasources*. A shared datasource is a datasource that can be used in several webforms inside the same project.
 
 Shared datasources are grouped under namespaces. To create a shared datasource, follow the steps to [create a local or remote datasource](#creating-a-datasource) and enter a namespace before choosing **Confirm**. 
 
