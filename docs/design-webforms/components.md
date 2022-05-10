@@ -43,9 +43,11 @@ A Webform loader's initial value determines which webform it displays when it lo
 * using the Properties panel
 * by binding a local datasource of type Text to it and giving it an initial value. 
 
+> If you apply both methods to the same Webform loader, the contents of the bound datasource are displayed in priority.
+
 The initial value must match the name of the webform to display.
 
-The difference between these methods is that using a local datasource allows you to dynamically update the contents of the Webform loader by changing the value of the datasource.
+The difference between these methods is that binding a local datasource allows you to dynamically update the contents of the Webform loader. Every time the value of the datasource changes, the contents of the Webform loader are updated accordingly.
 
 ## Server-side reference
 
