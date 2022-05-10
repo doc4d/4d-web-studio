@@ -117,13 +117,14 @@ A crafted component includes the initial component's:
 3. (Optional) Enter a name for the crafted component.
 4. Click **Add**.
 
-The crafted component is now available in the **Components** > **Crafted** section and can be moved to the Canvas.
+The crafted component is now available in the **Components** > **Crafted** section and can be dragged and dropped on the Canvas.
 
-### Handling styles and datasources
+### Handling styles, datasources and events
 
 When you drop a crafted component on the Canvas:
-* its CSS classes are imported into the target webform, unless that Webform already has CSS classes with the same names.
+* its CSS classes are imported into the target Webform, unless that Webform already has CSS classes with the same names.
 * its datasources are not imported into the target webform. That's because crafted components only include references to datasources, not the datasources themselves.
+* its event configuration is preserved, so you'll need to modify that configuration or make sure it matches the webform where you drop the crafted component.
 
 ## Templates
 
