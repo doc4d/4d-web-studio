@@ -33,6 +33,8 @@ You can bind your webform events to different actions such as executing a functi
 
 A class function can be mapped to several events, and you can assign several events to the same class function.
 
+> When configuring events,the functions that have namespaces displayed next to them are [shared functions](../datasources.md/#shared-functions).
+
 ### Bind a navigation action to an event
 
 Inside your application, you can create navigation between pages or update the contents of a page by binding navigation actions to events.
