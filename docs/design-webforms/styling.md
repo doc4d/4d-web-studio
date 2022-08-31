@@ -9,15 +9,23 @@ Once a component is on the Canvas, you can customize its look using styling tool
 
 One way of styling components is by dragging CSS classes from the Styles Library and dropping them on the components.
 
-The Styles Library offers two types of styles: 
+The Styles Library offers three types of styles: 
 * Local: Styles you create
 * Theme: Predefined CSS classes
+* Shared: Shared CSS classes
 
 ![styles-library](img/styles-library.png)
 
-Unlike Theme classes, Local styles can only be used in the Webforms in which they are created. 
+Local styles can only be used in the Webforms in which they are created, while theme and shared CSS classes are usable by all Webforms through the whole project.
 
-To create a local CSS class, click the "+" button and enter a name. CSS classes can be edited in the Contextual panel at the bottom.
+Theme classes cannot be modified. 
+
+To create a local CSS class, click the "+" button and enter a name and let the **Export as Shared** option unchecked.
+To create a shared CSS class, check the **Export as Shared** option.
+
+Local or shared CSS class code can be edited in the Contextual panel at the bottom.
+
+
 
 #### Inspect button
 
@@ -59,8 +67,9 @@ You can export the new values to create a new CSS class.
 
 You can export the style of an element as a CSS class to reuse it later: 
 1. Select a an element on the canvas, the tooltip appears.
-2. Click the CSS icon in the tooltip and enter a name for the new CSS class.
-3. Click **Export**.
+2. Click the CSS icon in the tooltip and enter a name for the new CSS class. 
+3. If you want to export a shared CSS, check the **Export as shared** option.
+4. Click **Export**.
 
 :::note
 
@@ -68,11 +77,19 @@ This does not export all the styles of the component, only the properties you ov
 
 :::
 
-This exports the [new style properties](#overriding-style-properties) of the element as a new local CSS class. Now it appears as a choice in the Styles library and in the property list, and you can apply the class to other elements on your canvas. 
+This exports the [new style properties](#overriding-style-properties) of the element as a new local or shared CSS class. Now it appears as a choice in the Styles library and in the property list, and you can apply the class to other elements on your canvas. 
+
+### Naming CSS classes
+
+If a shared css and a local css class have the same name:
+- in the Webform source, the shared css is placed first and the local one is placed in second
+- as a result, if one of them is applied to a component, they are both applied and some local css properties may override the shared ones.
+
+
 
 ### Editing a CSS class
 
-Once a local class is created, you can hover over it in the Styles Library and click the **Edit Class** button next to its name to edit the CSS directly. The changes apply to all the components using this class.
+Once a local or shared class is created, you can hover over it in the Styles Library and click the **Edit Class** button next to its name to edit the CSS directly. The changes apply to all the components using this class.
 
 ## See also
 
