@@ -9,35 +9,38 @@ Components are the building blocks of your application. To add a component, drag
 
 ## Component list
 
-The Component library lets you search for a component or choose one from the list. Once a component is on the canvas, you can [customize its look](styling.md) and bind a data source to it.
+The Component library lets you search for a component or choose one from the list. Once a component is on the canvas, you can [customize its look](styling.md) and bind a data source to it (if possible).
 
 ![alt-text](img/components.png)
 
+Two kinds of components are available:
+- **containers**, which contain and organize other components
+- **data sources**, components whose actions are bound to datasources 
+
 The following components are available: 
 
-|Component|Description|
-|---|---|
-|Webform| Base container that holds all the other components| 
-|Stylebox| Container used to keep the content centered and legible |
-|Grid| Allows you to produce complex and responsive layouts faster. Grid areas can be edited directly on the canvas |
-|Columns|Displays data inside columns|
-|Tabs|Organizes and allows navigation between groups of content that are related and at the same level of hierarchy|
-|Text input|Allows users to enter data in a form|
-|Button|Triggers actions on a web page|
-|Radio button|Allows selecting one of a set of options|
-|Range input|Allows selecting a value in a range|
-|Select box|Allows selecting an item in a list|
-|Image|Displays an image|
-|Icon|Displays an icon|
-|Checkbox|Allows the user to make a binary choice (boolean value)|
-|Text|Displays text on a web page|
-|Datatable|Displays data in the form of a table. You can select a row to interact with the server|
-|Matrix| Container of repeated Styleboxes. Its Stylebox must have a fixed height set in pixels|
-|Webform loader| Displays a webform inside the current Webform component|
+|Component|Type|Description|Properties|
+|---|---|---|---|
+|Button|data source|Triggers actions on a web page||
+|Checkbox|data source|Allows the user to make a binary choice (boolean value)||
+|Columns|data source|Displays data inside columns||
+|Datatable|data source|Displays data in the form of a table. You can select a row to interact with the server||
+|Icon|data source|Displays an icon||
+|Image|data source|Displays an image||
+|Grid|data source| Allows you to produce complex and responsive layouts faster. Grid areas can be edited directly on the canvas||
+|Matrix|container|Container of repeated Styleboxes. Its Stylebox must have a fixed height set in pixels|Iterative|
+|Radio button|data source|Allows selecting one of a set of options||
+|Range input|data source|Allows selecting a value in a range||
+|Select box|data source|Allows selecting an item in a list|Iterative|
+|Stylebox|container| Container used to keep the content centered and legible||
+|Tabs|data source|Organizes and allows navigation between groups of content that are related and at the same level of hierarchy||
+|Text|data source|Displays text on a web page||
+|Text input|data source|Allows users to enter data in a form||
+|Webform|container| Base container that holds all the other components||
+|Webform loader|container| Displays a webform inside the current Webform component||
 
-> More components will be available in the future, and the existing components will be enhanced.
 
-#### Setting a Webform loader's initial value
+### Setting a Webform loader's initial value
 
 A Webform loader's initial value determines which webform it displays when it loads. You can set that initial value in one of the following ways: 
 * using the Properties panel
@@ -48,6 +51,22 @@ A Webform loader's initial value determines which webform it displays when it lo
 The initial value must match the name of the webform to display.
 
 The difference between these methods is that binding a local datasource allows you to dynamically update the contents of the Webform loader. Every time the value of the datasource changes, the contents of the Webform loader are updated accordingly.
+
+### Iterative components
+
+You can use components to iterate on data. These components allow you to select an item among the data as an independent datasource.
+
+The following components are iterative: **matrix** and **select box**.
+
+Iterative components can be bound to two data sources:
+
+- DataSource: a data source to iterate on. Its attributes are bound to the component to display the iterative data
+- Selected Element: a data source to get the item selected inside the iterative component.
+
+To assign the data sources, use the Data Access panel:
+
+![alt-text](img/iterate1.png)
+
 
 ## Server-side reference
 
