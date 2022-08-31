@@ -81,9 +81,9 @@ This exports the [new style properties](#overriding-style-properties) of the ele
 
 ### Naming CSS classes
 
-If a shared css and a local css class have the same name:
-- in the Webform source, the shared css is placed first and the local one is placed in second
-- as a result, if one of them is applied to a component, they are both applied and some local css properties may override the shared ones.
+If a shared and a local CSS classes have the same name:
+- in the Webform source, the shared CSS is placed first and the local one is placed in second
+- as a result, if one of them is applied to a component, they are both applied and some local CSS properties may override the shared ones.
 
 
 
