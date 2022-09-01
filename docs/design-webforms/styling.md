@@ -21,9 +21,13 @@ Local styles can only be used in the Webforms in which they are created, while t
 Theme classes cannot be modified. 
 
 To create a local CSS class, click the "+" button and enter a name and let the **Export as Shared** option unchecked.
-To create a shared CSS class, check the **Export as Shared** option.
+To create a shared CSS class, check the **Export as Shared** option. 
 
-Local or shared CSS class code can be edited in the Contextual panel at the bottom.
+Local and shared CSS class code can be edited in the Contextual panel at the bottom. 
+
+You can convert a local CSS to a shared CSS by clicking on the following button in the Contextual panel:
+
+![CSS-convert](img/shared-stylesheet.png)
 
 
 
@@ -81,7 +85,7 @@ This exports the [new style properties](#overriding-style-properties) of the ele
 
 ### Naming CSS classes
 
-If a shared and a local CSS classes have the same name:
+If both a shared and a local CSS classes have the same name:
 - in the Webform source, the shared CSS is placed first and the local one is placed in second
 - as a result, if one of them is applied to a component, they are both applied and some local CSS properties may override the shared ones.
 
