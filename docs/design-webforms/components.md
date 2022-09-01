@@ -19,7 +19,7 @@ Two kinds of components are available:
 
 The following components are available: 
 
-|Component|Type|Description|Properties|
+|Component|Type|Description|Comments|
 |---|---|---|---|
 |Button|data source|Triggers actions on a web page||
 |Checkbox|data source|Allows the user to make a binary choice (boolean value)||
@@ -35,7 +35,7 @@ The following components are available:
 |Stylebox|container| Container used to keep the content centered and legible||
 |Tabs|data source|Organizes and allows navigation between groups of content that are related and at the same level of hierarchy||
 |Text|data source|Displays text on a web page||
-|Text input|data source|Allows users to enter data in a form||
+|Text input|data source|Allows users to enter data in a form|Supports a **Type** property:<br/><li>text: standard</li><li>numbe: the user can only enter a number</li><li>password: data entered is not displayed in plain text</li><li>date:the user can only enter a date|
 |Webform|container| Base container that holds all the other components||
 |Webform loader|container| Displays a webform inside the current Webform component||
 
@@ -60,8 +60,8 @@ The following components are iterative: **matrix** and **select box**.
 
 Iterative components can be bound to two data sources:
 
-- DataSource: a data source to iterate on. Its attributes are bound to the component to display the iterative data
-- Selected Element: a data source to get the item selected inside the iterative component.
+- **DataSource**: a data source to iterate on. Its attributes are bound to the component to display the iterative data. Usually, an entity selection or a collection.
+- **Selected Element**: a data source to get the item selected inside the iterative component. Usually, an entity or a collection element.
 
 To assign the data sources, use the Data Access panel:
 
