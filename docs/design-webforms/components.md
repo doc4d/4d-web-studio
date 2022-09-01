@@ -28,16 +28,16 @@ The following components are available:
 |Icon|data source|Displays an icon||
 |Image|data source|Displays an image||
 |Grid|data source| Allows you to produce complex and responsive layouts faster. Grid areas can be edited directly on the canvas||
-|Matrix|container|Container of repeated Styleboxes. Its Stylebox must have a fixed height set in pixels|Iterative|
+|Matrix|container|Container of repeated Styleboxes. Its Stylebox must have a fixed height set in pixels|[Iterative](#iterative-components)|
 |Radio button|data source|Allows selecting one of a set of options||
 |Range input|data source|Allows selecting a value in a range||
-|Select box|data source|Allows selecting an item in a list|Iterative|
+|Select box|data source|Allows selecting an item in a list|[Iterative](#iterative-components)|
 |Stylebox|container| Container used to keep the content centered and legible||
 |Tabs|data source|Organizes and allows navigation between groups of content that are related and at the same level of hierarchy||
 |Text|data source|Displays text on a web page||
-|Text input|data source|Allows users to enter data in a form|Supports a **Type** property:<br/><li>text: standard</li><li>numbe: the user can only enter a number</li><li>password: data entered is not displayed in plain text</li><li>date:the user can only enter a date|
+|Text input|data source|Allows users to enter data in a form|Supports a **Type** property with the following values:<br/><li>*text*: standard</li><li>*number*: the user can only enter a number</li><li>*password*: data entered is not displayed in clear</li><li>*date*: the user can only enter a date|
 |Webform|container| Base container that holds all the other components||
-|Webform loader|container| Displays a webform inside the current Webform component||
+|Webform loader|container| Displays a webform inside the current Webform component|See the following paragraph |
 
 
 ### Setting a Webform loader's initial value
