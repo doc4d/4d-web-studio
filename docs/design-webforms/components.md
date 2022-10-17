@@ -35,7 +35,7 @@ The following components are available:
 |Stylebox|container| Container used to keep the content centered and legible||
 |Tabs|data source|Organizes and allows navigation between groups of content that are related and at the same level of hierarchy||
 |Text|data source|Displays text on a web page||
-|Text input|data source|Allows users to enter data in a form|Supports a **Type** property with the following values:<br/><li>*text*: standard</li><li>*number*: the user can only enter a number</li><li>*password*: data entered is not displayed in clear</li><li>*date*: the user can only enter a date</li>|
+|Text input|data source|Allows users to enter data in a form|Supports a **Type** property with the following values:<br/><li>*text*: standard</li><li>*number*: the user can only enter a number</li><li>*password*: data entered is not displayed in clear</li><li>*date*: the user can only enter a date. A date picker is automatically displayed on the client when the user enters the form area</li>|
 |Webform|container| Base container that holds all the other components||
 |Webform loader|container| Displays a webform inside the current Webform component|See the following paragraph |
 
