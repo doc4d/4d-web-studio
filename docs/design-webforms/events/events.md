@@ -147,3 +147,39 @@ An On Change event attached a datasource triggers in the following cases:
 The On Error event is not available yet.
 
 :::
+
+
+## Standard actions
+
+You can define standard actions to apply to datasources in response to specific events. Available actions depend on the datasource kind.
+For example, you can associate the **Order By** action to an entity selection datasource, or the **Save** action to an entity datasource.
+
+To attach a standard action to a component:
+
+1. Select an event.
+2. In the Action area, enter the datasource name.
+3. Click on the standard action icon.
+
+![datasource-action](img/datasource-action.png)
+
+
+### List of standard actions
+
+The following standard actions are available, depending on the datasource kind:
+
+|Datasource kind|Action|Description|
+|---|---|---|
+|entity|save||
+||first|if the entity belongs to an entity selection|
+||last|if the entity belongs to an entity selection|
+||next|if the entity belongs to an entity selection|
+||previous|if the entity belongs to an entity selection|
+||drop||
+||reload||
+||new|creates a new entity from the same dataclass|
+|entity selection|orderBy||
+||query|the query is given as a string and supports the same syntax as an [ORDA query](https://developer.4d.com/docs/API/DataClassClass#query) except the use of formula (eval) and the settings object. Placeholders can be given with datasources or data as is|
+||reload|reloads the whole entity selection from the server|
+||all|loads all the entities of the same dataclass|
+||newSelection|creates a new selection of the same dataclass|
+
