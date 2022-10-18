@@ -154,11 +154,11 @@ The On Error event is not available yet.
 You can define standard actions to apply to datasources in response to specific events. Available actions depend on the datasource kind.
 For example, you can associate the **Order By** action to an entity selection datasource, or the **Save** action to an entity datasource.
 
-To attach a standard action to a component:
+To attach a standard action to the selected component:
 
 1. Select an event.
 2. In the Action area, enter the datasource name.
-3. Click on the standard action icon.
+3. Click on the desired standard action icon.
 
 ![datasource-action](img/datasource-action.png)
 
@@ -169,17 +169,17 @@ The following standard actions are available, depending on the datasource kind:
 
 |Datasource kind|Action|Description|
 |---|---|---|
-|entity|save||
-||first|if the entity belongs to an entity selection|
-||last|if the entity belongs to an entity selection|
-||next|if the entity belongs to an entity selection|
-||previous|if the entity belongs to an entity selection|
-||drop||
-||reload||
-||new|creates a new entity from the same dataclass|
-|entity selection|orderBy||
-||query|the query is given as a string and supports the same syntax as an [ORDA query](https://developer.4d.com/docs/API/DataClassClass#query) except the use of formula (eval) and the settings object. Placeholders can be given with datasources or data as is|
-||reload|reloads the whole entity selection from the server|
-||all|loads all the entities of the same dataclass|
-||newSelection|creates a new selection of the same dataclass|
+|Entity|New|Creates a new entity from the same dataclass|
+||Save|Saves the entity|
+||Refresh|Reloads the entity values from the server|
+||Remove|Deletes the entity|
+||First|Goes to the first entity of the entity selection. Available if the entity belongs to an entity selection|
+||Previous|Goes to the previous entity in the entity selection. Available if the entity belongs to an entity selection|
+||Next|Goes to the next entity in the entity selection. Available if the entity belongs to an entity selection|
+||Last|Goes to the last entity of the entity selection. Available if the entity belongs to an entity selection|
+|Entity selection|Order By|You can enter several attributes to sort and select direction|
+||Query|The query is given as a string and supports the same syntax as an [ORDA query](https://developer.4d.com/docs/API/DataClassClass#query) except the use of formula (eval) and the settings object. Placeholders can be given with datasources or data as is|
+||Refresh|Reloads the whole entity selection from the server|
+||All|Loads all the entities of the same dataclass|
+||Empty|Creates a new, empty selection of the same dataclass|
 
