@@ -18,7 +18,7 @@ The Webform Editor provides several tools to customize the interface and content
 ![interface](img/web-form-editor-interface.png)
 
 <ol class="interface-numbers">
-<li class="interface-item">Explorer: Displays your project's webforms, methods and classes.</li>
+<li class="interface-item">Explorer: Lists your project's webforms, methods, classes, shared elements (such as images), and debuggger sessions. Use the **...** contextual menu at the right side of each element to access actions available for the element (usually **Delete**, **Duplicate**, **Open** or **Edit**). The Explorer also provides access to the project's definition files: roles and privileges, data model, and settings. </li>
 <li class="interface-item">Tabs: They let you keep track of your currently opened elements, such as your forms and methods.</li>
 <li class="interface-item">Components: The building blocks of your application.</li>
 <li class="interface-item">Data Sources: Create and explore your datasources.</li>
