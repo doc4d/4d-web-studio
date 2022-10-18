@@ -32,4 +32,6 @@ The Webform Editor provides several tools to customize the interface and content
 
 ## Uploading images
 
-With the [Image](./components.md#component-list) component, you can upload an image to the studio and display it in your application. That image is available to all the webforms in your project and is stored in the **Explorer** panel > **Assets** > **Images**.
+With the [Image](./components.md#component-list) component, you can upload an image to the studio and display it in your application. That image is available to all the webforms in your project and is stored in the **Explorer** panel > **Shared** > **assets** > **images**. 
+
+An uploaded image is displayed in the WebForm window when you select it in the **images** directory.
