@@ -28,6 +28,11 @@ module.exports = {
       id: 'rendering',
       label: "Rendering a webform"
     },
+	{
+      type: 'doc',
+      id: 'settings',
+      label: "Settings"
+    },
     {
       type: 'doc',
       id: 'coding-and-debugging',

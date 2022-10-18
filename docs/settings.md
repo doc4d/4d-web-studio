@@ -1,0 +1,53 @@
+---
+id: settings
+title: Settings
+---
+
+The Settings panel allows you to customize the Web Studio interface for the current project and the current user. 
+
+To open the Settings panel, click on the Settings button from the Explorer or the toolbar:
+ 
+![settings](img/settings-button.png)
+
+The following settings page are available:
+
+- **User**: settings related to the user interface
+- **Database**: settings related to the web project
+
+
+## User
+
+This page contains settings related to the Web Studio user interface.
+
+#### Show Renderer Pop Over
+
+Displays or not the pop over for Preview.
+
+#### Tooltip Behavior
+
+Defines how to display the component tooltip when the mouse hovers a component area:
+
+![tooltip](img/tool-tip.png)
+
+- **Show after timeout**: The tooltip is displayed after a the defined timeout (and left onscreen until the user moves the mouse). 
+- **Hide after timeout**: The tooltip is immediately displayed and hidden after a the defined timeout.
+
+#### Tooltip timeout (in seconds)
+
+Timeout for selected tooltip behavior.
+
+#### Enable Helper Tips
+
+Shows or hides the tips icons in the webform editor.
+
+![helper](img/helper-tip.png)
+
+## Database
+
+#### Preview Page
+
+Allows to select a webform to use as the home page. When clicking on the **Preview/Run application** button, this webform is rendered in a new tab.
+
+This setting is defined at project level.
+
+
