@@ -27,7 +27,7 @@ Displays or not the pop over for Preview.
 
 Defines how to display the component tooltip ![tooltip](img/tool-tip.png) when the mouse hovers a component area.
 
-- **Show after timeout**: The tooltip is displayed after a the defined timeout (and left onscreen until the user moves the mouse). 
+- **Show after timeout**: The tooltip is displayed after a the defined timeout (and kept onscreen until the user moves the mouse). 
 - **Hide after timeout**: The tooltip is immediately displayed and hidden after a the defined timeout.
 
 #### Tooltip timeout (in seconds)
