@@ -13,7 +13,7 @@ The Component library lets you search for a component or choose one from the lis
 
 ![alt-text](img/components.png)
 
-Two kinds of components are available:
+Two types of components are available:
 - **containers**, which contain and organize other components
 - **data sources**, components whose actions are bound to datasources 
 
@@ -34,25 +34,13 @@ The following components are available:
 |Select box|data source|Allows selecting an item in a list|[Iterative](#iterative-components)|
 |Stylebox|container| Container used to keep the content centered and legible||
 |Tabs|data source|Organizes and allows navigation between groups of content that are related and at the same level of hierarchy||
-|Text|data source|Displays text on a web page||
+|Text|data source|Displays text on a web page|When some text is selected, its [tooltip](#tooltip) contains additional actions: **style**, **toogle datasource**, and **toggle link** |
 |Text input|data source|Allows users to enter data in a form|Supports a **Type** property with the following values:<br/><li>*text*: standard</li><li>*number*: the user can only enter a number</li><li>*password*: data entered is not displayed in clear</li><li>*date*: the user can only enter a date. A date picker is automatically displayed on the client when the user enters the form area</li>|
 |Webform|container| Base container that holds all the other components||
-|Webform loader|container| Displays a webform inside the current Webform component|See the following paragraph |
+|Webform loader|container| Displays a webform inside the current Webform component|See [this paragraph](#setting-a-webform-loaders-initial-value) |
 
 
-### Setting a Webform loader's initial value
-
-A Webform loader's initial value determines which webform it displays when it loads. You can set that initial value in one of the following ways: 
-* using the Properties panel
-* by binding a local datasource of type Text to it and giving it an initial value. 
-
-> If you apply both methods to the same Webform loader, the contents of the bound datasource are displayed in priority.
-
-The initial value must match the name of the webform to display.
-
-The difference between these methods is that binding a local datasource allows you to dynamically update the contents of the Webform loader. Every time the value of the datasource changes, the contents of the Webform loader are updated accordingly.
-
-### Iterative components
+## Iterative components
 
 You can use components to iterate on data. These components allow you to select an item among the data as an independent datasource.
 
@@ -68,17 +56,37 @@ To assign the data sources, use the Data Access panel:
 ![alt-text](img/iterate1.png)
 
 
-## Server-side reference
+## Uploading images
+
+With the [Image](./components.md#component-list) component, you can upload an image to the studio and display it in your application. That image is available to all the webforms in your project and is stored in the **Explorer** panel > **Shared** > **assets** > **images**. 
+
+An uploaded image is displayed in the WebForm window when you select it in the **images** directory.
+
+
+## Managing your components
+
+You can use the following tools to manage your components.
+
+### Setting a Webform loader's initial value
+
+A Webform loader's initial value determines which webform it displays when it loads. You can set that initial value in one of the following ways: 
+* using the Properties panel
+* by binding a local datasource of type Text to it and giving it an initial value. 
+
+> If you apply both methods to the same Webform loader, the contents of the bound datasource are displayed in priority.
+
+The initial value must match the name of the webform to display.
+
+The difference between these methods is that binding a local datasource allows you to dynamically update the contents of the Webform loader. Every time the value of the datasource changes, the contents of the Webform loader are updated accordingly.
+
+
+### Server-side reference
 
 The server-side reference of a component is its "address" on the server. To set the behavior of a component, you can give it a server-side reference, and then [use that reference in class functions](../API/WebFormItemClass.md).
 
 To assign a server-side reference to a component, enter a value in the Properties panel > Server Side:
 
 ![alt-text](img/image-server-side.png)
-
-## Managing your components
-
-You can use the following tools to manage your components.
 
 ### Tooltip
 
@@ -101,23 +109,17 @@ In addition to these actions, the contextual panel also offers basic actions suc
 
 The tooltip is contextual. This means that some actions are available to certain elements, and not others. For example, you can duplicate a Text input component, but not its individual parts (Label and Input). 
 
-### Breadcrumbs
+#### Additional actions for Text component
 
-When you select a component, the breadcrumbs display its hierarchy:
+When you select some text in the Text component, additional actions are proposed in the tooltip:
 
-![breadcrumbs](img/breadcrumbs.png)
+|Icon|Action|
+|---|---|
+|Style buttons|Applies style to the selected text: Bold, Italic, Underline, Strikethrough|
+|Toggle DataSource|Selects the parent component|
+|Toggle Link|Removes the selected component from the canvas|
 
-To select any parent component displayed in the breadcrumbs trail, click its name. 
 
-### Outline
-
-The outline section displays the hierarchy of your webform:
-
-![outline](img/outline.png)
-
-Click an element in the list to select it, or click and drag it anywhere in the outline to move it somewhere else.
-
-To display or hide an element, click the eye icon.
 
 ## Crafted components
 

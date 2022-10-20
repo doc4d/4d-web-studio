@@ -1,6 +1,6 @@
 ---
 id: create-webform
-title: Creating a webform
+title: Webform Editor
 ---
 
 ## Creating a webform
@@ -30,8 +30,21 @@ The Webform Editor provides several tools to customize the interface and content
 <li class="interface-item-2"> Header: Save and preview your work, access the Data Explorer as well as additional settings.</li>
 </ol>
 
-## Uploading images
 
-With the [Image](./components.md#component-list) component, you can upload an image to the studio and display it in your application. That image is available to all the webforms in your project and is stored in the **Explorer** panel > **Shared** > **assets** > **images**. 
+### Breadcrumbs
 
-An uploaded image is displayed in the WebForm window when you select it in the **images** directory.
+When you select a component in the canvas, the breadcrumbs display its hierarchy:
+
+![breadcrumbs](img/breadcrumbs.png)
+
+To select any parent component displayed in the breadcrumbs trail, click its name. 
+
+### Outline
+
+The outline section displays the hierarchy of your webform:
+
+![outline](img/outline.png)
+
+Click an element in the list to select it, or click and drag it anywhere in the outline to move it somewhere else.
+
+To display or hide an element, click the eye icon.
