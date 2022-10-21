@@ -64,7 +64,7 @@ Two types of components are available:
 |Select box|data source|Allows selecting an item in a list|[Iterative](#iterative-components)|
 |Stylebox|container| Container used to keep the content centered and legible||
 |Tabs|data source|Organizes and allows navigation between groups of content that are related and at the same level of hierarchy||
-|Text|data source|Displays text on a web page|When some text is selected, its [tooltip](#tooltip) contains [additional actions](#additional-actions-for-text-component): **style**, **toogle datasource**, and **toggle link** |
+|Text|data source|Displays text on a web page|When some text is selected, its [tooltip](#tooltip) contains [additional actions](#additional-actions-for-text-component): **style**, **toggle datasource**, and **toggle link** |
 |Text input|data source|Allows users to enter data in a form|Supports a **Type** property with the following values:<br/><li>*text*: standard</li><li>*number*: the user can only enter a number</li><li>*password*: data entered is not displayed in clear</li><li>*date*: the user can only enter a date. A date picker is automatically displayed on the client when the user enters the form area</li>|
 |Webform|container| Base container that holds all the other components||
 |Webform loader|container| Displays a webform inside the current Webform component|See [this paragraph](#setting-a-webform-loaders-initial-value) |
@@ -116,7 +116,7 @@ When you select some text in the Text component, additional actions are proposed
 ![alt-text](img/toogle-datasource.png)  
 - **Toggle Link**: Allows you to insert a text label bound to an hypertext link. Select Open in a new tab if you want that the link be opened a new browser tab.   
 The link can be a static **URL** or a dynamic value based upon a **datasource**. For example, if the datasource is an object property, the property value is used as the URL.
-![alt-text](img/togole-link.png)  
+![alt-text](img/toogle-link.png)  
 
 
 
