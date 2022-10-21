@@ -3,94 +3,26 @@ id: components
 title: Components
 ---
 
-Components are the building blocks of your application. To add a component, drag it from the Components section and drop it on the canvas.
+Components are the building blocks of your application. 
+
+
+## Managing components
+
+### Adding components
+
+The Component library lets you search for a component or choose one from the list. 
+
+To add a component, drag it from the Components library section and drop it on the canvas.
 
 ![add-component-screenshot](img/add-component.png)
 
-## Component list
-
-The Component library lets you search for a component or choose one from the list. Once a component is on the canvas, you can [customize its look](styling.md) and bind a data source to it (if possible).
+Once a component is on the canvas, you can [customize its look](styling.md) and bind a data source to it (if possible).
 
 ![alt-text](img/components.png)
 
-Two types of components are available:
-- **containers**, which contain and organize other components
-- **data sources**, components whose actions are bound to datasources 
-
-The following components are available: 
-
-|Component|Type|Description|Comments|
-|---|---|---|---|
-|Button|data source|Triggers actions on a web page||
-|Checkbox|data source|Allows the user to make a binary choice (boolean value)||
-|Columns|data source|Displays data inside columns||
-|Datatable|data source|Displays data in the form of a table. You can select a row to interact with the server||
-|Icon|data source|Displays an icon||
-|Image|data source|Displays an image||
-|Grid|data source| Allows you to produce complex and responsive layouts faster. Grid areas can be edited directly on the canvas||
-|Matrix|container|Container of repeated Styleboxes. Its Stylebox must have a fixed height set in pixels|[Iterative](#iterative-components)|
-|Radio button|data source|Allows selecting one of a set of options||
-|Range input|data source|Allows selecting a value in a range||
-|Select box|data source|Allows selecting an item in a list|[Iterative](#iterative-components)|
-|Stylebox|container| Container used to keep the content centered and legible||
-|Tabs|data source|Organizes and allows navigation between groups of content that are related and at the same level of hierarchy||
-|Text|data source|Displays text on a web page|When some text is selected, its [tooltip](#tooltip) contains additional actions: **style**, **toogle datasource**, and **toggle link** |
-|Text input|data source|Allows users to enter data in a form|Supports a **Type** property with the following values:<br/><li>*text*: standard</li><li>*number*: the user can only enter a number</li><li>*password*: data entered is not displayed in clear</li><li>*date*: the user can only enter a date. A date picker is automatically displayed on the client when the user enters the form area</li>|
-|Webform|container| Base container that holds all the other components||
-|Webform loader|container| Displays a webform inside the current Webform component|See [this paragraph](#setting-a-webform-loaders-initial-value) |
-
-
-## Iterative components
-
-You can use components to iterate on data. These components allow you to select an item among the data as an independent datasource.
-
-The following components are iterative: **matrix** and **select box**.
-
-Iterative components can be bound to two data sources:
-
-- **DataSource**: a data source to iterate on. Its attributes are bound to the component to display the iterative data. Usually, an entity selection or a collection.
-- **Selected Element**: a data source to get the item selected inside the iterative component. Usually, an entity or a collection element.
-
-To assign the data sources, use the Data Access panel:
-
-![alt-text](img/iterate1.png)
-
-
-## Uploading images
-
-With the [Image](./components.md#component-list) component, you can upload an image to the studio and display it in your application. That image is available to all the webforms in your project and is stored in the **Explorer** panel > **Shared** > **assets** > **images**. 
-
-An uploaded image is displayed in the WebForm window when you select it in the **images** directory.
-
-
-## Managing your components
-
-You can use the following tools to manage your components.
-
-### Setting a Webform loader's initial value
-
-A Webform loader's initial value determines which webform it displays when it loads. You can set that initial value in one of the following ways: 
-* using the Properties panel
-* by binding a local datasource of type Text to it and giving it an initial value. 
-
-> If you apply both methods to the same Webform loader, the contents of the bound datasource are displayed in priority.
-
-The initial value must match the name of the webform to display.
-
-The difference between these methods is that binding a local datasource allows you to dynamically update the contents of the Webform loader. Every time the value of the datasource changes, the contents of the Webform loader are updated accordingly.
-
-
-### Server-side reference
-
-The server-side reference of a component is its "address" on the server. To set the behavior of a component, you can give it a server-side reference, and then [use that reference in class functions](../API/WebFormItemClass.md).
-
-To assign a server-side reference to a component, enter a value in the Properties panel > Server Side:
-
-![alt-text](img/image-server-side.png)
-
 ### Tooltip
 
-When you select a component, the tooltip displays its type and offers several actions:
+When you select a component in the cannvas, the tooltip displays its type and offers several actions:
 
 ![tooltip](img/tooltip.png)
 
@@ -107,17 +39,95 @@ When you select a component, the tooltip displays its type and offers several ac
 
 In addition to these actions, the contextual panel also offers basic actions such as **Copy**, **Cut**, and **Paste**.
 
-The tooltip is contextual. This means that some actions are available to certain elements, and not others. For example, you can duplicate a Text input component, but not its individual parts (Label and Input). 
+The tooltip is contextual. This means that some actions are available to certain elements, and not others. For example, you can duplicate a Text input component, but not its individual parts (Label and Input). When you select some text in the Text component, additional actions are proposed in its [tooltip](#tooltip).
 
-#### Additional actions for Text component
 
-When you select some text in the Text component, additional actions are proposed in the tooltip:
+## Component Description
 
-|Icon|Action|
-|---|---|
-|Style buttons|Applies style to the selected text: Bold, Italic, Underline, Strikethrough|
-|Toggle DataSource|Selects the parent component|
-|Toggle Link|Removes the selected component from the canvas|
+Two types of components are available:
+
+- **containers**, which contain and organize other components
+- **data sources**, components whose actions are bound to datasources 
+
+|Component|Type|Description|Comments|
+|---|---|---|---|
+|Button|data source|Triggers actions on a web page||
+|Checkbox|data source|Allows the user to make a binary choice (boolean value)||
+|Columns|data source|Displays data inside columns||
+|Datatable|data source|Displays data in the form of a table. You can select a row to interact with the server||
+|Icon|data source|Displays an icon||
+|Image|data source|Displays an image||
+|Grid|data source| Allows you to produce complex and responsive layouts faster. Grid areas can be edited directly on the canvas||
+|Matrix|container|Container of repeated Styleboxes. Its Stylebox must have a fixed height set in pixels|[Iterative](#iterative-components)|
+|Radio button|data source|Allows selecting one of a set of options||
+|Range input|data source|Allows selecting a value in a range||
+|Select box|data source|Allows selecting an item in a list|[Iterative](#iterative-components)|
+|Stylebox|container| Container used to keep the content centered and legible||
+|Tabs|data source|Organizes and allows navigation between groups of content that are related and at the same level of hierarchy||
+|Text|data source|Displays text on a web page|When some text is selected, its [tooltip](#tooltip) contains [additional actions](#additional-actions-for-text-component): **style**, **toogle datasource**, and **toggle link** |
+|Text input|data source|Allows users to enter data in a form|Supports a **Type** property with the following values:<br/><li>*text*: standard</li><li>*number*: the user can only enter a number</li><li>*password*: data entered is not displayed in clear</li><li>*date*: the user can only enter a date. A date picker is automatically displayed on the client when the user enters the form area</li>|
+|Webform|container| Base container that holds all the other components||
+|Webform loader|container| Displays a webform inside the current Webform component|See [this paragraph](#setting-a-webform-loaders-initial-value) |
+
+
+### Iterative components
+
+You can use components to iterate on data. These components allow you to select an item among the data as an independent datasource.
+
+The following components are iterative: **matrix** and **select box**.
+
+Iterative components can be bound to two data sources:
+
+- **DataSource**: a data source to iterate on. Its attributes are bound to the component to display the iterative data. Usually, an entity selection or a collection.
+- **Selected Element**: a data source to get the item selected inside the iterative component. Usually, an entity or a collection element.
+
+To assign the data sources, use the Data Access panel:
+
+![alt-text](img/iterate1.png)
+
+
+### Uploading images
+
+With the [Image](./components.md#component-list) component, you can upload an image to the studio and display it in your application. That image is available to all the webforms in your project and is stored in the **Explorer** panel > **Shared** > **assets** > **images**. 
+
+An uploaded image is displayed in the WebForm window when you select it in the **images** directory.
+
+
+
+### Webform loader's initial value
+
+A Webform loader's initial value determines which webform it displays when it loads. You can set that initial value in one of the following ways: 
+* using the Properties panel
+* by binding a local datasource of type Text to it and giving it an initial value. 
+
+> If you apply both methods to the same Webform loader, the contents of the bound datasource are displayed in priority.
+
+The initial value must match the name of the webform to display.
+
+The difference between these methods is that binding a local datasource allows you to dynamically update the contents of the Webform loader. Every time the value of the datasource changes, the contents of the Webform loader are updated accordingly.
+
+
+### Additional actions for Text component
+
+When you select some text in the Text component, additional actions are proposed in its [tooltip](#tooltip):
+
+- **Style buttons**: Applies style to the selected text: Bold, Italic, Underline, Strikethrough
+- **Toggle DataSource**: Allows you to insert a text bound to a datasource. It means that the text contents is defined dynamically by the datasource value. For example, it can be an object property, in which case the property value is used as the text.  
+![alt-text](img/toogle-datasource.png)  
+- **Toggle Link**: Allows you to insert a text label bound to an hypertext link. Select Open in a new tab if you want that the link be opened a new browser tab.   
+The link can be a static **URL** or a dynamic value based upon a **datasource**. For example, if the datasource is an object property, the property value is used as the URL.
+![alt-text](img/togole-link.png)  
+
+
+
+## Server-side reference
+
+The server-side reference of a component is its "address" on the server. To set the behavior of a component, you can give it a server-side reference, and then [use that reference in class functions](../API/WebFormItemClass.md).
+
+To assign a server-side reference to a component, enter a value in the Properties panel > Server Side:
+
+![alt-text](img/image-server-side.png)
+
 
 
 
