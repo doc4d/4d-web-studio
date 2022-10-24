@@ -22,24 +22,27 @@ Once a component is on the canvas, you can [customize its look](styling.md) and 
 
 ### Tooltip
 
-When you select a component in the cannvas, the tooltip displays its type and offers several actions:
+When you select a component in the canvas, the tooltip displays its type and offers several actions:
 
 ![tooltip](img/tooltip.png)
 
-|Icon|Action|
+|Action|Description|
 |---|---|
 |Move|Moves the selected component on the canvas|
-|Select Parent Component|Selects the parent component|
-|Delete Component|Removes the selected component from the canvas|
-|Export Styles|Exports the [overridden CSS properties](styling.md#overriding-style-properties) to a new CSS class|
-|Open Events Panel|Opens the bottom panel, allowing you to bind events to the component|
-|Save as craft|Saves the component, its child components, and their styles as a reusable component|
-|Clear Styles|Clears the styles of the selected element (resets the [overridden CSS properties](styling.md#overriding-style-properties))|
+|Select Parent Component|Selects the parent component of the element. For example, selects the Text Input component when you click on its Label or Input part. |
+|Delete component|Removes the selected component from the canvas|
+|Export styles|Exports the [overridden CSS properties](styling.md#overriding-style-properties) to a new CSS class|
+|Open Events panel|Opens the bottom panel, allowing you to bind [events](events/events.md) to the component|
+|Copy, Cut, Paste, Paste into|Standard edit actions|
 |Duplicate|Duplicates the component|
+|Save as craft|Saves the component, its child components, and their styles as a reusable component named [crafted component](#crafted-components)|
+|Copy contents|Copies the contents of the component|
+|Clear styles|Clears the styles of the selected element (resets the [overridden CSS properties](styling.md#overriding-style-properties))|
+|Clear Contents|Clears the contents of the component|
 
-In addition to these actions, the contextual panel also offers basic actions such as **Copy**, **Cut**, and **Paste**.
+The tooltip is contextual, which means that some actions are available to certain elements, and not others. For example, you can duplicate a Text input component, but not its individual parts (Label and Input).
 
-The tooltip is contextual. This means that some actions are available to certain elements, and not others. For example, you can duplicate a Text input component, but not its individual parts (Label and Input). When you select some text in the Text component, additional actions are proposed in its [tooltip](#tooltip).
+When you select some text in the Text component, additional actions are proposed in its [tooltip](#tooltip).
 
 
 ## Component Description
@@ -112,9 +115,9 @@ The difference between these methods is that binding a local datasource allows y
 When you select some text in the Text component, additional actions are proposed in its [tooltip](#tooltip):
 
 - **Style buttons**: Applies style to the selected text: Bold, Italic, Underline, Strikethrough
-- **Toggle DataSource**: Allows you to insert a text bound to a datasource. It means that the text contents is defined dynamically by the datasource value. For example, it can be an object property, in which case the property value is used as the text.  
+- **Toggle DataSource**: Allows you to display the contents of a datasource as a text. It means that the text contents is defined dynamically by the datasource value. In **Text** you can insert a placeholder to display on the canvas, and in **Datasource** the datasource path (for example, "employer.name"). In an [iterative component](#iterative-components), use the `$This` keyword. 
 ![alt-text](img/toogle-datasource.png)  
-- **Toggle Link**: Allows you to insert a text label bound to an hypertext link. Select Open in a new tab if you want that the link be opened a new browser tab.   
+- **Toggle Link**: Allows you to insert a text label bound to an hypertext link. Select **Open in a new tab** if you want that the link be opened a new browser tab.   
 The link can be a static **URL** or a dynamic value based upon a **datasource**. For example, if the datasource is an object property, the property value is used as the URL.
 ![alt-text](img/toogle-link.png)  
 
