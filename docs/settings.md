@@ -21,7 +21,7 @@ This page contains settings related to the Web Studio user interface.
 
 #### Show Renderer Pop Over
 
-Displays or not the pop over for Preview.
+Displays or not a pop over when the renderer and the Studio use [different URL schemes](configuration/license-usage.md#url-schemes) (which could lead to wrong licence counting).
 
 #### Tooltip Behavior
 

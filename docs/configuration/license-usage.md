@@ -15,7 +15,7 @@ On the other hand, the [renderer](../rendering.md) communicates with the 4D web 
 
 If you run the renderer from the studio and these two web servers are not reached through the same URL scheme (HTTP or HTTPS), it might lead to wrong licence counting.
 
-## Example
+### Example
 
 1. You run the Web Studio on an HTTPS URL scheme (e.g. `https://127.0.0.1:7443/studio/`)
 
@@ -28,6 +28,12 @@ If you run the renderer from the studio and these two web servers are not reache
 ![alt-text](img/render-button.png)
 
 As a result, two licenses are retained.
+
+:::note
+
+You can enable/disable the display of this pop over using a [User setting](../settings.md#show-renderer-pop-over).
+
+:::
 
 ## SameSite attribute
 
