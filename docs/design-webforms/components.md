@@ -134,16 +134,10 @@ A matrix automatically displays as many stylebox composents as possible in the d
 
 ![alt-text](img/matrix-orientation.png) 
 
-- **Horizontal**: stylebox components are displayed in horizontal order
-- **Vertical** (default): stylebox components are displayed in vertical order and a vertical scrollbar is automatically displayed if necessary
+- **Horizontal**: stylebox components are ordered horizontally and a horizontal scrollbar is automatically displayed if necessary.
+- **Vertical** (default): stylebox components are ordered vertically order and a vertical scrollbar is automatically displayed if necessary.
 
-
-- with vertical orientation, stylebox components are displayed vertically and, if the height of the matrix component is not sufficient to display all the styleboxes, a vertical scrolling is automatically proposed.
-
-In a matrix with horizontal orientation, stylebox components are displayed horizontally and, if the height of the matrix component is not sufficient to display all the styleboxes, a vertical scrolling is automatically proposed.
-
-By defaut, a matrix is orient
-
+To display a 
 
 
 ## Server-side reference
