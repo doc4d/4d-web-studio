@@ -45,7 +45,7 @@ The tooltip is contextual, which means that some actions are available to certai
 When you select some text in the Text component, additional actions are proposed in its [tooltip](#tooltip).
 
 
-## Component Description
+## Component Overview
 
 Two types of components are available:
 
@@ -120,6 +120,29 @@ When you select some text in the Text component, additional actions are proposed
 - **Toggle Link**: Allows you to insert a text label bound to an hypertext link. Select **Open in a new tab** if you want that the link be opened a new browser tab.   
 The link can be a static **URL** or a dynamic value based upon a **datasource**. For example, if the datasource is an object property, the property value is used as the URL.
 ![alt-text](img/toogle-link.png)  
+
+
+## Matrix
+
+A **matrix** component displays a variable number of **stylebox** components (based upon the number of elements in the matrix's datasource). A stylebox component can contain any other components on which you can iterate using the *$This* syntax. 
+
+For example, you can display an entity selection using a matrix, where each stylebox contains some attributes of the entity selection (text, images, etc). 
+
+### Orientation
+
+A matrix automatically displays as many stylebox composents as possible in the defined height and width. You can select the **orientation** of the matrix, i.e. the order stylebox components are displayed and how they can be scrolled. Two options are available:
+
+![alt-text](img/matrix-orientation.png) 
+
+- **Horizontal**: stylebox components are displayed in horizontal order
+- **Vertical** (default): stylebox components are displayed in vertical order and a vertical scrollbar is automatically displayed if necessary
+
+
+- with vertical orientation, stylebox components are displayed vertically and, if the height of the matrix component is not sufficient to display all the styleboxes, a vertical scrolling is automatically proposed.
+
+In a matrix with horizontal orientation, stylebox components are displayed horizontally and, if the height of the matrix component is not sufficient to display all the styleboxes, a vertical scrolling is automatically proposed.
+
+By defaut, a matrix is orient
 
 
 
