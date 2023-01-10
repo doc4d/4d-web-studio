@@ -128,6 +128,16 @@ A **matrix** component displays a variable number of **stylebox** components (ba
 
 For example, you can display an entity selection using a matrix, where each stylebox contains some attributes of the entity selection (text, images, etc). 
 
+### Stylebox
+
+The matrix's stylebox is the first element of a matrix:
+
+![alt-text](img/stylebox.png)
+
+It is automatically replicated in the matrix area depending on its orientation and datasource:
+
+![alt-text](img/matrix-2.png)
+
 ### Orientation
 
 A matrix automatically displays as many stylebox composents as possible in the defined height and width. You can select the **orientation** of the matrix, i.e. the order stylebox components are displayed and how they can be scrolled. Two options are available:
