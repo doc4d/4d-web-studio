@@ -135,9 +135,7 @@ A matrix automatically displays as many stylebox composents as possible in the d
 ![alt-text](img/matrix-orientation.png) 
 
 - **Horizontal**: stylebox components are ordered horizontally and a horizontal scrollbar is automatically displayed if necessary.
-- **Vertical** (default): stylebox components are ordered vertically order and a vertical scrollbar is automatically displayed if necessary.
-
-To display a 
+- **Vertical** (default): stylebox components are ordered vertically and a vertical scrollbar is automatically displayed if necessary.
 
 
 ## Server-side reference
