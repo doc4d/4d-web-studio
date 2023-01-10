@@ -81,12 +81,22 @@ The following components are iterative: **matrix** and **select box**.
 
 Iterative components can be bound to two data sources:
 
-- **DataSource**: a data source to iterate on. Its attributes are bound to the component to display the iterative data. Usually, an entity selection or a collection.
+- **DataSource**: a data source to iterate on. Its attributes are bound to the component to display the iterative data (usually, an entity selection or a collection).
 - **Selected Element**: a data source to get the item selected inside the iterative component. Usually, an entity or a collection element.
 
 To assign the data sources, use the Data Access panel:
 
 ![alt-text](img/iterate1.png)
+
+:::tip
+
+If you drag and drop a datasource attribute to a component within the stylebox of an iterative component, the *$This.attributeName* binding is automatically done:
+![alt-text](img/matrix-3.png)
+For images, the binding is automatically displayed in the Data Access panel:
+![alt-text](img/matrix-4.png)
+
+:::
+
 
 
 ### Uploading images
