@@ -16,7 +16,7 @@ To add a component, drag it from the Components library section and drop it on t
 
 ![add-component-screenshot](img/add-component.png)
 
-Once a component is on the canvas, you can [customize its look](styling.md) and bind a data source to it (if possible).
+Once a component is on the canvas, you can [customize its look](styling.md) and bind a [data source](datasources.md) to it (if possible).
 
 ![alt-text](img/components.png)
 
@@ -57,7 +57,7 @@ Two types of components are available:
 |Button|data source|Triggers actions on a web page||
 |Checkbox|data source|Allows the user to make a binary choice (boolean value)||
 |Columns|data source|Displays data inside columns||
-|Datatable|data source|Displays data in the form of a table. You can select a row to interact with the server||
+|Datatable|data source|Displays data in the form of a table. User can select a row to interact with the server||
 |Icon|data source|Displays an icon||
 |Image|data source|Displays an image||
 |Grid|data source| Allows you to produce complex and responsive layouts faster. Grid areas can be edited directly on the canvas||
@@ -157,7 +157,8 @@ A matrix automatically displays as many stylebox composents as possible in the d
 ![alt-text](img/matrix-orientation.png) 
 
 - **Horizontal**: stylebox components are ordered horizontally and a horizontal scrollbar is automatically displayed if necessary.
-- **Vertical** (default): stylebox components are ordered vertically and a vertical scrollbar is automatically displayed if necessary.
+- **Vertical** (default): stylebox components are ordered vertically and a vertical scrollbar is automatic
+ally displayed if necessary.
 
 
 ## Server-side reference
