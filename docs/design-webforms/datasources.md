@@ -114,6 +114,32 @@ There are several ways to bind a datasource to a component:
 * Drag it from the **Data Sources** section and drop it on a component
 * Select a component and enter the name of the datasource in the **Properties** panel > **Data Access** > **DataSource** 
 
+:::tip
+
+If you drag and drop a datasource attribute to a component, the *$This.attributeName* binding is automatically done:
+![alt-text](img/matrix-3.png)
+
+For images, the binding is automatically displayed in the Data Access panel:
+
+![alt-text](img/matrix-4.png)
+
+:::
+
+### Iterative components
+
+You can use components to iterate on data. These components allow you to select an item among the data as an independent datasource.
+
+The following components are iterative: [**matrix**](components.md#matrix) and [**select box**](components.md#select-box).
+
+Iterative components can be bound to two data sources:
+
+- **DataSource**: a data source to iterate on. Its attributes are bound to the component to display the iterative data (usually, an entity selection or a collection).
+- **Selected Element**: a data source to get the item selected inside the iterative component. Usually, an entity or a collection element.
+
+To assign the data sources, use the Data Access panel:
+
+![alt-text](img/iterate1.png)
+
 ## Attaching events to datasources 
 
 You can attach events to datasources to trigger certain actions when these datasources are updated in the web browser. See [datasource events](design-webforms/events/events.md#datasource-events) for more information.
