@@ -1,6 +1,6 @@
 ---
 id: create-webform
-title: Webform Editor
+title: Webform Editor Overview
 ---
 
 ## Creating a webform
@@ -11,7 +11,7 @@ To create a webform:
 * from the homepage, click **Webform** and enter a name for the new webform
 * from the Webform Editor, click the **New +** tab > **Webform**
 
-## Webform Editor Interface
+## Interface
 
 The Webform Editor provides several tools to customize the interface and contents of your application:
 
@@ -48,3 +48,22 @@ The outline section displays the hierarchy of your webform:
 Click an element in the list to select it, or click and drag it anywhere in the outline to move it somewhere else.
 
 To display or hide an element, click the eye icon.
+
+
+## Sanity check
+
+The Webfom editor includes a **Sanity check** feature, allowing you to easily and quickly check the consistency of your Webforms. This tool is useful to avoid errors at runtime and save time. In particular, the sanity check will detect if a component is bound with a non existing datasource. 
+
+The Sanity check is automatically enabled when an opened webform is being edited. Its icon is located at the upper right area above the canvas. When there are no errors, the icon looks like this:
+
+![sanity](img/sanity-ok.png)
+
+When errors have been detected, the number of errors is displayed on the icon and you can click on it to display more information about the error(s):
+
+![sanity](img/sanity.png)
+
+:::note
+
+The Sanity check is only informative. A webform can always be saved even if it contains errors. 
+
+:::

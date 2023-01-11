@@ -79,7 +79,7 @@ You can use components to iterate on data. These components allow you to select 
 
 The following components are iterative: **matrix** and **select box**.
 
-Iterative components can be bound to two data sources:
+Iterative components can be bound to two [data sources](#datasources.md):
 
 - **DataSource**: a data source to iterate on. Its attributes are bound to the component to display the iterative data (usually, an entity selection or a collection).
 - **Selected Element**: a data source to get the item selected inside the iterative component. Usually, an entity or a collection element.
@@ -92,6 +92,7 @@ To assign the data sources, use the Data Access panel:
 
 If you drag and drop a datasource attribute to a component within the stylebox of an iterative component, the *$This.attributeName* binding is automatically done:
 ![alt-text](img/matrix-3.png)
+
 For images, the binding is automatically displayed in the Data Access panel:
 ![alt-text](img/matrix-4.png)
 
@@ -149,6 +150,7 @@ It is automatically replicated in the matrix area depending on its orientation a
 ![alt-text](img/matrix-2.png)
 
 ### Orientation
+
 
 A matrix automatically displays as many stylebox composents as possible in the defined height and width. You can select the **orientation** of the matrix, i.e. the order stylebox components are displayed and how they can be scrolled. Two options are available:
 
