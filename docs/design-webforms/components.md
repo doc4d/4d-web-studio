@@ -58,9 +58,10 @@ Two types of components are available:
 |Checkbox|data source|Allows the user to make a binary choice (boolean value)|
 |Columns|data source|Displays data inside columns|
 |Datatable|data source|Displays data in the form of a table. User can select a row to interact with the server|
+|File input|data source| Allows you to upload a file to the server|
+|Grid|data source| Allows you to produce complex and responsive layouts faster. Grid areas can be edited directly on the canvas|
 |Icon|data source|Displays an icon|
 |Image|data source|Displays an image|
-|Grid|data source| Allows you to produce complex and responsive layouts faster. Grid areas can be edited directly on the canvas|
 |Matrix|container|[Iterative](datasources.md#iterative-components). Container of repeated Styleboxes. Its Stylebox must have a fixed height set in pixels|[Iterative](datasources.md#iterative-components)|
 |Radio button|data source|Allows selecting one of a set of options|
 |Range input|data source|Allows selecting a value in a range|
@@ -72,6 +73,12 @@ Two types of components are available:
 |Webform|container| Base container that holds all the other components|
 |Webform loader|container| Displays a webform inside the current Webform component|
 
+
+
+## File input
+
+The **File input** component provides a convenient way to upload files to the server. Thanks to this component, the user can upload a binary or a picture file and store it in an entity attribute.
+  
 
 
 ## Image
