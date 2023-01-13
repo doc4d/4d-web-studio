@@ -136,7 +136,8 @@ A **select box** component allows users to select an item from a list of stylebo
 - **Placeholder:**: text to display dimmed in the select box, for example "Select an activity" 
 - **Number of items:** maximum number of items to display simultaneously in the box
 - **Show length**: display a string with the total number of items above the component in the web page. By defaut, the "{{ length }} items" is used, but you can customize this pattern in the area that appears when you select this option.
-- **Enable search**: adds a search area in the web form, in which the user can enter characters to filter the contents of the select box. When you select this option, a **searchAttributes** area is displayed so that you can define the datasource attribute(s) in which the entered string will be searched. 
+- **Enable search**: adds a search area in the web form, in which the user can enter characters to automatically filter the datasource contents displayed in the select box (the search is triggered on each key stroke).   
+When you select this option, a **searchAttributes** area is displayed so that you can define the datasource attribute(s) in which the entered string will be searched. Only attributes of type *string* or *number* can be searched. 
 
 ![alt-text](img/select-box.png) 
 
