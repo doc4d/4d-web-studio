@@ -109,6 +109,8 @@ An uploaded image is displayed in the WebForm window when you select it in the *
 
 ## Matrix
 
+[**Iterative** component](#iterative-components).
+
 A **matrix** component displays a variable number of stylebox components (based upon the number of elements in the matrix's datasource). For example, you can display an entity selection using a matrix, where each included stylebox contains some attributes of the entity selection (text, images, etc). 
 
 The matrix is an [iterative component](#iterative-components). You can iterate on the matrix contents using the `$This` keyword.
@@ -124,6 +126,19 @@ A matrix automatically displays as many stylebox composents as possible in the d
 - **Vertical** (default): stylebox components are ordered vertically and a vertical scrollbar is automatic
 ally displayed if necessary.
 
+
+## Select box
+
+[**Iterative** component](datasources.md#iterative-components).
+
+A **select box** component allows users to select an item from a list of stylebox components. A select box proposes the following properties:
+
+- **Placeholder:**: text to display dimmed in the select box, for example "Select an activity" 
+- **Number of items:** maximum number of items to display simultaneously in the box
+- **Show length**: display a string with the total number of items above the component in the web page. By defaut, the "{{ length }} items" is used, but you can customize this pattern in the area that appears when you select this option.
+- **Enable search**: adds a search area in the web form, in which the user can enter characters to filter the contents of the select box. When you select this option, a **searchAttributes** area is displayed so that you can define the datasource attribute(s) in which the entered string will be searched. 
+
+![alt-text](img/select-box.png) 
 
 
 ## Stylebox
