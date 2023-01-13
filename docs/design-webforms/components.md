@@ -168,13 +168,14 @@ The **Text** component displays some text on the web page.
 When you select some text in the Text component, additional actions are proposed in its [tooltip](#tooltip):
 
 - **Style buttons**: Applies style to the selected text: Bold, Italic, Underline, Strikethrough
-- **Toggle DataSource**: Allows you to display the contents of a datasource as a text. It means that the text contents is defined dynamically by the datasource value. In **Text** you can insert a placeholder to display on the canvas, and in **Datasource** the datasource path (for example, "employer.name"). In an [iterative component](#iterative-components), use the `$This` keyword. 
+- **Toggle DataSource**: Allows you to display the contents of a datasource as a text. It means that the text contents is defined dynamically by the datasource value. In **Text** you can insert a placeholder to display on the canvas, and in **Datasource** the datasource path (for example, "employer.name"). In an [iterative component](#iterative-components), use the `$This` keyword.   
 ![alt-text](img/toogle-datasource.png)    
 If you selected a datasource of type date, an additional **Format** area allows you to enter a date format pattern:  
 ![alt-text](img/date-format.png)  
 See [this page on unicode.org](https://www.unicode.org/reports/tr35/tr35-dates.html#Date_Field_Symbol_Table) for a detailed of available symbols and patterns. 
 - **Toggle Link**: Allows you to insert a text label bound to an hypertext link. Select **Open in a new tab** if you want that the link be opened a new browser tab.   
-The link can be a static **URL** or a dynamic value based upon a **datasource**. For example, if the datasource is an object property, the property value is used as the URL.
+The link can be a static **URL** or a dynamic value based upon a **datasource**. For example, if the datasource is an object property, the property value is used as the URL.  
+
 ![alt-text](img/toogle-link.png)  
 
 ## Text input
