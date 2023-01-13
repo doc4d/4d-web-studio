@@ -78,7 +78,24 @@ Two types of components are available:
 ## File input
 
 The **File input** component provides a convenient way to upload files to the server. Thanks to this component, the user can upload a binary or a picture file and store it in an entity attribute.
-  
+
+A File input component is made of two elements (that you can select separately):
+
+![alt-text](img/file-upload.png)
+
+- a **Label**, usually displaying basic instructions such as "Please drop a file" (can be hidden)
+- the **File input** area. 
+
+The File input area can be configured with the following properties, available in the **Properties** panel:
+
+- **Label position**: relative position of the label regarding the file input area. You can also select **hidden** to not display a label.
+- **Size limit**: maximum file size that the user will be allowed to upload. You can select the unit: KB, MB, GB. If the user selects a file with a larger size, an error is displayed on the browser. 
+- **Media type**: file type. Supported type: text, image, video, audio.
+
+
+You must select an Entity datasource based upon an attribute of type Blob or picture to bind to the component. This attribute will be used to store the uploaded file. 
+
+
 
 
 ## Image
