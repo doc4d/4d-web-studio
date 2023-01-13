@@ -107,45 +107,23 @@ You can upload an image to the studio and display it in your application. That i
 An uploaded image is displayed in the WebForm window when you select it in the **images** directory.
 
 
+## Matrix
 
-## Webform loader
+A **matrix** component displays a variable number of stylebox components (based upon the number of elements in the matrix's datasource). For example, you can display an entity selection using a matrix, where each included stylebox contains some attributes of the entity selection (text, images, etc). 
 
-The **Webform loader** component displays a webform inside the current Webform component.
+The matrix is an [iterative component](#iterative-components). You can iterate on the matrix contents using the `$This` keyword.
 
-A Webform loader's initial value determines which webform it displays when it loads. You can set that initial value in one of the following ways: 
-* using the Properties panel
-* by binding a local datasource of type Text to it and giving it an initial value. 
-
-> If you apply both methods to the same Webform loader, the contents of the bound datasource are displayed in priority.
-
-The initial value must match the name of the webform to display.
-
-The difference between these methods is that binding a local datasource allows you to dynamically update the contents of the Webform loader. Every time the value of the datasource changes, the contents of the Webform loader are updated accordingly.
+### Orientation
 
 
-## Text
+A matrix automatically displays as many stylebox composents as possible in the defined height and width. You can select the **orientation** of the matrix, i.e. the order stylebox components are displayed and how they can be scrolled. Two options are available:
 
-The **Text** component displays some text on the web page. 
+![alt-text](img/matrix-orientation.png) 
 
-When you select some text in the Text component, additional actions are proposed in its [tooltip](#tooltip):
+- **Horizontal**: stylebox components are ordered horizontally and a horizontal scrollbar is automatically displayed if necessary.
+- **Vertical** (default): stylebox components are ordered vertically and a vertical scrollbar is automatic
+ally displayed if necessary.
 
-- **Style buttons**: Applies style to the selected text: Bold, Italic, Underline, Strikethrough
-- **Toggle DataSource**: Allows you to display the contents of a datasource as a text. It means that the text contents is defined dynamically by the datasource value. In **Text** you can insert a placeholder to display on the canvas, and in **Datasource** the datasource path (for example, "employer.name"). In an [iterative component](#iterative-components), use the `$This` keyword. 
-![alt-text](img/toogle-datasource.png)  
-- **Toggle Link**: Allows you to insert a text label bound to an hypertext link. Select **Open in a new tab** if you want that the link be opened a new browser tab.   
-The link can be a static **URL** or a dynamic value based upon a **datasource**. For example, if the datasource is an object property, the property value is used as the URL.
-![alt-text](img/toogle-link.png)  
-
-## Text input
-
-The **Text input** component allows users to enter data as text in the web form.
-
-The Text input component supports a **Type** property with the following values:
-
-- *text*: standard
-- *number*: the user can only enter a number
-- *password*: data entered is not displayed in clear<
-- *date*: the user can only enter a date. A date picker is automatically displayed on the client when the user enters the form area.
 
 
 ## Stylebox
@@ -182,22 +160,51 @@ When you drag and drop a datasource attribute to a stylebox, a new [Text](#text)
 
 
 
-## Matrix
 
-A **matrix** component displays a variable number of stylebox components (based upon the number of elements in the matrix's datasource). For example, you can display an entity selection using a matrix, where each included stylebox contains some attributes of the entity selection (text, images, etc). 
+## Text
 
-The matrix is an [iterative component](#iterative-components). You can iterate on the matrix contents using the `$This` keyword.
+The **Text** component displays some text on the web page. 
 
-### Orientation
+When you select some text in the Text component, additional actions are proposed in its [tooltip](#tooltip):
+
+- **Style buttons**: Applies style to the selected text: Bold, Italic, Underline, Strikethrough
+- **Toggle DataSource**: Allows you to display the contents of a datasource as a text. It means that the text contents is defined dynamically by the datasource value. In **Text** you can insert a placeholder to display on the canvas, and in **Datasource** the datasource path (for example, "employer.name"). In an [iterative component](#iterative-components), use the `$This` keyword. 
+![alt-text](img/toogle-datasource.png)    
+If you selected a datasource of type date, an additional **Format** area allows you to enter a date format pattern:  
+![alt-text](img/date-format.png)  
+See [this page on unicode.org](https://www.unicode.org/reports/tr35/tr35-dates.html#Date_Field_Symbol_Table) for a detailed of available symbols and patterns. 
+- **Toggle Link**: Allows you to insert a text label bound to an hypertext link. Select **Open in a new tab** if you want that the link be opened a new browser tab.   
+The link can be a static **URL** or a dynamic value based upon a **datasource**. For example, if the datasource is an object property, the property value is used as the URL.
+![alt-text](img/toogle-link.png)  
+
+## Text input
+
+The **Text input** component allows users to enter data as text in the web form.
+
+The Text input component supports a **Type** property with the following values:
+
+- *text*: standard
+- *number*: the user can only enter a number
+- *password*: data entered is not displayed in clear<
+- *date*: the user can only enter a date. A date picker is automatically displayed on the client when the user enters the form area.
 
 
-A matrix automatically displays as many stylebox composents as possible in the defined height and width. You can select the **orientation** of the matrix, i.e. the order stylebox components are displayed and how they can be scrolled. Two options are available:
 
-![alt-text](img/matrix-orientation.png) 
 
-- **Horizontal**: stylebox components are ordered horizontally and a horizontal scrollbar is automatically displayed if necessary.
-- **Vertical** (default): stylebox components are ordered vertically and a vertical scrollbar is automatic
-ally displayed if necessary.
+
+## Webform loader
+
+The **Webform loader** component displays a webform inside the current Webform component.
+
+A Webform loader's initial value determines which webform it displays when it loads. You can set that initial value in one of the following ways: 
+* using the Properties panel
+* by binding a local datasource of type Text to it and giving it an initial value. 
+
+> If you apply both methods to the same Webform loader, the contents of the bound datasource are displayed in priority.
+
+The initial value must match the name of the webform to display.
+
+The difference between these methods is that binding a local datasource allows you to dynamically update the contents of the Webform loader. Every time the value of the datasource changes, the contents of the Webform loader are updated accordingly.
 
 
 ## Server-side reference
