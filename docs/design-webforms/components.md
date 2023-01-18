@@ -16,7 +16,7 @@ To add a component, drag it from the Components library section and drop it on t
 
 ![add-component-screenshot](img/add-component.png)
 
-Once a component is on the canvas, you can [customize its look](styling.md) and bind a data source to it (if possible).
+Once a component is on the canvas, you can [customize its look](styling.md) and bind a [data source](datasources.md) to it (if possible).
 
 ![alt-text](img/components.png)
 
@@ -45,59 +45,173 @@ The tooltip is contextual, which means that some actions are available to certai
 When you select some text in the Text component, additional actions are proposed in its [tooltip](#tooltip).
 
 
-## Component Description
+## Component Overview
 
 Two types of components are available:
 
 - **containers**, which contain and organize other components
 - **data sources**, components whose actions are bound to datasources 
 
-|Component|Type|Description|Comments|
-|---|---|---|---|
-|Button|data source|Triggers actions on a web page||
-|Checkbox|data source|Allows the user to make a binary choice (boolean value)||
-|Columns|data source|Displays data inside columns||
-|Datatable|data source|Displays data in the form of a table. You can select a row to interact with the server||
-|Icon|data source|Displays an icon||
-|Image|data source|Displays an image||
-|Grid|data source| Allows you to produce complex and responsive layouts faster. Grid areas can be edited directly on the canvas||
-|Matrix|container|Container of repeated Styleboxes. Its Stylebox must have a fixed height set in pixels|[Iterative](#iterative-components)|
-|Radio button|data source|Allows selecting one of a set of options||
-|Range input|data source|Allows selecting a value in a range||
-|Select box|data source|Allows selecting an item in a list|[Iterative](#iterative-components)|
-|Stylebox|container| Container used to keep the content centered and legible||
-|Tabs|data source|Organizes and allows navigation between groups of content that are related and at the same level of hierarchy||
-|Text|data source|Displays text on a web page|When some text is selected, its [tooltip](#tooltip) contains [additional actions](#additional-actions-for-text-component): **style**, **toggle datasource**, and **toggle link** |
-|Text input|data source|Allows users to enter data in a form|Supports a **Type** property with the following values:<br/><li>*text*: standard</li><li>*number*: the user can only enter a number</li><li>*password*: data entered is not displayed in clear</li><li>*date*: the user can only enter a date. A date picker is automatically displayed on the client when the user enters the form area</li>|
-|Webform|container| Base container that holds all the other components||
-|Webform loader|container| Displays a webform inside the current Webform component|See [this paragraph](#setting-a-webform-loaders-initial-value) |
+|Component|Type|Description|
+|---|---|---|
+|Button|data source|Triggers actions on a web page|
+|Checkbox|data source|Allows the user to make a binary choice (boolean value)|
+|Columns|data source|Displays data inside columns|
+|Datatable|data source|Displays data in the form of a table. User can select a row to interact with the server|
+|File input|data source| Allows you to upload a file to the server|
+|Grid|data source| Allows you to produce complex and responsive layouts faster. Grid areas can be edited directly on the canvas|
+|Icon|data source|Displays an icon|
+|Image|data source|Displays an image|
+|Matrix|container|[Iterative](datasources.md#iterative-components). Container of repeated Styleboxes. Its Stylebox must have a fixed height set in pixels|[Iterative](datasources.md#iterative-components)|
+|Radio button|data source|Allows selecting one of a set of options|
+|Range input|data source|Allows selecting a value in a range|
+|Select box|data source|[Iterative](datasources.md#iterative-components). Allows selecting an item in a list|
+|Stylebox|container| Container used to keep the content centered and legible|
+|Tabs|data source|Organizes and allows navigation between groups of content that are related and at the same level of hierarchy|
+|Text|data source|Displays text on a web page|
+|Text input|data source|Allows users to enter data in a form|
+|Webform|container| Base container that holds all the other components|
+|Webform loader|container| Displays a webform inside the current Webform component|
 
 
-### Iterative components
 
-You can use components to iterate on data. These components allow you to select an item among the data as an independent datasource.
+## File input
 
-The following components are iterative: **matrix** and **select box**.
+The **File input** component provides a convenient way to upload files to the server. Thanks to this component, the user can upload a binary or a picture file and store it in an entity attribute.
 
-Iterative components can be bound to two data sources:
+A File input component is made of two elements (that you can select separately):
 
-- **DataSource**: a data source to iterate on. Its attributes are bound to the component to display the iterative data. Usually, an entity selection or a collection.
-- **Selected Element**: a data source to get the item selected inside the iterative component. Usually, an entity or a collection element.
+![alt-text](img/file-upload.png)
 
-To assign the data sources, use the Data Access panel:
+- a **Label**, usually displaying basic instructions such as "Please drop a file" (can be hidden)
+- the **File input** area. 
 
-![alt-text](img/iterate1.png)
+The File input area can be configured with the following properties, available in the **Properties** panel:
+
+- **Label position**: relative position of the label regarding the file input area. You can also select **hidden** to not display a label.
+- **Size limit**: maximum file size that the user will be allowed to upload. You can select the unit: KB, MB, GB. If the user selects a file with a larger size, an error is displayed on the browser. 
+- **Media type**: file type. Supported type: text, image, video, audio.
 
 
-### Uploading images
+You must select an Entity datasource based upon an attribute of type Blob or picture to bind to the component. This attribute will be used to store the uploaded file. 
 
-With the [Image](./components.md#component-list) component, you can upload an image to the studio and display it in your application. That image is available to all the webforms in your project and is stored in the **Explorer** panel > **Shared** > **assets** > **images**. 
+
+
+
+## Image
+
+The **Image** component displays an image in the webform.
+
+You can upload an image to the studio and display it in your application. That image is available to all the webforms in your project and is stored in the **Explorer** panel > **Shared** > **assets** > **images**. 
 
 An uploaded image is displayed in the WebForm window when you select it in the **images** directory.
 
 
+## Matrix
 
-### Webform loader's initial value
+[**Iterative** component](#iterative-components).
+
+A **matrix** component displays a variable number of stylebox components (based upon the number of elements in the matrix's datasource). For example, you can display an entity selection using a matrix, where each included stylebox contains some attributes of the entity selection (text, images, etc). 
+
+The matrix is an [iterative component](#iterative-components). You can iterate on the matrix contents using the `$This` keyword.
+
+### Orientation
+
+
+A matrix automatically displays as many stylebox composents as possible in the defined height and width. You can select the **orientation** of the matrix, i.e. the order stylebox components are displayed and how they can be scrolled. Two options are available:
+
+![alt-text](img/matrix-orientation.png) 
+
+- **Horizontal**: stylebox components are ordered horizontally and a horizontal scrollbar is automatically displayed if necessary.
+- **Vertical** (default): stylebox components are ordered vertically and a vertical scrollbar is automatic
+ally displayed if necessary.
+
+
+## Select box
+
+[**Iterative** component](datasources.md#iterative-components).
+
+A **select box** component allows users to select an item from a list of stylebox components. A select box proposes the following properties:
+
+- **Placeholder:**: text to display dimmed in the select box, for example "Select an activity" 
+- **Number of items:** maximum number of items to display simultaneously in the box
+- **Show length**: display a string with the total number of items above the component in the web page. By defaut, the "{{ length }} items" is used, but you can customize this pattern in the area that appears when you select this option.
+- **Enable search**: adds a search area in the web form, in which the user can enter characters to automatically filter the datasource contents displayed in the select box (the search is triggered on each key stroke).   
+When you select this option, a **searchAttributes** area is displayed so that you can define the datasource attribute(s) in which the entered string will be searched. Only attributes of type *string* or *number* can be searched. 
+
+![alt-text](img/select-box.png) 
+
+
+## Stylebox
+
+A **stylebox** component is a container that is used to keep the content centered and legible.
+
+Styleboxes can be inserted at the root level of a webform, and can be nested to create a hierarchy of elements. 
+
+The following components automatically include a stylebox component that organizes their contents:
+
+- columns,
+- grid,
+- tabs,
+- matrix,
+- select box.
+
+For example, the matrix's stylebox is the first element of a matrix:
+
+![alt-text](img/stylebox.png)
+
+It is automatically replicated in the matrix area depending on its orientation and datasource:
+
+![alt-text](img/matrix-2.png)
+
+When you drag and drop a datasource attribute to a stylebox, a new [Text](#text) component bound with the datasource is automatically created inside the stylebox:
+
+|Datasource type|New text component bound with|
+|---|---|
+|Entity attribute|entity.attribute|
+|Selection attribute|$iterator.attribute|
+|Length of a selection|selection.length|
+|Scalar datasource|datasourceName|
+
+
+
+
+
+## Text
+
+The **Text** component displays some text on the web page. 
+
+When you select some text in the Text component, additional actions are proposed in its [tooltip](#tooltip):
+
+- **Style buttons**: Applies style to the selected text: Bold, Italic, Underline, Strikethrough
+- **Toggle DataSource**: Allows you to display the contents of a datasource as a text. It means that the text contents is defined dynamically by the datasource value. In **Text** you can insert a placeholder to display on the canvas, and in **Datasource** the datasource path (for example, "employer.name"). In an [iterative component](#iterative-components), use the `$This` keyword.   
+![alt-text](img/toogle-datasource.png)    
+If you selected a datasource of type date, an additional **Format** area allows you to enter a date format pattern:  
+![alt-text](img/date-format.png)  
+See [this page on unicode.org](https://www.unicode.org/reports/tr35/tr35-dates.html#Date_Field_Symbol_Table) for a detailed of available symbols and patterns. 
+- **Toggle Link**: Allows you to insert a text label bound to an hypertext link. Select **Open in a new tab** if you want that the link be opened a new browser tab.   
+The link can be a static **URL** or a dynamic value based upon a **datasource**. For example, if the datasource is an object property, the property value is used as the URL.  
+
+![alt-text](img/toogle-link.png)  
+
+## Text input
+
+The **Text input** component allows users to enter data as text in the web form.
+
+The Text input component supports a **Type** property with the following values:
+
+- *text*: standard
+- *number*: the user can only enter a number
+- *password*: data entered is not displayed in clear<
+- *date*: the user can only enter a date. A date picker is automatically displayed on the client when the user enters the form area.
+
+
+
+
+
+## Webform loader
+
+The **Webform loader** component displays a webform inside the current Webform component.
 
 A Webform loader's initial value determines which webform it displays when it loads. You can set that initial value in one of the following ways: 
 * using the Properties panel
@@ -108,19 +222,6 @@ A Webform loader's initial value determines which webform it displays when it lo
 The initial value must match the name of the webform to display.
 
 The difference between these methods is that binding a local datasource allows you to dynamically update the contents of the Webform loader. Every time the value of the datasource changes, the contents of the Webform loader are updated accordingly.
-
-
-### Additional actions for Text component
-
-When you select some text in the Text component, additional actions are proposed in its [tooltip](#tooltip):
-
-- **Style buttons**: Applies style to the selected text: Bold, Italic, Underline, Strikethrough
-- **Toggle DataSource**: Allows you to display the contents of a datasource as a text. It means that the text contents is defined dynamically by the datasource value. In **Text** you can insert a placeholder to display on the canvas, and in **Datasource** the datasource path (for example, "employer.name"). In an [iterative component](#iterative-components), use the `$This` keyword. 
-![alt-text](img/toogle-datasource.png)  
-- **Toggle Link**: Allows you to insert a text label bound to an hypertext link. Select **Open in a new tab** if you want that the link be opened a new browser tab.   
-The link can be a static **URL** or a dynamic value based upon a **datasource**. For example, if the datasource is an object property, the property value is used as the URL.
-![alt-text](img/toogle-link.png)  
-
 
 
 ## Server-side reference
