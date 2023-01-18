@@ -45,7 +45,9 @@ The tooltip is contextual, which means that some actions are available to certai
 When you select some text in the Text component, additional actions are proposed in its [tooltip](#tooltip).
 
 
-## Component Overview
+## Component List
+
+### Overview
 
 Two types of components are available:
 
@@ -75,7 +77,7 @@ Two types of components are available:
 
 
 
-## File input
+### File input
 
 The **File input** component provides a convenient way to upload files to the server. Thanks to this component, the user can upload a binary or a picture file and store it in an entity attribute.
 
@@ -98,7 +100,7 @@ You must select an Entity datasource based upon an attribute of type Blob or pic
 
 
 
-## Image
+### Image
 
 The **Image** component displays an image in the webform.
 
@@ -107,7 +109,7 @@ You can upload an image to the studio and display it in your application. That i
 An uploaded image is displayed in the WebForm window when you select it in the **images** directory.
 
 
-## Matrix
+### Matrix
 
 [**Iterative** component](#iterative-components).
 
@@ -115,7 +117,7 @@ A **matrix** component displays a variable number of stylebox components (based 
 
 The matrix is an [iterative component](#iterative-components). You can iterate on the matrix contents using the `$This` keyword.
 
-### Orientation
+#### Orientation
 
 
 A matrix automatically displays as many stylebox composents as possible in the defined height and width. You can select the **orientation** of the matrix, i.e. the order stylebox components are displayed and how they can be scrolled. Two options are available:
@@ -127,7 +129,7 @@ A matrix automatically displays as many stylebox composents as possible in the d
 ally displayed if necessary.
 
 
-## Select box
+### Select box
 
 [**Iterative** component](datasources.md#iterative-components).
 
@@ -142,7 +144,7 @@ When you select this option, a **searchAttributes** area is displayed so that yo
 ![alt-text](img/select-box.png) 
 
 
-## Stylebox
+### Stylebox
 
 A **stylebox** component is a container that is used to keep the content centered and legible.
 
@@ -177,7 +179,7 @@ When you drag and drop a datasource attribute to a stylebox, a new [Text](#text)
 
 
 
-## Text
+### Text
 
 The **Text** component displays some text on the web page. 
 
@@ -194,7 +196,7 @@ The link can be a static **URL** or a dynamic value based upon a **datasource**.
 
 ![alt-text](img/toogle-link.png)  
 
-## Text input
+### Text input
 
 The **Text input** component allows users to enter data as text in the web form.
 
@@ -209,7 +211,7 @@ The Text input component supports a **Type** property with the following values:
 
 
 
-## Webform loader
+### Webform loader
 
 The **Webform loader** component displays a webform inside the current Webform component.
 
