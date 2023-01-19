@@ -15,6 +15,14 @@ module.exports = {
     },
     {
       type: 'category',
+      label: 'Model',
+      items: ['model/model-overview',
+        'model/model-editor-interface',
+        'model/datastore-classes'
+      ],
+    },
+    {
+      type: 'category',
       label: 'Designing a webform',
       items: ['design-webforms/create-webform',
         'design-webforms/components',

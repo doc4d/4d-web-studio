@@ -1,8 +1,8 @@
 ---
-id: model-editer
-title: Model Editor
+id: model-overview
+title: Qodly Models
 ---
-The structure of your project is called a [Model](model/model-editer.md). When you click on an
+The structure of your project is called a Model. When you click on an
 empty space in the Data Model Editor, you can view the properties for
 your Model(coming soon). By default, a Model does not contain any
 default datastore classes; you have to create the datastore classes
@@ -29,16 +29,5 @@ everything interface **from the toolbar to the Properties Area**
 ### Datastore functions 
 
 ### Attributes
-
-### Functions and Events 
-
-> The Datastore class functions, datastore class events, attribute
-> events, and calculated attribute events are structured in the
-> following way.
-
-### Model Properties - Coming soon..
-
-\*\*maybe add a little part about Model Permissions here
-eventually\*\*
 
 ##### 

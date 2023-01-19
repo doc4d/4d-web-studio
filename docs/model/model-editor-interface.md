@@ -1,6 +1,6 @@
 ---
-id: overview-model
-title: Overview Model
+id: model-editor-interface
+title: Model Editor Interface
 ---
 The Data Model Editor allows you to define the Model
 ( database structure) for your application.
@@ -16,13 +16,9 @@ To open your project\'s active model you double click on  ![alt-text](img/model-
 The Data Model Editor is made up of the following areas:
 
 -   Workspace
-
 -   Toolbar
-
 -   Miniature Overview Area
-
 -   Datastore Classes Area
-
 -   Properties Area (coming soon)
 
 ### Workspace
@@ -83,7 +79,7 @@ specific datastore class:
 
 -   ![alt-text](img/fitview-icon.png) fit to view : to show a fitted view of the selected datastore class in your workspace area.
 
--   ![alt-text](img/importfromcvs-icon.png) import from CVS : Allows you to import data from a CVS file.
+-   ![alt-text](img/importfromcvs-icon.png) import from CSV : Allows you to import data from a CSV file.
 
 -   You can delete the datastore class completely by clicking on the ![alt-text](img/deletedatastoreclass-icon.png) icon.
 
