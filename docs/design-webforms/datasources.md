@@ -5,16 +5,44 @@ title: Datasources
 
 ## Overview
 
-Datasources contain data. You can bind them to your Webform components to determine where the data is displayed in your application.
+Datasources are a central concept to Qodly's architecture and are intended to make developping Web applications as simple as possible. A datasource references data and automatically generates events when this data is changed. Your webform components can **subscribe** to datasources to determine how and where the data is displayed in your application.
 
 
-### Shared datasources 
 
-Inside a project, you can create *shared datasources*. A shared datasource can be used in several webforms inside the same project.
+### Datasources and components
 
-Shared datasources are grouped under namespaces. To create a shared datasource, follow the steps to [create a datasource](#creating-a-datasource) and enter a namespace before choosing **Confirm**. 
+A **component** is a UI element subscribing to a datasource and which displays all or part of the attributes of the datasource (in case of ORDA or object datasources). When this datasource changes, the component reflects this change.
+For example, if a datasource is returned as result by a function, after the function has been called the component reflects automatically the new or modified data of the datasource. 
 
-When you select a component linked to a datasource, the Properties panel allows you to identify if that datasource is shared:
+![components](./img/datasource-1.png)
+
+
+### ORDA datasources (aka Catalog datasources)
+
+Catalog datasources are references to entities and entity selections existing on the server and coming from the data model. Data exchange is optimized: only attributes displayed by the component are requested from the server and available on the browser (same concept as [contexts](https://developer.4d.com/docs/ORDA/datastores#context)). 
+
+![datasources](./img/datasource-2.png)
+
+### Scalar datasources
+
+Scalar datasources exist locally in the browser. They can be created on the browser and then sent to the server during a function call but are not issued from the Data model and therefore are not persistant. Scalar datasources can be of type String, Number, Boolean, Date, Object, or Collection. 
+
+
+
+### Webform datasources vs Shared datasources
+
+You can create *webform datasources* or *shared datasources*.
+
+The scope of a webform datasource is the webform, whereas the scope of the shared datasource is the application. A webform datasource can only be used in the webform from which it has been defined. A shared datasource can be used in several webforms inside the same project.
+
+By default when you [create a datasource](#creating-a-datasource), if you do not enter a namespace, you define a webform datasource. 
+
+Shared datasources are grouped under namespaces. You can create as many namespaces as you need in the application.
+
+To create a shared datasource, follow the steps to [create a datasource from the catalog](#from-the-catalog) and enter a namespace before choosing **Confirm**, or create a datasource directly [from a namespace](#from-a-namespace). 
+
+When you select a component bound to a datasource, the Properties panel allows you to identify if that datasource is shared:
+
 * If the datasource is shared, its namespace appears next to its name.
 * If the datasource is not shared, *webform* is displayed next to its name to indicate that it can only be used in the current webform.
 
@@ -27,6 +55,7 @@ Namespaces of shared datasources are also displayed in the Contextual panel when
 By extension, when entity and entity selections are used as shared datasources, their functions are shared too and can be used in several webforms in the same project. 
 
 When you configure a function event, the Contextual panel indicates if the function is shared:
+
 * If it is shared, its namespace is displayed next to its name. 
 * If it isn't shared, *webform* is displayed instead. 
 
@@ -39,14 +68,6 @@ However, [webform rendering](../rendering.md) happens outside 4D Web Studio, and
 
 See [Exposed vs non-exposed functions](https://developer.4d.com/docs/en/ORDA/ordaClasses.html#exposed-vs-non-exposed-functions) and [Exposing tables](https://developer.4d.com/docs/en/REST/configuration.html#exposing-tables) for more information on how to expose assets.
 
-### Remote or local
-
-Datasources can be remote or local:
-
-- **Remote**: Remote datasources are based upon entities and entity selections. They are handled on the server. They offer functions defined on the [ORDA classes](https://developer.4d.com/docs/en/ORDA/ordaClasses.html#class-description) that they instantiate (Entity class, Entity Selection class). 
-- **Local**: Local datasources are based upon scalar data types handled with the browser's memory. They can be assigned to variables. No request is sent to the server when the application accesses local datasources.
-
-Basically, remote and local datasources work the same way.
 
 
 
@@ -65,14 +86,16 @@ In this section, you'll find:
 - A **Search** area, allowing to filter the datasource list 
 
 - The **Catalog**, which holds:
-    * data from your database. From this list, you can designate entities or entity selections from your [datastore](https://developer.4d.com/docs/en/ORDA/dsmapping.html), and they will be handled by the server as datasources.
-    * the functions defined in each class
+    * dataclasses from your application. From this list, you can designate entities or entity selections from your [datastore](https://developer.4d.com/docs/en/ORDA/dsmapping.html), and they will be handled by the server as datasources.
+    * the functions defined at the datastore level and in each dataclass
 
-- **Webform datasources**: Datasources that can only be used within the webform.  
+- **This Webform**: Datasources that can only be used within the webform.  
 
 - **Namespaces**: Datasources that can be used in several webforms your project (**shared datasources**), grouped by namespaces. You can create a namespace by clicking on the **+** icon or when defining a shared datasource. 
 
 #### From the Catalog
+
+You can create webform or shared datasources from the Catalog. 
 
 1. In the Data Sources section, choose **Catalog** > **Data Classes**
 2. Click the **+** icon next to a dataclass
@@ -84,13 +107,25 @@ In this section, you'll find:
 
 The newly created Entity or Entity selection datasource now appears in the **This Webform** or **Namespaces** section, depending on your settings.
 
+#### From This Webform
+
+You can create webform datasources only from this line. 
+
+1. Click the **+** icon near the **This Webform** line.
+2. Enter the name of the datasource.
+3. Select the datasource scalar Type.  
+If you select Entity selection or Entity, you create an ORDA datasource. You need then to select its Dataclass and configure its settings (initial value, page size or depth).
+
+
+
 #### From a Namespace
+
+You can create shared datasources only from a namespace. 
 
 1. Click the **+** icon near a defined namespace.
 2. Enter the name of the datasource.
 3. Select the datasource Type.  
-If you select Entity selection or Entity, you create a remote datasource. You need then to select its Dataclass and configure its settings (initial value, page size or depth).
-
+If you select Entity selection or Entity, you create an ORDA datasource. You need then to select its Dataclass and configure its settings (initial value, page size or depth).
 4. Click **Confirm**. 
 
 ### Renaming a datasource
@@ -116,7 +151,7 @@ There are several ways to bind a datasource to a component:
 
 :::tip
 
-If you drag and drop a datasource attribute to a component, the *$This.attributeName* binding is automatically done:
+If you drag and drop an entity selection attribute to a [Select box](components.md#select-box) or [Matrix](components.md#matrix) component, the *$This.attributeName* binding is automatically done:
 ![alt-text](img/matrix-3.png)
 
 For images, the binding is automatically displayed in the Data Access panel:
@@ -129,14 +164,14 @@ For images, the binding is automatically displayed in the Data Access panel:
 
 You can use components to iterate on data. These components allow you to select an item among the data as an independent datasource.
 
-The following components are iterative: [**matrix**](components.md#matrix) and [**select box**](components.md#select-box).
+The following components are iterative: [**datatable**](components.md#matrix), [**matrix**](components.md#matrix), and [**select box**](components.md#select-box).
 
 Iterative components can be bound to two data sources:
 
 - **DataSource**: a data source to iterate on. Its attributes are bound to the component to display the iterative data (usually, an entity selection or a collection).
 - **Selected Element**: a data source to get the item selected inside the iterative component. Usually, an entity or a collection element.
 
-To assign the data sources, use the Data Access panel:
+The data sources are assigned using the Data Access panel:
 
 ![alt-text](img/iterate1.png)
 

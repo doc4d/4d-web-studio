@@ -97,7 +97,7 @@ An **onChange** event calls the `search` function and passes the text typed in t
 
 Now everytime the text changes inside the **Input** element, a query is sent and the list of students displayed in the **Matrix** component is updated.
 
-###  Datasource events
+### Datasource events
 
 Aside from events triggered by end-user actions, events can trigger automatically when datasources are updated.
 
