@@ -1,6 +1,6 @@
 ---
 id: events
-title: Events and interactions
+title: Events and standard actions
 ---
 
 Events are usually used as a means of triggering certain behaviors. They are used in conjunction with different actions to create interactions in an application.
@@ -107,23 +107,17 @@ For a list of datasource events, see [List of available events](#list-of-datasou
 
 In the image below: 
 
-* The **Datatable** component displays a list of employees, based on an entity selection (the `employees` datasource is attached).
-* The button slices the `employees` entity selection datasource to keep only the first three entities.
-* An `onChange` event is attached to the `employees` datasource.
-* The **Text** component contains a local datasource of type Text, called *result*.
+* The employee [Datatable component](components.md#datatable) displays a list of employees, based on an entity selection (the *employees* catalog datasource is attached).
+* The "General statistics/Detailed statistics" [radio component](components.md#radio) is bound to the *choice* webfom datasource. 
+* Buttons are bound to standard actions that execute queries on the employee datasource (e.g. "salary < 23000").
+* An `onChange` event is attached to the `employees` datasource and another `onChange` event is attached to the `choice` datasource. Both events call the same function from the `EmployeeSelection` class, named *statistics*.
+* For simplicity, the "statistics" scalar datasource (object) is displayed as a [Text component](components.md#text).
 
 ![event-datasource](img/event-datasource.png)
 
-When the end-user clicks the button, the `employees` datasource is updated, triggering the `onChange` event. This calls `displayValue` to update *result*:
+When the user clicks a button or select a radio button, the `employees` datasource is updated, triggering the `onChange` event. This function takes the value of the *choice* datasource as parameter, and returns general or detailed statistics as an object depending on the parameter value.  
 
 ![event-datasource-event](img/event-datasource-event.png)
-
-The `displayValue` function returns text according to the number of entities: 
-
-```4d 
-exposed function displayValue() -> $result : Text
-$result:="The table now displays " + String(This.length) + " entries"
-```
 
 Here's what you obtain after the button is clicked:
 

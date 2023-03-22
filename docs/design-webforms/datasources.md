@@ -146,7 +146,7 @@ There are several ways to bind a datasource to a component:
 * Drag it from the **Data Sources** section and drop it on a component
 * Select a component and enter the name of the datasource in the **Properties** panel > **Data Access** > **DataSource** 
 
-:::info Shortcuts
+:::note Shortcuts
 
 If you drag and drop an entity selection attribute to a [Select box](components.md#select-box) or [Matrix](components.md#matrix) component, the *$This.attributeName* binding is automatically done:
 ![alt-text](img/matrix-3.png)
@@ -154,6 +154,8 @@ If you drag and drop an entity selection attribute to a [Select box](components.
 For [images](components.md#images), the binding is automatically displayed in the Data Access panel:
 
 ![alt-text](img/matrix-4.png)
+
+:::
 
 
 ### Iterative components
