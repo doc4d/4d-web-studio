@@ -76,6 +76,23 @@ Two types of components are available:
 |Webform loader|container| Displays a webform inside the current Webform component|
 
 
+### DataTable
+
+The **DataTable** component is designed to display data as a table from a datasource. Usually when a DataTable is bound to a catalog datasource, attributes are represented as columns, and entities are represented as rows. A DataTable also contains a header. 
+
+Basic features include column sorting, resizable columns, tips display with cell value, and selectable/tabbable rows. 
+
+![data-table](img/datatable1.png)
+
+Note that all DataTable components parts are highly customizable thanks to a specific [CSS class].
+
+The DataTable can be configured with the following properties, available in the **Properties** panel:
+
+- **Header height**: Height of the datre.
+- **Size limit**: maximum file size that the user will be allowed to upload. You can select the unit: KB, MB, GB. If the user selects a file with a larger size, an error is displayed on the browser. 
+- **Media type**: file type. Supported type: text, image, video, audio.
+
+
 
 ### File input
 
