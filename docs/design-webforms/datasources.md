@@ -3,33 +3,34 @@ id: datasources
 title: Datasources
 ---
 
-## Overview
 
 Datasources are a central concept to Qodly's architecture and are intended to make developping Web applications as simple as possible. A datasource references data and automatically generates events when this data is changed. Your webform components can **subscribe** to datasources to determine how and where the data is displayed in your application.
 
 
+## What are datasources?
 
-### Datasources and components
+### Components and datasources
 
-A **component** is a UI element subscribing to a datasource and which displays all or part of the attributes of the datasource (in case of ORDA or object datasources). When this datasource changes, the component reflects this change.
+Components are UI elements that can subscribe to datasources and display all or part of the attributes of the datasource (in case of ORDA or object datasources). When this datasource changes, the component reflects this change.
 For example, if a datasource is returned as result by a function, after the function has been called the component reflects automatically the new or modified data of the datasource. 
 
 ![components](./img/datasource-1.png)
 
+### Events and datasources 
 
-### ORDA datasources (aka Catalog datasources)
+You can also attach **events** to datasources to trigger certain actions when these datasources are updated in the web browser. See [datasource events](design-webforms/events/events.md#datasource-events) for more details.
 
-Catalog datasources are references to entities and entity selections existing on the server and coming from the data model. Data exchange is optimized: only attributes displayed by the component are requested from the server and available on the browser (same concept as [contexts](https://developer.4d.com/docs/ORDA/datastores#context)). 
+
+### Catalog datasources and scalar datasources
+
+**Catalog datasources** (aka **ORDA datasources**) are references to entities and entity selections existing on the server and coming from the data model. Data exchange is optimized: only attributes displayed by the component are requested from the server and available on the browser (same concept as [contexts](https://developer.4d.com/docs/ORDA/datastores#context)). 
+
+**Scalar datasources** exist locally in the browser. They can be created on the browser and then sent to the server during a function call but are not issued from the Data model and therefore are not persistant. Scalar datasources can be of type String, Number, Boolean, Date, Object, or Collection. 
 
 ![datasources](./img/datasource-2.png)
 
-### Scalar datasources
 
-Scalar datasources exist locally in the browser. They can be created on the browser and then sent to the server during a function call but are not issued from the Data model and therefore are not persistant. Scalar datasources can be of type String, Number, Boolean, Date, Object, or Collection. 
-
-
-
-### Webform datasources vs Shared datasources
+### Webform datasources and shared datasources
 
 You can create *webform datasources* or *shared datasources*.
 
@@ -50,7 +51,7 @@ When you select a component bound to a datasource, the Properties panel allows y
 
 Namespaces of shared datasources are also displayed in the Contextual panel when you configure events that trigger functions.
 
-### Shared functions 
+#### Shared functions 
 
 By extension, when entity and entity selections are used as shared datasources, their functions are shared too and can be used in several webforms in the same project. 
 
@@ -58,15 +59,6 @@ When you configure a function event, the Contextual panel indicates if the funct
 
 * If it is shared, its namespace is displayed next to its name. 
 * If it isn't shared, *webform* is displayed instead. 
-
-
-### Exposed and non-exposed assets
-
-4D Web Studio runs through the [4D WebAdmin web server](https://developer.4d.com/docs/en/Admin/webAdmin.html). When you use 4D Web Studio as a developer, even when you preview a webform in the studio, you’re using the 4D WebAdmin web server. This allows you to see dataclasses, functions and attributes that are not exposed as REST resources for example (they are greyed out).
-
-However, [webform rendering](../rendering.md) happens outside 4D Web Studio, and is served by the [standard 4D web server](https://developer.4d.com/docs/en/WebServer/webServer.html). In this situation, your web application cannot access assets that are not exposed as REST resources.
-
-See [Exposed vs non-exposed functions](https://developer.4d.com/docs/en/ORDA/ordaClasses.html#exposed-vs-non-exposed-functions) and [Exposing tables](https://developer.4d.com/docs/en/REST/configuration.html#exposing-tables) for more information on how to expose assets.
 
 
 
@@ -141,6 +133,11 @@ When renaming a shared datasource, only opened web forms can have their referenc
 
 :::
 
+### Keeping track of your datasources
+
+The **Inspect** option ![styles-library](img/inspect-button.png) allows you to check where your datasources are used in your webforms. Toggle the option by clicking the icon, then mouse over a datasource to highlight its location in your webform.
+
+
 
 ## Binding a datasource to a component
 
@@ -149,16 +146,15 @@ There are several ways to bind a datasource to a component:
 * Drag it from the **Data Sources** section and drop it on a component
 * Select a component and enter the name of the datasource in the **Properties** panel > **Data Access** > **DataSource** 
 
-:::tip
+:::info Shortcuts
 
 If you drag and drop an entity selection attribute to a [Select box](components.md#select-box) or [Matrix](components.md#matrix) component, the *$This.attributeName* binding is automatically done:
 ![alt-text](img/matrix-3.png)
 
-For images, the binding is automatically displayed in the Data Access panel:
+For [images](components.md#images), the binding is automatically displayed in the Data Access panel:
 
 ![alt-text](img/matrix-4.png)
 
-:::
 
 ### Iterative components
 
@@ -175,15 +171,7 @@ The data sources are assigned using the Data Access panel:
 
 ![alt-text](img/iterate1.png)
 
-## Attaching events to datasources 
-
-You can attach events to datasources to trigger certain actions when these datasources are updated in the web browser. See [datasource events](design-webforms/events/events.md#datasource-events) for more information.
-
 ## Storing data in a datasource
 
-You can store data in local and remote datasources. For example, you can configure an event that calls a function, and store the result of that function in a datasource. See the [example from the user events section](design-webforms/events/events.md#example-search-feature-using-the-onchange-event).
-
-## Keeping track of your datasources
-
-The **Inspect** option ![styles-library](img/inspect-button.png) allows you to check where your datasources are used in your webforms. Toggle the option by clicking the icon, then mouse over a datasource to highlight its location in your webform.
+You can store data in scalar and catalog datasources. For example, you can configure an event that calls a function, and store the result of that function in a datasource. See the [example from the user events section](design-webforms/events/events.md#example-search-feature-using-the-onchange-event).
 

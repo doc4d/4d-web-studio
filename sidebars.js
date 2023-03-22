@@ -23,18 +23,14 @@ module.exports = {
     },
     {
       type: 'category',
-      label: 'Designing a webform',
+      label: 'Webforms',
       items: ['design-webforms/create-webform',
         'design-webforms/components',
         'design-webforms/styling',
         'design-webforms/datasources',
-        'design-webforms/events/events'
+        'design-webforms/events/events',
+		'rendering',
       ],
-    },
-    {
-      type: 'doc',
-      id: 'rendering',
-      label: "Rendering a webform"
     },
 	{
       type: 'doc',

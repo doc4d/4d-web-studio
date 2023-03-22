@@ -45,7 +45,7 @@ The tooltip is contextual, which means that some actions are available to certai
 When you select some text in the Text component, additional actions are proposed in its [tooltip](#tooltip).
 
 
-## Component List
+## Description of components
 
 ### Overview
 

@@ -20,9 +20,12 @@ The following diagram describes how data flows to and from the studio:
 * The 4D WebAdmin web server provides a secured web access to 4D Web Studio and allows previewing webforms inside the studio.
 * The main 4D web server is [exposed as REST server](https://developer.4d.com/docs/en/REST/configuration.html#starting-the-rest-server), and the renderer communicates with it using [REST requests](https://developer.4d.com/docs/en/REST/gettingStarted.html).
 * The webforms are deployed with the application, and end-users render them in their browsers. 
+
+
 ## How to render a webform
 
 Webforms can be rendered from the 4D Web Studio IDE, or directly from a browser window. 
+
 ### From the 4D Web Studio IDE
 
 To open a browser tab and render a webform, click the **Render** button (![render-button](img/render-button.png)).
@@ -40,3 +43,14 @@ The button is displayed only when the [configuration options](#configuration) ar
 Webforms can be rendered directly from a browser window, by typing the following address:
 
 `IP:port/$lib/renderer/?w=WebFormName`
+
+
+## Exposed and non-exposed assets
+
+4D Web Studio runs through the [4D WebAdmin web server](https://developer.4d.com/docs/en/Admin/webAdmin.html). When you use 4D Web Studio as a developer, even when you preview a webform in the studio, you’re using the 4D WebAdmin web server. This allows you to see dataclasses, functions and attributes that are not exposed as REST resources for example (they are greyed out).
+
+However, webform rendering happens outside 4D Web Studio, and is served by the [standard 4D web server](https://developer.4d.com/docs/en/WebServer/webServer.html). In this situation, your web application cannot access assets that are not exposed as REST resources.
+
+See [Exposed vs non-exposed functions](https://developer.4d.com/docs/en/ORDA/ordaClasses.html#exposed-vs-non-exposed-functions) and [Exposing tables](https://developer.4d.com/docs/en/REST/configuration.html#exposing-tables) for more information on how to expose assets.
+
+

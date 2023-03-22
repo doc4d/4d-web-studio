@@ -101,7 +101,7 @@ Now everytime the text changes inside the **Input** element, a query is sent and
 
 Aside from events triggered by end-user actions, events can trigger automatically when datasources are updated.
 
-For a list of datasource events, see [List of available events](#list-of-available-events).
+For a list of datasource events, see [List of available events](#list-of-datasource-events).
 
 #### Example - Updating an entity selection
 
@@ -133,20 +133,15 @@ Here's what you obtain after the button is clicked:
 
 ### On Change
 
-An On Change event attached a datasource triggers in the following cases:
+An `On Change` event attached a datasource triggers in the following cases:
 
 |Trigger|Description|
 |---|---|
 |Datasource|<ul><li>The reference pointed by the datasource changes in the web browser (not on the server)</li><li>The entity is [touched](https://developer.4d.com/docs/en/API/EntityClass.html#touched)</li></ul>|
 |Entity attribute|The contents of the entity attribute change|
-|Local datasource|The contents of the local datasource change|
+|Scalar datasource|The contents of the scalar datasource change|
 |Entity selection datasource| <li>The reference pointed by the datasource changes in the web browser (not on the server)</li><li>An entity is added to the entity selection</li>|
 
-:::note 
-
-The On Error event is not available yet.
-
-:::
 
 
 ## Standard actions
