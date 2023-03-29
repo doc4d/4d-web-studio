@@ -104,26 +104,19 @@ The DataTable can be configured with the following properties, available from th
 
 #### Styling
 
-Tha DataTable component supports specific css classes:
+The DataTable component supports dedicated CSS classes that allow customizing specific parts such as even columns or selected row. Refer to the [**Customizing DataTable Styles**](styling.md#customizing-datatable-styles) section for class definition and examples. 
 
-|Area|Class name|Applies to|
-|---|---|----|
-|Header|.header|the whole header|
-||.header-cell|all the cells of the header|
-||.header-even|header of even columns|
-||.header-datasourceName (*)|the header of the corresponding datasource|
-|Row|.row|all rows|
-||.selected|the selected row|
-||.row-even|all even rows|
-||.hover|the hovered row|
-|Cell|.cell|all the cells|
-|Column|.col-datasourceName (*)|the column of the corresponding datasource|
-||.col-even|even columns|
-||.sorted|sorted colums|
-||.sorted-asc|asc sorted columns|
-||.sorted-desc|desc sorted columns|
+#### Events
 
-(*) Ex: .header-lastname, .header-employer-name (use a - instead of . for relations)
+The DataTable component supports the following specific [server event](../API/web-event.md):
+
+|Property|Type|Description|
+|---|---|---|
+|eventType|Text|"onheaderclick"|
+|data|Object|-|
+|index|Number|index of the clicked column header (starting from 0)|
+|name|Text|the datasource of the column (i.e; address.city)|
+
 
 ### File input
 
