@@ -80,19 +80,50 @@ Two types of components are available:
 
 The **DataTable** component is designed to display data as a table from a datasource. Usually when a DataTable is bound to a catalog datasource, attributes are represented as columns, and entities are represented as rows. A DataTable also contains a header. 
 
-Basic features include column sorting, resizable columns, tips display with cell value, and selectable/tabbable rows. 
+Basic features include column sorting, resizable columns, columns movable by drag and drop, tips display with cell value, and selectable/tabbable rows. 
 
 ![data-table](img/datatable1.png)
 
 Note that all DataTable components parts are highly customizable thanks to a specific [CSS class].
 
-The DataTable can be configured with the following properties, available in the **Properties** panel:
+The DataTable can be configured with the following properties, available from the **Properties** panel:
 
-- **Header height**: Height of the datre.
-- **Size limit**: maximum file size that the user will be allowed to upload. You can select the unit: KB, MB, GB. If the user selects a file with a larger size, an error is displayed on the browser. 
-- **Media type**: file type. Supported type: text, image, video, audio.
+- **Header height**: Height of the header row in pixels.
+- **Row height**: Height of each row (except the header) in pixels.
+- **columns area**: Use this area to add, move, or remove colums from the DataTable.
+	+ to **add** a column, click on the `+` icon to display a new column configuration area at the bottom of the column list (see below)
+	+ to **remove** a column: click the trash icon of the column
+	+ to **move** a column: select the icon at the left of the column name, then drag and drop the column.
+- ***column name***: Each added column is configured individually and has the following properties:
+	+ **Title**: Column title to be displayed in the header and as column name in the properties area. 
+	+ **Source**: datasource for the column. Usually, it is an attribute whose value depends on each element of the DataTable's DataSource. 
+	+ **Format**: Display format for the column.
+	+ **Width**: Column width in pixels. You can define the width in pixels or in percentage by using the unit menu at the right side of the entry area (**PX** or **%**)
+	+ **Sorting**: Check this selector if you want that the user can sort the column by clicking the header area at runtime (alternatively for ascending/descending sort). ![data-table](img/datatable2.png)
 
 
+#### Styling
+
+Tha DataTable component supports specific css classes:
+
+|Area|Class name|Applies to|
+|---|---|----|
+|Header|.header|the whole header|
+||.header-cell|all the cells of the header|
+||.header-even|header of even columns|
+||.header-datasourceName (*)|the header of the corresponding datasource|
+|Row|.row|all rows|
+||.selected|the selected row|
+||.row-even|all even rows|
+||.hover|the hovered row|
+|Cell|.cell|all the cells|
+|Column|.col-datasourceName (*)|the column of the corresponding datasource|
+||.col-even|even columns|
+||.sorted|sorted colums|
+||.sorted-asc|asc sorted columns|
+||.sorted-desc|desc sorted columns|
+
+(*) Ex: .header-lastname, .header-employer-name (use a - instead of . for relations)
 
 ### File input
 
