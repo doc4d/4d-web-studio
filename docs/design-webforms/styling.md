@@ -131,6 +131,8 @@ The following CSS definitions allow to design custom datatable components.
 
 #### Example 1
 
+![blue-headers](img/BlueHeaders.png)
+
 ```css
 self {
   border-radius: 10px;
@@ -176,8 +178,10 @@ self .Grid .innerScrollContainer > :not([hidden]) ~ :not([hidden]) {
 
 #### Example 2
 
+![green-headers](img/GreenHeaders.png)
+
 ```css
-elf .header .header-cell {
+self .header .header-cell {
   background-color: #324960;
   color: #fff;
   font-weight: bold;
@@ -223,6 +227,8 @@ self .Grid .innerScrollContainer > :not([hidden]) ~ :not([hidden]) {
 #### Example 3
 
 This example requires that the DataTable contains a column associated to a `lastname` datasource.
+
+![dark-mode-datatable](img/Dark-mode.png)
 
 ```css
 self {
