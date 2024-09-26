@@ -48,7 +48,7 @@ The toolbar bordering the top of your workspace contains 3 actions:
 
 -   Fit view : By clicking on the ![alt-text](img/fitview-icon.png) icon you will get a fitted view of your entire datastore classes Model in the Workspace area.
 
--   ![alt-text](img/fitview-icon.png) reload model :
+-   Reload model : Clicking on the ![alt-text](img/reloadmodel-icon.png) icon refreshes your model’s interface and updates the latest modifications.
 
 **On the right side:**
 

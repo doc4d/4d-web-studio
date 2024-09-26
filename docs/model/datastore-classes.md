@@ -46,11 +46,11 @@ In the Properties tab, you can modify the datastore class's properties:
 
 -   **Scope**: Modifies the scope of the datastore class(Expose as REST or do not expose as REST). By default, this option is set to Expose as REST which means the datastore class can be accessed using a REST request.
 
--   **Page size**:
+-   **Page size**: Defines how many elements are within a list when you do a list fetch.
 
--   **Records definitely deleted:**
+-   **Records definitely deleted**:
 
--   **Include in log file:**
+-   **Include in log file**: By default, this option is checked for all new tables. Allows operations performed on the Datastore class’s data to be included in the database log file (when it is generated). 
 
 -   **Comment**: Comments that you can store with your datastore class for private use.
 
